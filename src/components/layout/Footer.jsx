@@ -20,7 +20,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-text text-surface" role="contentinfo">
+    <footer className="bg-neutral-900 dark:bg-neutral-950 text-surface" role="contentinfo">
       <div className="page-container">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pt-12 pb-8">
           <div className="md:col-span-2 lg:col-span-2">
