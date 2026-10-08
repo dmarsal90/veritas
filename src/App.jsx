@@ -13,6 +13,9 @@ import FAQ from './components/sections/FAQ';
 import CTA from './components/sections/CTA';
 import QuoteForm from './components/features/quote/QuoteForm';
 import AIAssistant from './components/features/ai-assistant/AIAssistant';
+import ScrollProgress from './components/ui/ScrollProgress';
+import ScrollToTop from './components/ui/ScrollToTop';
+import BackToTop from './components/ui/BackToTop';
 
 function Home() {
   return (
@@ -32,6 +35,8 @@ function Home() {
       </main>
       <Footer />
       <AIAssistant />
+      <BackToTop />
+      <ScrollProgress />
     </>
   );
 }
@@ -46,6 +51,8 @@ function QuotePage() {
       </main>
       <Footer />
       <AIAssistant />
+      <BackToTop />
+      <ScrollProgress />
     </>
   );
 }
@@ -53,6 +60,7 @@ function QuotePage() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quote" element={<QuotePage />} />
