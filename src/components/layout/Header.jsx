@@ -26,6 +26,7 @@ export default function Header() {
 
   return (
     <header
+      id="main-header"
       className={`sticky top-0 z-100 border-b border-border transition-all duration-300 ${
         scrolled ? 'shadow-md bg-surface/95 backdrop-blur-md' : 'bg-surface'
       }`}

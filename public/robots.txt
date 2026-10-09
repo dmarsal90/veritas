@@ -1,0 +1,16 @@
+# Veritas HomeServices LLC - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://veritashomeservices.com/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 10
+
+# Disallow admin/private paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$

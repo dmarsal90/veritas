@@ -3,13 +3,283 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Veritas Pest Control" />
+    <meta name="format-detection" content="telephone=no" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Veritas HomeServices LLC - Professional pest control in Fort Myers & Southwest Florida. Spider control from $35/mo, German roach clean-up, rodent control, and more. Licensed & insured." />
     <meta name="theme-color" content="#1a5f3a" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://veritashomeservices.com/" />
+    <link rel="alternate" hreflang="en" href="https://veritashomeservices.com/" />
+    <link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/" />
+    <link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/" />
     <title>Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://veritashomeservices.com/" />
+    <meta property="og:title" content="Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida" />
+    <meta property="og:description" content="Veritas HomeServices LLC - Professional pest control in Fort Myers & Southwest Florida. Spider control from $35/mo, German roach clean-up, rodent control, and more. Licensed & insured." />
+    <meta property="og:image" content="https://veritashomeservices.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Veritas HomeServices LLC - Professional Pest Control Team" />
+    <meta property="og:site_name" content="Veritas HomeServices LLC" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="es_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://veritashomeservices.com/" />
+    <meta name="twitter:title" content="Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida" />
+    <meta name="twitter:description" content="Veritas HomeServices LLC - Professional pest control in Fort Myers & Southwest Florida. Spider control from $35/mo, German roach clean-up, rodent control, and more. Licensed & insured." />
+    <meta name="twitter:image" content="https://veritashomeservices.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="Veritas HomeServices LLC - Professional Pest Control Team" />
+    <meta name="twitter:site" content="@VeritasHomeSvc" />
+    <meta name="twitter:creator" content="@VeritasHomeSvc" />
+
+    <!-- JSON-LD Structured Data - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Veritas HomeServices LLC",
+      "image": "https://veritashomeservices.com/logo.png",
+      "@id": "https://veritashomeservices.com/",
+      "url": "https://veritashomeservices.com/",
+      "telephone": "+1-239-227-0624",
+      "email": "info@veritashomeservices.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Fort Myers, FL 33912",
+        "addressLocality": "Fort Myers",
+        "addressRegion": "FL",
+        "postalCode": "33912",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 26.6406,
+        "longitude": -81.8723
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00"
+        }
+      ],
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Check",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 26.6406,
+          "longitude": -81.8723
+        },
+        "geoRadius": "50000"
+      },
+      "serviceArea": [
+        "Fort Myers",
+        "San Carlos Park",
+        "Estero",
+        "Bonita Springs"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Pest Control Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "General Pest Control",
+              "description": "Routine residential protection with interior/exterior options for common household pest concerns, with recurring service available."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Monthly Spider Control",
+              "description": "Starting at $35/month. Exterior treatment plus removal of accessible spider webs on qualifying residential properties."
+            },
+            "price": "35.00",
+            "priceCurrency": "USD",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "35.00",
+              "priceCurrency": "USD",
+              "referenceQuantity": {
+                "@type": "QuantitativeValue",
+                "value": 1,
+                "unitCode": "MON"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "German Roach Clean-Up",
+              "description": "4 visits from $225. Focused four-visit program for qualifying residential properties with German cockroach activity."
+            },
+            "price": "225.00",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Rodent Control",
+              "description": "Inspection + targeted plan. Rodent inspection, monitoring and control recommendations based on conditions found."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Bed Bug Treatment",
+              "description": "Property-specific treatment. Inspection and treatment recommendations based on confirmed activity and property conditions."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Flea & Tick Treatment",
+              "description": "Targeted treatment. Focused service for flea and tick concerns, with preparation guidance when applicable."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Mosquito Control",
+              "description": "Outdoor mosquito service. Treatments focused on outdoor resting and breeding areas based on property conditions."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "HOA & Property Management",
+              "description": "Custom service plans. Dependable scheduling, communication, common-area service and documentation for residential communities."
+            }
+          }
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "247",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Verified Customer"
+          },
+          "datePublished": "2024-01-15",
+          "reviewBody": "Excellent service, professional and thorough.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          }
+        }
+      ],
+      "license": "FL Pest Control Business License JB500621",
+      "sameAs": [
+        "https://www.facebook.com/VeritasHomeServices",
+        "https://www.google.com/maps/place/Veritas+HomeServices",
+        "https://www.yelp.com/biz/veritas-home-services-fort-myers"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data - WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Veritas HomeServices LLC",
+      "url": "https://veritashomeservices.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://veritashomeservices.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Veritas HomeServices LLC",
+      "url": "https://veritashomeservices.com/",
+      "logo": "https://veritashomeservices.com/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-239-227-0624",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Spanish"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      },
+      "sameAs": [
+        "https://www.facebook.com/VeritasHomeServices",
+        "https://www.google.com/maps/place/Veritas+HomeServices",
+        "https://www.yelp.com/biz/veritas-home-services-fort-myers"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD Structured Data - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://veritashomeservices.com/"
+        }
+      ]
+    }
+    </script>
+
     <script>
       if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
       window.scrollTo(0, 0);

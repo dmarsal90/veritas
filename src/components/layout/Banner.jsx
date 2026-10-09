@@ -5,7 +5,7 @@ export default function Banner() {
   const { t } = useLanguage();
 
   return (
-    <div className="bg-primary/90 text-white text-sm font-medium backdrop-blur-sm" role="banner">
+    <div className="bg-primary/90 text-white text-sm font-medium backdrop-blur-sm" role="region" aria-label="Announcement">
       <div className="container flex items-center justify-between gap-4 h-10 md:h-10 flex-wrap">
         <div className="banner-text">
           <span>{t.banner.text}</span>

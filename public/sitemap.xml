@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://veritashomeservices.com/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/" />
+  </url>
+
+  <!-- Quote page -->
+  <url>
+    <loc>https://veritashomeservices.com/quote</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/quote" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/quote" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/quote" />
+  </url>
+
+  <!-- Services page -->
+  <url>
+    <loc>https://veritashomeservices.com/services</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/services" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/services" />
+  </url>
+
+  <!-- Spider Control page -->
+  <url>
+    <loc>https://veritashomeservices.com/spider-control</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/spider-control" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/spider-control" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/spider-control" />
+  </url>
+
+  <!-- Roach Cleanup page -->
+  <url>
+    <loc>https://veritashomeservices.com/roach-cleanup</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/roach-cleanup" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/roach-cleanup" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/roach-cleanup" />
+  </url>
+
+  <!-- Communities page -->
+  <url>
+    <loc>https://veritashomeservices.com/communities</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/communities" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/communities" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/communities" />
+  </url>
+
+  <!-- Rodent Control page -->
+  <url>
+    <loc>https://veritashomeservices.com/rodent-control</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/rodent-control" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/rodent-control" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/rodent-control" />
+  </url>
+
+  <!-- Bed Bug Treatment page -->
+  <url>
+    <loc>https://veritashomeservices.com/bed-bug-treatment</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/bed-bug-treatment" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/bed-bug-treatment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/bed-bug-treatment" />
+  </url>
+
+  <!-- Flea & Tick Treatment page -->
+  <url>
+    <loc>https://veritashomeservices.com/flea-tick-treatment</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/flea-tick-treatment" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/flea-tick-treatment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/flea-tick-treatment" />
+  </url>
+
+  <!-- Mosquito Control page -->
+  <url>
+    <loc>https://veritashomeservices.com/mosquito-control</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/mosquito-control" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/mosquito-control" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/mosquito-control" />
+  </url>
+
+  <!-- Service Areas pages -->
+  <url>
+    <loc>https://veritashomeservices.com/san-carlos-park</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/san-carlos-park" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/san-carlos-park" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/san-carlos-park" />
+  </url>
+
+  <url>
+    <loc>https://veritashomeservices.com/estero</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/estero" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/estero" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/estero" />
+  </url>
+
+  <url>
+    <loc>https://veritashomeservices.com/bonita-springs</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://veritashomeservices.com/bonita-springs" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/bonita-springs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/bonita-springs" />
+  </url>
+</urlset>

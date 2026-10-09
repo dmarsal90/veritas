@@ -1,0 +1,23 @@
+{
+  "name": "Veritas HomeServices LLC",
+  "short_name": "Veritas Pest Control",
+  "description": "Professional pest control in Fort Myers & Southwest Florida. Spider control from $35/mo, German roach clean-up, rodent control, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#1a5f3a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "screenshots": [],
+  "prefer_related_applications": false
+}
