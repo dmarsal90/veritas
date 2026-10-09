@@ -22,8 +22,8 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-900 dark:bg-neutral-950 text-surface" role="contentinfo">
       <div className="page-container">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pt-12 pb-8">
-          <div className="md:col-span-2 lg:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pt-12 pb-8 min-w-0">
+          <div className="md:col-span-2 lg:col-span-2 min-w-0">
             <Link to="/" className="flex items-center gap-2.5 mb-6" aria-label="Veritas HomeServices LLC - Home">
               <span className="w-10 h-10 rounded-md bg-primary text-white flex items-center justify-center font-extrabold text-xl flex-shrink-0" aria-hidden="true">V</span>
               <div className="flex flex-col leading-tight min-w-0">
@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="footer-nav" aria-label="Services">
+          <nav className="footer-nav min-w-0" aria-label="Services">
             <h4 className="font-semibold text-surface mb-4">{t.footer.services}</h4>
             <ul className="flex flex-col gap-2">
               {footerLinks.services.map((link) => (
@@ -64,7 +64,7 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <nav className="footer-nav" aria-label="Local Service">
+          <nav className="footer-nav min-w-0" aria-label="Local Service">
             <h4 className="font-semibold text-surface mb-4">{t.footer.areas}</h4>
             <ul className="flex flex-col gap-2">
               {footerLinks.local.map((link) => (

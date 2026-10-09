@@ -251,15 +251,16 @@ export default function Services() {
           initial={reduceMotion ? {} : { opacity: 0 }}
           whileInView={reduceMotion ? {} : { opacity: 1 }}
           viewport={{ once: false, amount: 0.3 }}
+          style={{ minWidth: 0 }}
         >
           {services.map((service) => (
-            <motion.article
-              key={service.link}
-              className="card glass-card card-volume group relative overflow-hidden"
-              variants={itemVariants}
-              whileHover={{ y: -8, boxShadow: 'var(--shadow-elevated-hover)' }}
-              transition={{ duration: 0.3 }}
-            >
+<motion.article
+               key={service.link}
+               className="card glass-card card-volume group relative overflow-hidden min-w-0"
+               variants={itemVariants}
+               whileHover={{ y: -8, boxShadow: 'var(--shadow-elevated-hover)' }}
+               transition={{ duration: 0.3 }}
+             >
               <div className="p-6">
                 <motion.div
                   className="icon-wrapper mb-5"
