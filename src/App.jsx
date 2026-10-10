@@ -6,8 +6,8 @@ import Footer from './components/layout/Footer';
 import ScrollProgress from './components/ui/ScrollProgress';
 import ScrollToTop from './components/ui/ScrollToTop';
 import BackToTop from './components/ui/BackToTop';
+import Hero from './components/sections/Hero';
 
-const Hero = lazy(() => import('./components/sections/Hero'));
 const Services = lazy(() => import('./components/sections/Services'));
 const WhyVeritas = lazy(() => import('./components/sections/WhyVeritas'));
 const QuickStart = lazy(() => import('./components/sections/QuickStart'));
@@ -29,9 +29,7 @@ function Home() {
       <Banner />
       <Header />
       <main>
-        <Suspense fallback={<SectionFallback />}>
-          <Hero />
-        </Suspense>
+        <Hero />
         <Suspense fallback={<SectionFallback />}>
           <Services />
         </Suspense>

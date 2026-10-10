@@ -2,18 +2,30 @@ import { motion, useMotionValue, useTransform, useReducedMotion } from 'motion/r
 import { Link } from 'react-router-dom';
 import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
+import { useEffect, useState } from 'react';
 
 export default function Hero() {
   const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024 || 'ontouchstart' in window);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   const handleMouseMove = (e) => {
-    if (reduceMotion) return;
-    const rect = e.currentTarget.getBoundingClientRect();
+    if (reduceMotion || isMobile) return;
+    const target = e.currentTarget;
+    const rect = target.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
     mouseX.set(x * 20);
@@ -21,7 +33,7 @@ export default function Hero() {
   };
 
   const handleMouseLeave = () => {
-    if (reduceMotion) return;
+    if (reduceMotion || isMobile) return;
     mouseX.set(0);
     mouseY.set(0);
   };
@@ -39,9 +51,10 @@ export default function Hero() {
           <div className="hero-content relative z-10">
             <motion.span 
               className="badge badge-primary mb-6 inline-block"
-              initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
+              initial={reduceMotion ? {} : { y: 20 }}
+              animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.badge}
             </motion.span>
@@ -49,27 +62,30 @@ export default function Hero() {
             <motion.h1 
               id="hero-title" 
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] text-text mb-6 text-balance tracking-tight"
-              initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { y: 30 }}
+              animate={reduceMotion ? {} : { y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.titleNew}
             </motion.h1>
             
             <motion.p 
               className="text-lg md:text-xl lg:text-2xl text-text-muted leading-relaxed mb-8 max-w-2xl font-medium"
-              initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { y: 30 }}
+              animate={reduceMotion ? {} : { y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.descriptionNew}
             </motion.p>
             
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 mb-10"
-              initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { y: 30 }}
+              animate={reduceMotion ? {} : { y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+              style={{ opacity: 1, willChange: 'transform' }}
             >
               <Link
                 to="/quote"
@@ -116,9 +132,10 @@ export default function Hero() {
             
             <motion.div 
               className="trust-bar flex flex-wrap items-center gap-6 md:gap-8 text-sm"
-              initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
-              animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.65, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { y: 20 }}
+              animate={reduceMotion ? {} : { y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              style={{ opacity: 1, willChange: 'transform' }}
             >
               <div className="flex items-center gap-2 text-primary font-semibold">
                 <motion.svg 

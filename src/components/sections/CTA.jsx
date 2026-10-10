@@ -1,18 +1,30 @@
 import { motion, useReducedMotion, useMotionValue, useTransform } from 'motion/react';
 import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
+import { useEffect, useState } from 'react';
 
 export default function CTA() {
   const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 1024 || 'ontouchstart' in window);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   const handleMouseMove = (e) => {
-    if (reduceMotion) return;
-    const rect = e.currentTarget.getBoundingClientRect();
+    if (reduceMotion || isMobile) return;
+    const target = e.currentTarget;
+    const rect = target.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
     mouseX.set(x * 30);
@@ -20,7 +32,7 @@ export default function CTA() {
   };
 
   const handleMouseLeave = () => {
-    if (reduceMotion) return;
+    if (reduceMotion || isMobile) return;
     mouseX.set(0);
     mouseY.set(0);
   };

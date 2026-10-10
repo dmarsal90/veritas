@@ -24,10 +24,19 @@
     <link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/" />
     <link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/" />
     <title>Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" as="font" type="font/woff2" crossorigin fetchpriority="high" href="https://fonts.gstatic.com/s/geist/v2/6e95a5405936d12.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/geistmono/v2/6e95a5405936d12.woff2">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap"></noscript>
+
+    <!-- Netlify hud removal for production -->
+    <script>
+      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        var hud = document.querySelector('script[src*="hud"]');
+        if (hud) hud.remove();
+      }
+    </script>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -302,6 +311,7 @@
   </head>
   <body>
     <div id="root"></div>
+    <link rel="modulepreload" href="/src/main.jsx">
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
