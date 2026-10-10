@@ -1,10 +1,9 @@
 import { motion, useReducedMotion, useMotionValue, useTransform } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function CTA() {
-  const { phone, phoneHref } = useContactInfo();
+  const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
 

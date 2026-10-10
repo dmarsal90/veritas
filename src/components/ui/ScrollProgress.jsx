@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
 
 export default function ScrollProgress() {
   const [scrollProgress, setScrollProgress] = useState(0);
-  const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     const handleScroll = () => {

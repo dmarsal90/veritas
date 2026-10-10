@@ -1,21 +1,27 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import Header from './components/layout/Header';
 import Banner from './components/layout/Banner';
 import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
-import Services from './components/sections/Services';
-import WhyVeritas from './components/sections/WhyVeritas';
-import QuickStart from './components/sections/QuickStart';
-import Process from './components/sections/Process';
-import HOA from './components/sections/HOA';
-import ServiceAreas from './components/sections/ServiceAreas';
-import FAQ from './components/sections/FAQ';
-import CTA from './components/sections/CTA';
-import QuoteForm from './components/features/quote/QuoteForm';
-import AIAssistant from './components/features/ai-assistant/AIAssistant';
 import ScrollProgress from './components/ui/ScrollProgress';
 import ScrollToTop from './components/ui/ScrollToTop';
 import BackToTop from './components/ui/BackToTop';
+
+const Hero = lazy(() => import('./components/sections/Hero'));
+const Services = lazy(() => import('./components/sections/Services'));
+const WhyVeritas = lazy(() => import('./components/sections/WhyVeritas'));
+const QuickStart = lazy(() => import('./components/sections/QuickStart'));
+const Process = lazy(() => import('./components/sections/Process'));
+const HOA = lazy(() => import('./components/sections/HOA'));
+const ServiceAreas = lazy(() => import('./components/sections/ServiceAreas'));
+const FAQ = lazy(() => import('./components/sections/FAQ'));
+const CTA = lazy(() => import('./components/sections/CTA'));
+const QuoteForm = lazy(() => import('./components/features/quote/QuoteForm'));
+const AIAssistant = lazy(() => import('./components/features/ai-assistant/AIAssistant'));
+
+function SectionFallback() {
+  return <div className="section-skeleton h-64 md:h-96 lg:h-[500px]" aria-hidden="true" />;
+}
 
 function Home() {
   return (
@@ -23,18 +29,38 @@ function Home() {
       <Banner />
       <Header />
       <main>
-        <Hero />
-        <Services />
-        <WhyVeritas />
-        <QuickStart />
-        <Process />
-        <HOA />
-        <ServiceAreas />
-        <FAQ />
-        <CTA />
+        <Suspense fallback={<SectionFallback />}>
+          <Hero />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Services />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <WhyVeritas />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <QuickStart />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Process />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <HOA />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <ServiceAreas />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <FAQ />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <CTA />
+        </Suspense>
       </main>
       <Footer />
-      <AIAssistant />
+      <Suspense fallback={<SectionFallback />}>
+        <AIAssistant />
+      </Suspense>
       <BackToTop />
       <ScrollProgress />
     </>
