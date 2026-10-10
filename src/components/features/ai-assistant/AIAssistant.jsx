@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
-import { useContactInfo } from '../../../hooks/useContactInfo';
 import { useLanguage } from '../../../context/LanguageContext';
 
 export default function AIAssistant() {
-  const { phone, phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState(() => [
@@ -219,18 +217,18 @@ export default function AIAssistant() {
           <div ref={messagesEndRef} />
         </div>
 
-        <div className="p-4 border-t border-border bg-background/50 flex flex-wrap gap-2 overflow-x-auto">
+        <ul className="p-4 border-t border-border bg-background/50 flex flex-wrap gap-2 overflow-x-auto" role="list" aria-label="Quick reply suggestions">
           {quickReplies.map((reply) => (
-            <button
-              key={reply}
-              className="whitespace-nowrap px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-150"
-              onClick={() => handleQuickReply(reply)}
-              role="listitem"
-            >
-              {reply}
-            </button>
+            <li key={reply}>
+              <button
+                className="whitespace-nowrap px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-150"
+                onClick={() => handleQuickReply(reply)}
+              >
+                {reply}
+              </button>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <form onSubmit={handleSend} className="p-4 bg-surface border-t border-border flex gap-2">
           <input

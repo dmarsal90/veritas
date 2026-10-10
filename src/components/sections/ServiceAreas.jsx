@@ -63,33 +63,38 @@ export default function ServiceAreas() {
           viewport={{ once: false, amount: 0.3 }}
         >
           {t.serviceAreas.areas.map((area) => (
-            <motion.Link
+            <motion.article
               key={area.name}
-              to={area.link}
               className="card glass-card card-volume p-6 lg:p-8 text-center group"
-              style={{ textDecoration: 'none', color: 'inherit' }}
               variants={itemVariants}
               whileHover={{ y: -8, boxShadow: 'var(--shadow-elevated-hover)' }}
               transition={{ duration: 0.3 }}
             >
-              <motion.h3
-                className="text-xl font-bold text-text mb-2"
-                initial={reduceMotion ? {} : { opacity: 0, y: 10 }}
-                animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.1 }}
-                whileHover={{ color: 'var(--color-primary)', scale: 1.02 }}
+              <Link
+                to={area.link}
+                className="block"
+                style={{ textDecoration: 'none', color: 'inherit' }}
+                aria-label={`View pest control services in ${area.name}`}
               >
-                {area.name}
-              </motion.h3>
-              <motion.p
-                className="text-text-muted leading-relaxed"
-                initial={reduceMotion ? {} : { opacity: 0, y: 10 }}
-                animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.15 }}
-              >
-                {area.description}
-              </motion.p>
-            </motion.Link>
+                <motion.h3
+                  className="text-xl font-bold text-text mb-2"
+                  initial={reduceMotion ? {} : { opacity: 0, y: 10 }}
+                  animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.1 }}
+                  whileHover={{ color: 'var(--color-primary)', scale: 1.02 }}
+                >
+                  {area.name}
+                </motion.h3>
+                <motion.p
+                  className="text-text-muted leading-relaxed"
+                  initial={reduceMotion ? {} : { opacity: 0, y: 10 }}
+                  animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.15 }}
+                >
+                  {area.description}
+                </motion.p>
+              </Link>
+            </motion.article>
           ))}
         </motion.div>
       </div>

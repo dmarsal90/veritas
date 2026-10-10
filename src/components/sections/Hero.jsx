@@ -4,7 +4,7 @@ import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function Hero() {
-  const { phone, phoneHref } = useContactInfo();
+  const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
 
@@ -35,7 +35,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-secondary)_0%,_transparent_50%)] opacity-5" aria-hidden="true" />
       
       <div className="page-container relative">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-[calc(100dvh-80px)]">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center min-h-[calc(100vh-80px)] min-h-[calc(100dvh-80px)] pt-10 md:pt-0 lg:pt-0">
           <div className="hero-content relative z-10">
             <motion.span 
               className="badge badge-primary mb-6 inline-block"

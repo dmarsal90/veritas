@@ -1,0 +1,2091 @@
+{
+  "version": 1,
+  "skills": {
+    "0xdesign-design-lab": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d596c099fe0e40644787b8a53c38e5fc88cc7dcf294d5e6b2672b19f334b0359",
+      "wellKnownDigest": "sha256:965e5a4d95679aaa36464f429e059fa097549d0491ef672b163c1460a72f2510"
+    },
+    "aashaexo-humanize": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "32789c01df2cde5c9c502eeeb0be9c578de61c2de717b1b4fad6ced24308bcbd",
+      "wellKnownDigest": "sha256:47db572a5ebd4bcd198f84ddea6c1a10ed142e7f44887db52868570644d023b8"
+    },
+    "aboudjem-humanizer": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "25677e687e5e1a30a412f1b7dcdd882543f7e59a4221a7988608624c086ddddb",
+      "wellKnownDigest": "sha256:71f0825d5ccc3b466d78b1656c71b35332931dc653271e1ab6b04f787299d9c6"
+    },
+    "accesslint-accessibility-diff": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0fe35de7ad63c36fc8b5a28cff090e34a174e7e1200656e84feb9067f5db17c5",
+      "wellKnownDigest": "sha256:7b59b85747cb8845858d751eb3efd56d1ef6cb98aef076a2a72c7ef80cd3ae70"
+    },
+    "accesslint-accessibility-scan": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6054f1cdbaa768e901f64fc3c45415335254c36cf8f44c0fd55adc3f7eaf268a",
+      "wellKnownDigest": "sha256:62af3248d1589455fa06dfeff0cd409340475eeb45cfb07cdfc7d64fd026180b"
+    },
+    "accesslint-audit-and-fix": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "87e88d724a6f06d475e869055e1a231769e7c252c96a830fd0dbdabc6a006207",
+      "wellKnownDigest": "sha256:fa1f1af1f043a075a93e989b35d00e74c1539cfe840dd69b70c4a00625eb9e44"
+    },
+    "accesslint-contrast-checker": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5a61982ddbd9e62f7caacbeed72ad0ae0a8e8230c6b3fd71a4b259230f1096bc",
+      "wellKnownDigest": "sha256:3a3ac56289191371509130a83f3b86152174c8464ad2464e0d9b49c7d2e86b94"
+    },
+    "accesslint-link-purpose": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5a61982ddbd9e62f7caacbeed72ad0ae0a8e8230c6b3fd71a4b259230f1096bc",
+      "wellKnownDigest": "sha256:3a3ac56289191371509130a83f3b86152174c8464ad2464e0d9b49c7d2e86b94"
+    },
+    "accesslint-refactor": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "cad06115e62d45bd3c41f7c7c2dd7f8ed0549832fece57a031b48cdc1edf70cb",
+      "wellKnownDigest": "sha256:93a6cb8508bd555629ad1d23ff7aa8ccf1154da750a61503c3940716ce7f4b64"
+    },
+    "accesslint-use-of-color": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5a61982ddbd9e62f7caacbeed72ad0ae0a8e8230c6b3fd71a4b259230f1096bc",
+      "wellKnownDigest": "sha256:3a3ac56289191371509130a83f3b86152174c8464ad2464e0d9b49c7d2e86b94"
+    },
+    "addyosmani-accessibility": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c6231cc2c510386e6c7c83a0d502c28f22936460e794071b53c351cae7985c84",
+      "wellKnownDigest": "sha256:267fb2a0707d6142f2871f22688203a42ba21291a2aa200fb740936e41362b5d"
+    },
+    "addyosmani-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "53632beaec2aed3d09b2b4eae3d9e277f77ccd204980d0d5c55735b4c870c6f9",
+      "wellKnownDigest": "sha256:9d1f10a08cd7a94176ce160ec860dbd3ecfadad75d46546001883f1f907c5c3e"
+    },
+    "addyosmani-core-web-vitals": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3b74b810c1799e28a467fef82d38c82a32944373f95d318e477b0b5bd25bee2c",
+      "wellKnownDigest": "sha256:731aa78c0347e8b3e191b75962175bee058ce73817278e610ac0fe546e685914"
+    },
+    "addyosmani-frontend-ui-engineering": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "caada020b47fb51c68ba91f9bf390745e18f9d6c17e4c251b046ba74e43343d7",
+      "wellKnownDigest": "sha256:549044e9bd8d7fe993ce8e5c0d2b0f5465650676dc15805329973f936179eb1e"
+    },
+    "addyosmani-performance": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6648dd03fe2e278af565977421627d1472fd956986646d51717a69672d2b058e",
+      "wellKnownDigest": "sha256:b0c220185d88c61f7770eb127d8facf86c86d2dd1fd82b86e15a4965a0137265"
+    },
+    "addyosmani-seo": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e74f6014a3120631c135ca24ea3a5d260e4da17a3703f6099aae5e05c8676421",
+      "wellKnownDigest": "sha256:57cd16566c2c706186b643644dec2884da89c42f296843364c65a40a4d566ae6"
+    },
+    "addyosmani-web-quality-audit": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5207c352eac9a80cb207858c8073e6af89a0b3c9a38f07a3c04ecc9b63b18284",
+      "wellKnownDigest": "sha256:1903cfb4dcba987d50dc7a51f6c19ec43830ff924c2c8f78979d8775fbe20f91"
+    },
+    "aminblg-simple-english": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5c0d3356d58f31a5b7d799f0c0f385eb54702fece293eeb976d261e2e69b7e06",
+      "wellKnownDigest": "sha256:2f25072b7edd707d525d597b388f473b46baad100a3232e13f60e30b0fcc4a82"
+    },
+    "antfu-antfu": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "41b70a476691066f9f3c3051c96ea01229cc8c64ff8d4872548b3496f6676cd9",
+      "wellKnownDigest": "sha256:2d6e33d9d0437fa8c626d875e725bf39a495501d092fb7ab62faa50088ac7dbb"
+    },
+    "antfu-nitro": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "58051b8625c77f81547ab2162a57f1eea45d37f38b272d1e17a965ad5d019819",
+      "wellKnownDigest": "sha256:d808edcda16776cf9b9772e818ab7bb0592d8ca09ea887de97178fa066c8d122"
+    },
+    "antfu-nuxt": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9279aa3df02ac0c13d18cbb6991949c7f9722e09fbce6c17bdee78f35bcf6497",
+      "wellKnownDigest": "sha256:6922e5db6a0c1490f490d6b68a150ec3fc6aff47343e8d9128f454a69ddaa48e"
+    },
+    "antfu-pinia": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "77c9ef2a15bcf9246719a7e6f248b10321b757b0f86b813c6b16be45dff15788",
+      "wellKnownDigest": "sha256:4efb2e7d17717bd796082a52431b182708b68ce0c7ca6ca067eb5d63a7728ba8"
+    },
+    "antfu-pnpm": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "001262ab43e62490ca71aeacd7272f3e2c2c010b3e34cd44c7a76cd426692435",
+      "wellKnownDigest": "sha256:a4bcad9e69af08b4bc7296ab168627ecd19c070f94007858d05daff0d8dce099"
+    },
+    "antfu-unocss": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f95eb67b1514ff9e5a59b73d635e83a8b965005808fc2223e528b0c0e65b22aa",
+      "wellKnownDigest": "sha256:ccf4a1e26e1c8df7fbfe899725beb361abaf7bd01d1fb9ebefc64b9224b030c7"
+    },
+    "antfu-vite": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "569c6c83bd19c6ef875a57374e4c1e09df16348ad5ee6464016a02bb914edc5d",
+      "wellKnownDigest": "sha256:20bddfc0d23d4b759abb1603a65c6ee488be631fdc2a2e6144c7b31e82480669"
+    },
+    "antfu-vitepress": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7b8e35fff88a68ab4167f5158420e71f538b903f976caf466ce6f9938787a5f6",
+      "wellKnownDigest": "sha256:42b9149a19483a73b04424b6a8e23b9f859805f459f329a6e3f30873efc8c584"
+    },
+    "antfu-vitest": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f2e0d6210cf77d8d98facb3b2d8ecf47b2a10a332dd7109b790ec5fbf8f408f7",
+      "wellKnownDigest": "sha256:d0c470a07b90936ca77fea9fbe25ab657a5bc1f386eb45b18bb70899df7e6baf"
+    },
+    "antfu-vue": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5fc8552bdc90e749b5333ab9411cc3b8d40f533755fcad36278a741f62e9bcaa",
+      "wellKnownDigest": "sha256:be148f51894085055710f424f7c8a6d5e6dade7045afcfa633b84629f19cc84f"
+    },
+    "anthropics-canvas-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0386a413438b1778e5d834b036b2b6fc2c7a5a00dfa2ff7fe82a6b8b8c5e033e",
+      "wellKnownDigest": "sha256:a1f288079624402f30682753c1d43920b6664785698d21d3e7aa197450a6448b"
+    },
+    "anthropics-frontend-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b8c8329ad9b98fa57f4a279e37bdf4a0d55743140e54bb7da3e340d754d75b43",
+      "wellKnownDigest": "sha256:d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3"
+    },
+    "arifszn-slide-wright": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "125a9b8f3ea32f88464cea669cf349be5da8d9bc6816ad97e387f9556bc72613",
+      "wellKnownDigest": "sha256:0fb15d38b056cb373298317615feacdf3d17efce601134984645306b091ba5d5"
+    },
+    "ask-matt": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/ask-matt/SKILL.md",
+      "computedHash": "d1c5b4151720e96135154bd593ac4986a1030a2bc81e2aaf129f8b11224af9a9"
+    },
+    "ayghri-i-have-adhd": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "81742488892b174ef3310de8276f178bc63ad0d90e55ef4d2086e201d1aa2e68",
+      "wellKnownDigest": "sha256:88955c019bbb1419ff4b49dbb1f80a867467de6233d7865af2e06a7d7b76c7d3"
+    },
+    "bencium-bencium-innovative-ux-designer": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2c6b38c9e922e61ea37afeffbb11910d1da687a119b54eea0cc72e37ba5d316d",
+      "wellKnownDigest": "sha256:5b08bc5017bbdcaa36f4cc7ad5b1698f552a8c43222ebddb5ef52c5a2cf8c50a"
+    },
+    "better-interface": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "skillPath": "skills/better-interface/SKILL.md",
+      "computedHash": "9c73b05d59b188147335eb71308ec7f37237272202fe2298f54c322e6c318b3f"
+    },
+    "better-layout": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "skillPath": "skills/better-layout/SKILL.md",
+      "computedHash": "96568d1af89fd3b0061622b9938ce2855b74c1c11134b63f2aec45961372e7ab"
+    },
+    "better-typography": {
+      "source": "jakubkrehel/skills",
+      "sourceType": "github",
+      "skillPath": "skills/better-typography/SKILL.md",
+      "computedHash": "f959c7e37cc5275dc1737090393998c546355919a14977bbf7d5f70cb6e3106b"
+    },
+    "blader-humanizer": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "bd58881e2990cc2157264393da3e36342d469937b0812de09bc60d33c420593c",
+      "wellKnownDigest": "sha256:0612f1dfb1672b0ea9b97e139bf1f06cabe98d8b27424fe8ff01e1fb4cc99cad"
+    },
+    "calicastle-chalk-logic": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "82ec158b6345db8096c79031e3c6bc4e51b50688328ebaafa7b6cb27ed0b6831",
+      "wellKnownDigest": "sha256:4edc29d603863ee89f65fab89daa7a663a2dd63fb44bedaada4ceab371aa46a9"
+    },
+    "calicastle-signal-geometry": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "63b41f6050ece76d076d09b8d256c5311eb269df2a7f82c598c9bedcad151909",
+      "wellKnownDigest": "sha256:1b85500a67c20e1753570ce91ed6632a03841a81a827a4bf5fa62ea35fbf8568"
+    },
+    "callstackincubator-react-native-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3300284186d15048558f7da412ae44c594d9a81158919d840189f84213ab1514",
+      "wellKnownDigest": "sha256:abdbb7fc34ad739420fe43632e0baa1d646a01d097c6905211aa8b5b41957bf1"
+    },
+    "cloudai-x-threejs-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8c50b1493812bd88f3ed0637c0c3c5d846afdb322157b67b2ffba4ce8e552835",
+      "wellKnownDigest": "sha256:b24dc96c7a854ab97fa797a8e20d6bf981f155dfc625fd1ef347042395b7754c"
+    },
+    "cloudai-x-threejs-fundamentals": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e08d49571071f0f54ef2a76fdfcb96c16673e4fda478067727def4659feb80ca",
+      "wellKnownDigest": "sha256:eb66d52f53f489067d602b9b62df507adb391d8220bdd1a8aae6b73e6cee578a"
+    },
+    "cloudai-x-threejs-geometry": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4e5757bf80a329810545c237e557e362fa14fd3a3e6a567ec1d75435be6b2dda",
+      "wellKnownDigest": "sha256:8337bcf86621411f54ef39727b338c84890815e4b3612ce635d593dd9c321a3e"
+    },
+    "cloudai-x-threejs-interaction": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "988d235b7ebd85276a584c6f81ce7c801280ebc45b401017b334136dc8a7ec82",
+      "wellKnownDigest": "sha256:1bb23f0388d39863432494ff00ea0a96ae7d093c0c6f3149fb223ba1e673fef6"
+    },
+    "cloudai-x-threejs-lighting": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9303d1b8a9704e88415e5a98c98ad7b6e0f654f8029a3606af7947c0efcb86cc",
+      "wellKnownDigest": "sha256:777875f7d6a75219d009ac69310772236231eec7cb57287c0509bb53e994af9d"
+    },
+    "cloudai-x-threejs-loaders": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f2cceed635fd7a2119acf6e5b1a2fcba63a0e52cf2514c1830a69e4744554fcc",
+      "wellKnownDigest": "sha256:03e0d7319692bb7eaa13cfada5d27d39840c7520c5ddc3fc8cc07b645dcba2e9"
+    },
+    "cloudai-x-threejs-materials": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "201cf0f3720c0ea9e415e6376b8ad389aa86b483875e87ca0e51aa2770c856aa",
+      "wellKnownDigest": "sha256:d5846d1b8254b903eacb3014486efbe331101518604b451098fd31989c3e7fe7"
+    },
+    "cloudai-x-threejs-postprocessing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "48e04ff507582a18e0d509c2738b9d9466881b00e8ca2600727910a0d52abf75",
+      "wellKnownDigest": "sha256:570b86434c30ad9bdc30f4f6d4e8c04124a07dd4ccaa778d4717ecc211dc1d90"
+    },
+    "cloudai-x-threejs-shaders": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "649ceb058edfb5cfd51e80fb3a6c57aca9bab4a9d3a03f6077aa9502be0c0771",
+      "wellKnownDigest": "sha256:6702267bd3ee70d458b54078211db36b1c3738c3faa0570e88e33dceaf478a4d"
+    },
+    "cloudai-x-threejs-textures": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "772a0bfc1d64cfcbc5347d206584a8fa412983201ad7a2cfb8766097b4936db9",
+      "wellKnownDigest": "sha256:2a90ce70931e9b172fa5b70c13fd12e7b6f1600482d3ba0c73d95570fe728b65"
+    },
+    "coldteadotai-agent-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1e618ac3cf1fae2ea9dab1a2fce72743864d38cb8f32518654d5b09f2c2d30ff",
+      "wellKnownDigest": "sha256:d0260518613ab0b243849843f324027f8a4a33df3cc18edaf08d3a94e7fd4c9a"
+    },
+    "coldteadotai-eli5": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3b336b16df86d2dd7481407fbd2103c02bf744754385436d962141a0d1366262",
+      "wellKnownDigest": "sha256:489b423e2d5710ea3dac38dbf72d5c94ff1b46a65ab39f4d9376f95e71f318a7"
+    },
+    "coldteadotai-pr-lens": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1e618ac3cf1fae2ea9dab1a2fce72743864d38cb8f32518654d5b09f2c2d30ff",
+      "wellKnownDigest": "sha256:d0260518613ab0b243849843f324027f8a4a33df3cc18edaf08d3a94e7fd4c9a"
+    },
+    "cursor-thermo-nuclear-code-quality-review": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9052b01b46b1d8dbf94c45f9313ec1983443f9a460e83d49cdc7fe0f640ca476",
+      "wellKnownDigest": "sha256:7faca08b51b643b2ddd0836f92af15574444024685dcc1e677dbbb39ae8c9e8f"
+    },
+    "cursor-unslop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6018ca8c329ba87c6b4298207f58d6b773fe23e44ff52a00a9a4d160c19bedc0",
+      "wellKnownDigest": "sha256:195411d320b5b328f9f642baf59757ed19aaf0931c0838740e0aca273d538dc1"
+    },
+    "dammyjay93-interface-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9b12c645c90a9644e53df3c71cbaa3b6500512af1ebd55b0ef17fb4604a4f9a7",
+      "wellKnownDigest": "sha256:720b31a31276e899fbe3006a33cbfeaceb77a73ba4c27b80d29afd38c8b7b208"
+    },
+    "danilaa1-compact-landing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0759fc4cb3ebfd3f46d886e5371cc0d60e0c2542c1ac2fc221d568be13e707bc",
+      "wellKnownDigest": "sha256:8a39394a6cae39cf1c56b4c04ee3cb9489246e9d9e01d2e42bb871d64c69fdba"
+    },
+    "dickwu-apple-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a47246c87b56433d9f6e35db590353a7ec048739af8f35bb7571b50b22987fb9",
+      "wellKnownDigest": "sha256:ec7b6e5ebf3477288ce547a1245e5b5234011ac6fa6dd25c2abdad0699dbd30b"
+    },
+    "diffusionstudio-text-to-lottie": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c7f8a7a536795229282e4c5c99069030453aaa322fac299857e9b37d1839c563",
+      "wellKnownDigest": "sha256:d2e5e6151f07e8660d8458c8bbcf7ba8b0f02caa04c1d535f523352a0d8442fd"
+    },
+    "dimillian-swiftui-ui-patterns": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1c957d6cb951be073ae35f4b2ad1c5032c78d5bffcb5b244d11f634379ec4442",
+      "wellKnownDigest": "sha256:adbc12e85a56643b41ee3649d24db37f00fd8163c70727f5947b38f3cb5760f2"
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/domain-modeling/SKILL.md",
+      "computedHash": "b3eb40152b81f0c98fd2095a023c019452dbdce56f7540cc67fece2972db8369"
+    },
+    "edenspiekermann-apply-design-system": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8517a8d903835b5ee71d37fb81162847a2f1ea1a392ffcc91f5aec159a069d0a",
+      "wellKnownDigest": "sha256:9dd64e9049586d93eff5dfc2f1f11fbe0c3cbe8013bfa93d9b02a842a6af4ec4"
+    },
+    "edenspiekermann-audit-design-system": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8b56f18bb6dace9b57b6ffe2d979169e76dfa3b2c9d5fa72f4032207e36dde5c",
+      "wellKnownDigest": "sha256:53ecaf826cd95b66ddca9010027ad96f5ee81ebcd2ac2f70574b0e3db7be5e59"
+    },
+    "edenspiekermann-fix-design-system-finding": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ea52454df5f30138cc055ec2fd1165cdec55c50645028a65c25f31a99271e284",
+      "wellKnownDigest": "sha256:95f10bfaaefea59cd44340e33438cc2167b9f09f9a358e075f82752de179390a"
+    },
+    "ehmo-slopbeth": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "27bdab3d6cc8ca6d316ba088275c3e4283a9ae82c614509eb1ce25402a5e8d3e",
+      "wellKnownDigest": "sha256:dfb2d461b8c4e73036f3bdb58893ae56f353f4767eb9ed30e637b47197091166"
+    },
+    "ehmo-slopgent": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e7287408380a13b1ba1b6cfd0d482c7648b12c2fb1bcba5836172900118a5f37",
+      "wellKnownDigest": "sha256:e95124e62bea28f098633c1af0354b23ac934d3a062c7686ef89f446cef2f551"
+    },
+    "elayadesign-landing-page-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6b5ab91701796daa00a5f357785cf9ca1851cc9588eb2d854c600b5d68be11d6",
+      "wellKnownDigest": "sha256:3aae79f3d33ea293491fe6251f9fee56ee0cbb7aa66d41b3f29cfc662e4bbdd6"
+    },
+    "elithrar-anti-slop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "210d883cbb34d5d13521a1c5d0ccff6a0c7b68527f17e10b00922e9d21b87086",
+      "wellKnownDigest": "sha256:45f2c2e9347822f18022883672b49ab48b3d8cf221b63c2eeef19f4972e7e0ea"
+    },
+    "elithrar-neo-industrial-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "df0b2083846715afddad9c8c567bd0b706d5300e4abb5b0a40f39b31a702806b",
+      "wellKnownDigest": "sha256:10602e7262cee75b77531a940dab185f3210121734dddc9c92b8e97491e541c3"
+    },
+    "elithrar-web-perf": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "dc35e8797773f41944ebc7c23aceb3609228558c5ac931d2f27517312af29eaa",
+      "wellKnownDigest": "sha256:3e7ee7394181a1d9bec0d554b70f30c205f2acc93a95077950eff81497c88bf5"
+    },
+    "emilkowalski-animate": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "690bbf22727b7fd37ff33e44519672fcee2c397171afbc8d4f942394f11d2189",
+      "wellKnownDigest": "sha256:b8ede161270458e6ae2e45e8a1985373515d4c63de5568ddb0f9012d7634356c"
+    },
+    "emilkowalski-animate-expo": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5da9e5724b35d7f45c539a86ce6ac8886f48d0e5f262aa830d502ec2097ac1ef",
+      "wellKnownDigest": "sha256:9a01a91701e6563c67677dde6b66ab30f066a5341d42c21a90ba51d99679274a"
+    },
+    "emilkowalski-animation-vocabulary": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0058036865ecbb864fd0c4132efcc62425355d6e99c7e6ef6a936742d62a5dea",
+      "wellKnownDigest": "sha256:40d2b27adfdfeb0570a9f20e7d0255109d9233c50603878bcd0dcd04c923fd94"
+    },
+    "emilkowalski-apple-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0190417d092a0df447b000154e39733ea6d97efad6d3bec8a6ce3845aeb88914",
+      "wellKnownDigest": "sha256:77bb63b7043bb93aca2ff4ab040c249484eef35682bb6ff7163433c31d30adc7"
+    },
+    "emilkowalski-ask-sonner": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ee3311176b40b61c21cf748f078be2ded6102607ad5676883e159fbac66b6dee",
+      "wellKnownDigest": "sha256:39f3ee185b3aa2cf70a689052ff078953ce7ba5915ed7a9391d232e9d4dcf57f"
+    },
+    "emilkowalski-break-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "487542ad46cd4d6171213bc436d61d7b43cc972becb51e0740cfc4088d44c342",
+      "wellKnownDigest": "sha256:e7eec1d70ac56a04255e9c0dbe98084ea3d544cc04aaad34f32c95d6fa9dff5e"
+    },
+    "emilkowalski-emil-design-eng": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "51f2537e04d15911b41d78e2de24c36a0e26d41beae15e82a954fe5496a5eda9",
+      "wellKnownDigest": "sha256:ffbe68e6007fb42cb8149f089b400a1ca007d59ba23e8948e2be4476f3175939"
+    },
+    "emilkowalski-find-animation-opportunities": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "465d087c41768e4f14ed640dd049036009f613feb55baaa5831b68b33178f9d2",
+      "wellKnownDigest": "sha256:d52a377819b84a71930f0c822cfe2849f40301605a2d5c7eccbfa3b257700df2"
+    },
+    "emilkowalski-improve-animations": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c5c9086613a66503ade04daff939c3edf0c882a32778684d46bb80e947239959",
+      "wellKnownDigest": "sha256:73962447464433476343e2c12cd08ab39cc99a9e5f3c118c5fb54ed897574ef6"
+    },
+    "emilkowalski-mobile-native": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f221cea36642168df6d3d6d7f236237cbf1ae669138ff7df07775674223d49ad",
+      "wellKnownDigest": "sha256:888b7651d66d66dbac4e72b7c554638eb19bd971d686d6cbdf030a5ef3788f55"
+    },
+    "emilkowalski-pick-ui-library": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5d2a77bf0ecafbda85aa95fb49999b6d77945d9066ec83d970b62e5b388cd686",
+      "wellKnownDigest": "sha256:675fdce308683256ed617351a9b74d23457a5fbd0a562d9831b9c764b8c5e682"
+    },
+    "emilkowalski-prototype": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "53d14db2dd3706961f410ba0a751ae91d3a771181125cb7809d33a709bef8ed0",
+      "wellKnownDigest": "sha256:bba39c955eb1871c5a02733976ceec5d0324198e0812e667604756489c89f7b9"
+    },
+    "emilkowalski-review-animations": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4b97902e0f0588993b65248a575b4b96bc1e76623f4ad371bfcfa43dbe377aa7",
+      "wellKnownDigest": "sha256:6ff590d29e436766135aa3d137be1fac2a867165c7257fc315b189361f1873af"
+    },
+    "emilkowalski-write-swift": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f20bb9cf51dbee1900b264820a12f1d3d378dc4d23ac758e7ba9e644c49a2459",
+      "wellKnownDigest": "sha256:16a4b6adb74e338e55e704ce5753ad54d825438b8a63930eeaede9f3c04c9447"
+    },
+    "ericzakariasson-scandinavian-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0bb310543d3d976834222e9ddf194e3a898d9b5445f5b898fd2bc96acb611fcc",
+      "wellKnownDigest": "sha256:4cba315cf70c3df3e622d4164565d8b0f28041e42fc21ae626688c3d1e73674a"
+    },
+    "figma-figma-code-connect": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b1aaad530c7623f9f533345c2e872022a9b0c25d76c4c450ceb1cdcb8f669103",
+      "wellKnownDigest": "sha256:87af3996edb167d6aa3c044cb1bbb6a0d8e2d631c731bb896b1e1e8669640415"
+    },
+    "figma-figma-create-new-file": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b9e5a91ed30d5b0650ea485f9e4c8114d998562168360b2ac2d3cbab46602556",
+      "wellKnownDigest": "sha256:bb7bc48c487f0ad7e738c23d0685bad5ec0bbbca8f5b5bb6295dc0666cc9ddf1"
+    },
+    "figma-figma-design-to-code": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6676accbe84e37deee2910458c5fa5908e1809d0adc3d3e19a74ba40da4c3efa",
+      "wellKnownDigest": "sha256:a6e852421e4db72260b2ca641929b1f84684e5b067aead081e35111f5b5feee4"
+    },
+    "figma-figma-generate-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "20cc2b1475dc2c85817f94f8dd1aad5b2eee05b803028bf61a7997eac425322c",
+      "wellKnownDigest": "sha256:7d85ad33118ae73f714ff9cb4250c40d6c1c179ea29343aabe17ea75ca8d640e"
+    },
+    "figma-figma-generate-diagram": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d0ad23cd61ab41edf791dba389a9e1c49643a31b0dec3367e5ac907b73ce93a3",
+      "wellKnownDigest": "sha256:7297638dbf2130d1b37bfd85df65d290a4dd0b11a11b54abafcf7d07565922b5"
+    },
+    "figma-figma-generate-library": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4f36bc45b2536a5eb09fdd48e21750a8097fcdac7dd776a91e6d1955a9a43ee1",
+      "wellKnownDigest": "sha256:b5277050191d1985f59e162e0acc82523a0a39a8cf614069a3d63753d5990f27"
+    },
+    "figma-figma-generative-plugins": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7af8aca53d0ee8cee26d8d247240a284d5b290984569306a7e8d0a0ebef14dfb",
+      "wellKnownDigest": "sha256:b97eb184a1f6b6545f3b8266a4d1a1e29304888904db7daed2864b9fd036b124"
+    },
+    "figma-figma-implement-motion": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "eee948415930c45b4ae1ad2833fea21f09c7f272f1804b7ea229f389d49f0494",
+      "wellKnownDigest": "sha256:2e26e67284d47c6a74aedf9dca7543f4c8817dafc59a11abb156d4f7feedb2c2"
+    },
+    "figma-figma-shaders": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c3325af42995b2a730774b6c6c4f9c6f2db41100969d99241c33a54238b3adba",
+      "wellKnownDigest": "sha256:c7e34c5a4eb316cfe84768cb419fe71b3ce840b29561ecd0f90eb402a72e1adf"
+    },
+    "figma-figma-swiftui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "026fb517f423a4e5784b0d8c132550449a7d3586df470882e17086a1129e7ae3",
+      "wellKnownDigest": "sha256:868c4defe2c0854f5a3e27594d3fa0f20347c86a9b15d103483b7488bfa8affe"
+    },
+    "figma-figma-use": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4e381cc780d215c98dd01e037e0c56d0e0cf902d6e091e83b48435382c6d6f72",
+      "wellKnownDigest": "sha256:ac385b80a05c850b5abc6bcae7c56625c4576318510545453a568aa5f21b8a95"
+    },
+    "figma-figma-use-figjam": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e6a821d5ecd05b8f9cd2a11f63cd8f6e497f1bfe4915377b45585c998538d014",
+      "wellKnownDigest": "sha256:8d566444a1aaf31c122682a5fbe3d6f14c6a844a4e05164cda3de872752cea24"
+    },
+    "figma-figma-use-motion": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c6a1a6423fe83befaa509198cdfd69be3b52e6c28f84100c808e29695824d0fa",
+      "wellKnownDigest": "sha256:d74fa8c9435a5260f8a61e3a8fbf11c068f940ae3423e9be2efde8b5e785d78c"
+    },
+    "figma-figma-use-slides": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e10fd5040d83aea73e9e074d6e845782459d985d6ae8caf8d7a88a6f4d7814d9",
+      "wellKnownDigest": "sha256:0a69a65e686dcc223581afb409a4d31cf318716e2c65cc9c926839a8737e71a4"
+    },
+    "figma-generate-project-plan": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2ada3ccaa9bb29e2b217b5629bf33da1665577c40e3ddf607bc3fddf2c05fda9",
+      "wellKnownDigest": "sha256:0cc7b780099b957d0687bb2f375b77d1dcf226809210ec88b8f92b6d4a20e3db"
+    },
+    "figma-video-interaction-mapper": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "37bba4eb29f6cc89f05f5b0966883e9b1bc5e0aed54040c3516a21649e800a5b",
+      "wellKnownDigest": "sha256:aa32df853ec3c7a33f170dc6261bb207d3f07c58b40b855d72d2f6caf1eae0ab"
+    },
+    "firebenders-sync-figma-token": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b6e27ee8b871b2b807681a9399ecbb440517cea24473519486b8e030d4185fd9",
+      "wellKnownDigest": "sha256:d608d4ac7c22cc62076cd480e0ae5be3e7334137f5c8edeb57e515826b672fdf"
+    },
+    "flornkm-prefer-container-queries": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3fa6dd9ef0abaa079079b2784ae02a355d595cf5e3936bbbf1fd7cd34119e34f",
+      "wellKnownDigest": "sha256:aaa09557f532585e06f1c122f18f2e585bf0f55fb8293be20ffed18fc9507bf5"
+    },
+    "flornkm-smooth-shadow-ring": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5abf55c240290cc9f645125623929b04e50df01681ef449af78235ca989cf0a3",
+      "wellKnownDigest": "sha256:acc6717961c4cc0719b005e86f6d916be486b415efcf769de4ae5a76993e518a"
+    },
+    "flornkm-webgl-components": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "31886f9556fef3c41c799dbc9e5628551de576734672ea459cdc15f22a20fdd0",
+      "wellKnownDigest": "sha256:76c0ea1b855dd07bab92c8ec5f63e4dd44ea42cff59c5e2d566e28f4dfc74272"
+    },
+    "github-gh-stack": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ac0e6567f961f0f768f17af6f23bee6dc45ca88e9ebcb96c4c464afde987d19a",
+      "wellKnownDigest": "sha256:909ca0dc20d644f8ce2d1a5e0c266d71aa93d2ecac366e505d14d1e8e45795dd"
+    },
+    "google-gemini-gemini-api-dev": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "95125679da2c9bb276413697b14c60fb0b0215ab77b952f6b629e024595d2b43",
+      "wellKnownDigest": "sha256:32f90db7dfa4d824a6e8e726a3cac87c36a3a5f7ca92ae9fb1b88aa6316f9245"
+    },
+    "google-gemini-gemini-live-api-dev": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0fc40747a05d5ec75d052a842164d6d2455819e6ceaa04289bbd803351f96a60",
+      "wellKnownDigest": "sha256:6b915e6d9d991160f792d0de9fd1b775edc4bfdff53e2297a0735774ad65fa69"
+    },
+    "google-gemini-gemini-omni-flash-api": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f803c5c2145270270d8466f2f4d2fda439a2e0d6831ee6a8a8587bc40cf173c8",
+      "wellKnownDigest": "sha256:5ec057f58398c846e41210c6416341fc6a8052763c1b9feef55f3652defdd220"
+    },
+    "greensock-gsap-core": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c4a01101d9e1aafbf4b49f75d74f9349790d8741981ba0237c990093863035a6",
+      "wellKnownDigest": "sha256:3887b47e050ab5afbe2a9a820f23d39fa02ab785e06a343be44c6f91d84d12b3"
+    },
+    "greensock-gsap-frameworks": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4852e85a48088d9044b08ebd1db607915b628c0c3ec7e04300713f546728fbdf",
+      "wellKnownDigest": "sha256:842d9d3659ec3ddc8abbdc524708f8facf81f468ac25d0577f48c759c4fa31e6"
+    },
+    "greensock-gsap-performance": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "863842ac2d7aee53fd4f0025c960173d7ad3e658a5715b89b2211fa280213c1f",
+      "wellKnownDigest": "sha256:cb5408d6fba707aabcbfe3320317a14c1f8fca6070074e5261047930f50d441e"
+    },
+    "greensock-gsap-plugins": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "791bda0e6e460511fe82a78e745db519b88ffaeeab4d04a74879a03ca4f41740",
+      "wellKnownDigest": "sha256:5838b856c74c07fbc9fa99b6dfd1eee34ea554c3e530c30e0d58014b707d70a4"
+    },
+    "greensock-gsap-react": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7d3b52822681a4158e371f895c58fb7030ecaf33f585a534b7162f9e92c5d893",
+      "wellKnownDigest": "sha256:88e2a5312b45e8cc7b3c496637ff5bc9af2ae9c925b555c8b235b34cbc989d74"
+    },
+    "greensock-gsap-scrolltrigger": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1cdc5647693783cb7a662d84a5de434c88a051ed56b4d33597c9b5782b5973e6",
+      "wellKnownDigest": "sha256:9351b6666a4749c0740406ea363aaccb99a087ff45cc5e8b99a0f367facf3ef4"
+    },
+    "greensock-gsap-timeline": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "54981c2feec5a9c0d57988aeb32315af32bdeadd261550d5e9db7a7b1f08b487",
+      "wellKnownDigest": "sha256:1a8b0f39cc4be3ed3d834b89672e4ae2f151b901dc3450bebf10bbc45379fe02"
+    },
+    "greensock-gsap-utils": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1ab2387f6e694718a4f1b5acf2a4ab16e1b884c3428adf5f6b26d830f00826cf",
+      "wellKnownDigest": "sha256:1927bcc4ea95b38203404ad5ea1d060b15c4a886c65ae53e885ff1793aabe0ba"
+    },
+    "hardikpandya-stop-slop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c6fceb8905653a3732fb4d25ba2e87b220d7624b6829f16ac1d4a2f0c4be392e",
+      "wellKnownDigest": "sha256:7432a1d9ebdd42b27666da8458af252edf549f723fb14bcd4791425103930310"
+    },
+    "heygen-com-general-video": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "347a082cb3b3e419e7eb3262e2e18807818b4636a7cc52221675f8379d4d6cc6",
+      "wellKnownDigest": "sha256:6e0aad276db66d31791bdb19abdd12f3650ce03b7f7329d1c2d2c9176d87214c"
+    },
+    "heygen-com-hyperframes": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5b037bf992aee84f3c842c98da86b568f590a658bbbf2a008b86bb311fceef5e",
+      "wellKnownDigest": "sha256:a277e9e46b3b5b8619639a353a4af3f46f8ae4f2e622ba802d5af730d135f410"
+    },
+    "heygen-com-hyperframes-core": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "14cf5981d75460f381e0a179caca6d22ed9872abf23957efff065af9cdbd9cc3",
+      "wellKnownDigest": "sha256:18ac7784765cc29af5a4d88f2a63a15deaf5395985009af188b5e3718edcfe3d"
+    },
+    "heygen-com-motion-graphics": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2894ae118013b784af7f239b99aae55f2845f11267555ec19f6501de663172d8",
+      "wellKnownDigest": "sha256:df1879ec7971ecfca42654c2027e38f3868d168fa20d5dcadf14288ad07c0567"
+    },
+    "heygen-com-remotion-to-hyperframes": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3a95a810d9036233bf8f54614021706bb2dc70ecda9761f7d115386c5c72abd3",
+      "wellKnownDigest": "sha256:883495113b6130e7ee48724bc00705cd28966197ef0bc2d8543a2ff2d6776187"
+    },
+    "humanlayer-build-iterated-agentic-loop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6df70c50ff2b28ac31d7e69eb11dad1f1f899113ae173ad0ae1b2d979eb60090",
+      "wellKnownDigest": "sha256:dea5c29e2cb6133896b0bb518775e18863df377ebe0198f8d867e28e52155671"
+    },
+    "humanlayer-design-control-loop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4d67cf0e535349a630c422eb3a0a7ce607b9fe4a0f1366fe028bfd499a365cd2",
+      "wellKnownDigest": "sha256:4e31d397362b23a88c7bd027cc5935fb3e5aa24eb0a5f934be0967f8974fc080"
+    },
+    "humanlayer-improve-claude-md": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a93226f53ffa6a2599c89fb983f3aed00c843c04071a7aa59ee3365141619d25",
+      "wellKnownDigest": "sha256:dbc3019c52f2409c031c4261664381c338d206b53ed700120743e374a87a9b8c"
+    },
+    "humanlayer-narrow-react-prop-types": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "acd3e6e8062b528e4e9bc32e2d577c3395bf97d487b6114011895925ee81786c",
+      "wellKnownDigest": "sha256:bfcea79a20074a9178c6aa21c34629951d9646ea381e8be4c83a0a136e3aa288"
+    },
+    "humanlayer-show-me": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ea4c39a2fb4f7ee7afcb6f565692a4b97dcaeda587b625feada821e7244298c9",
+      "wellKnownDigest": "sha256:434a2346cc95e313b0d367d477dda2e23ba642dd2181757415a09500664af100"
+    },
+    "humanlayer-visual-pr": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0b8fdad8a98f785ee2b95660722f0ed64a325feb181072ec369f829b9b40c32c",
+      "wellKnownDigest": "sha256:89df56774d8ec522bd0d0f03cd553dae5d70bff9364749874b5a0c0ae390eec0"
+    },
+    "iannuttall-seo": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "cdca10ab6d2c4771cb8867c6a264f93c5a03c9b855c08d1c2501cfb4c8c26152",
+      "wellKnownDigest": "sha256:4cfce696054ee456f15eb8048b1a86e567f61079ed8adb86ae8acc96dba9c561"
+    },
+    "iart-ai-60fps-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "951272c599c9e981c4b3b52f3fcb48c7a4d1727734fa0f57c57e292b49058c81",
+      "wellKnownDigest": "sha256:deb5d78aabae2289cbe161733be81aca6c3b4cd0940c0df3acf10196efdfe962"
+    },
+    "iart-ai-accessible-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e35ab6fb6313c03e1de6eab946b600f211923580ad4972cac19fa1ef46329da3",
+      "wellKnownDigest": "sha256:29d5fec1be9fa5e978738c313678974f61c06443e02ffce1bdc20434dfb0a767"
+    },
+    "iart-ai-ascii-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "359d3f770792727c451186b0fc912854cbe645fb436dbd225315536a4d585bcc",
+      "wellKnownDigest": "sha256:a2f45a09e0e6e7582da27ee509e3350fa5dd1b8492fdb3411d80bee7a15c4eea"
+    },
+    "iart-ai-glassmorphism": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "931895a3b01865d1179c03747e731b90a76b6f32e0e21e20270dcbd40bf7d569",
+      "wellKnownDigest": "sha256:661240900f170e695faf52adf3bbbcd2686121172e6caac8e67e64298eff6868"
+    },
+    "iart-ai-gsap-web": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "378ff163a4e36636163eafe45c972d0e0375b0edeb052ae5b8db9dab1a27ffae",
+      "wellKnownDigest": "sha256:9c52294210b31258d27b18e4102b4ec390bc21e95b11f663d932056fb3cb1740"
+    },
+    "iart-ai-lottie-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "eba4410bb3fab2f30522fa7e0825418840b01c2ea3fe7793c8bc181b689ecc22",
+      "wellKnownDigest": "sha256:c78826a8b4188052c0fb84c430af8fc6585ea027b14d14a80339aa843ed636b2"
+    },
+    "iart-ai-micro-interaction": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a04104a684a9469f0535e0db2ed3dab115dcf1f076bac4280dd9dc367e410ec7",
+      "wellKnownDigest": "sha256:f8ae0fc6137448bce51f689a13513a0a8742b1cbffa1b9f32ac723b46309e6e0"
+    },
+    "iart-ai-page-transition-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ae4f81747251551f28ace261f3292c8af604b367e0da3feff240940287b0c936",
+      "wellKnownDigest": "sha256:959302338dc2825214a1c90ece46b9db4b590e32397f985f65d02ad3e91e3414"
+    },
+    "iart-ai-svg-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2116851c096e7183da080f55771492b91f85dde9723ca14d51173f030c72d432",
+      "wellKnownDigest": "sha256:90e37f8f3d8c662515952de7a50c9130f5695d1a0cae1501115bd5d253c712c4"
+    },
+    "ibelick-baseline-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "dfcb3e778b57ad1cba92375689bb8265fa5aef78fba523a744f5220b3c619901",
+      "wellKnownDigest": "sha256:fea3322f36d58fdafafce2aef56e4556dd2ac7b20876b7dff7d8be7f25fa597f"
+    },
+    "ibelick-create-design-md": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5376526e2d60d21ab85fdba2ae15d1ee7be41fa3ee5b76a8717a08327d6459b1",
+      "wellKnownDigest": "sha256:adba4fa94a9ca0291811ac26405e8fe15c1a6375743a80971c6f895bb837eeed"
+    },
+    "ibelick-fixing-accessibility": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4fa8f5a772b4eef3d28a54c136b507d070e54e2c326578f65eaf5e5a0118b38a",
+      "wellKnownDigest": "sha256:549261e8a53b53a1a20c0ddbf736821e5fc0876ad82eee76e0efab8e9ee9dadf"
+    },
+    "ibelick-fixing-metadata": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "699e13890fb50acffa02dfd2d5b0e719bd916a9e2b7e6035bdc4513fc73d9174",
+      "wellKnownDigest": "sha256:b8315ff95a92dcfa48c33e2b4838a31d9448bd46252aab45726549ce865d6547"
+    },
+    "ibelick-fixing-motion-performance": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "426dcf33f23419643f2aab71e2253e1a5b5684a808fabb8a4ad135e489ed7a0f",
+      "wellKnownDigest": "sha256:0a2d654902bc04263ce68c8c02967ef03f17b482e855360a5463211d99d7baa9"
+    },
+    "ibelick-improve-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "84dc0b7e0eb85a822b43d949bf4a388484b6ca6e0c29dbd145c73034bc533823",
+      "wellKnownDigest": "sha256:fa2ac808f6d9dab7bb3620880b014d2c18e227e5b006102856038096e573e69a"
+    },
+    "ibelick-ui-skills-root": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e3120361faa5a0ef5fba9b67d91e00c90002f3c9ca092c5325d2391dab8c619e",
+      "wellKnownDigest": "sha256:d4e1033f910467164a9cd3931277c1b309cb87c6d23cb5f184a65bfdf92b1c9c"
+    },
+    "improve-codebase-architecture": {
+      "source": "mattpocock/skills",
+      "sourceType": "github",
+      "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
+      "computedHash": "ac2c94885f34ff8492dc12aa4543182f661f32ea1722b8d6b6c2c7045af33ae3"
+    },
+    "jakubantalik-refine-live": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f6afd660d103aa718bedb50b903f3f95f72a760bb2b95b0fdef252c49ae6a4ab",
+      "wellKnownDigest": "sha256:967c01d29dad8395d48948b66c6d71354312dee397db5d524a2f6da455b15969"
+    },
+    "jakubantalik-transitions-dev": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8c912bd0f889b6da37c777fe0b89b6a7f565d129948661e4b4f852d417b75e9a",
+      "wellKnownDigest": "sha256:a62129f3a894a79678f60276ca34838b46357820639d5755cf932e390d1bb735"
+    },
+    "jakubantalik-transitions-polish": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "df9cb00db49dadaf85e47a2fb9209c1337045cce0a650e617c59cc5d43131cde",
+      "wellKnownDigest": "sha256:cd7ca4bb79acb72fa1951bb79f5251570e2ef9d290c0ddf9a83a097067226cfa"
+    },
+    "jakubkrehel-better-accessibility": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d62c80ff888627ce1d8a0519a1543789dea5b53232c498daec18ebd363fe850e",
+      "wellKnownDigest": "sha256:df0cafe0e75a08548cf46a2a430f46c198e7e0ee9d46bdf7884c2afefb44b70e"
+    },
+    "jakubkrehel-better-colors": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e7dc3515c13971e2be0c2f9e004df4accfc5fcdb73988afd604017dc59a5e77d",
+      "wellKnownDigest": "sha256:e74f1c413a4094dc2a73fb0baa0da2241465e01d593b0257ba995500df9b0068"
+    },
+    "jakubkrehel-better-interface": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "afaa2b2697a3876dd9aae4b593a2ff5306de4bec15bd4489dc71b31d97a8316d",
+      "wellKnownDigest": "sha256:23416fef4d08e0417927b6eb6763b7b08ed832451abfb9e26ea699262a28abcb"
+    },
+    "jakubkrehel-better-layout": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "55efebe1d6a8b6272495b9237a56093e4359c47afb9b6d734377bb7cc312af25",
+      "wellKnownDigest": "sha256:8c5883ccb23c27c39b7c58d101154ff35e032410e0dc4794be9ab7fe070c2297"
+    },
+    "jakubkrehel-better-typography": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e450217adfd70238ffab4e496b11fb4379b9723b7b267e11544ef2cd122e1fe8",
+      "wellKnownDigest": "sha256:e60ca6467ba60e68f95ed2d2cfa35f2a850d96ef2a0c0d3fcfcfd9510e51f184"
+    },
+    "jakubkrehel-better-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "47dd8558d7fa18fd7b08ddb1a01a54a8b7c7bb7764d4c9d925fee087187ae8dd",
+      "wellKnownDigest": "sha256:fb9807bb5c59a3ca9d4a27b25f56b36e5596251d280fb30c4b7f2ff8b6f4fe2d"
+    },
+    "jakubkrehel-better-writing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "302830e174befd3268fe5fbb07c807c54099d9172a74055e79903bb3f75c97f4",
+      "wellKnownDigest": "sha256:ef6843cbfcbafa62614b1a6e012c0b1ab6fd33eee0bdd84123cf49fe275c3a31"
+    },
+    "jakubkrehel-break": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0360d32e14f7e8f1c0c1a13d31cf75931f6fb802caefb1cae11eef94d05542c7",
+      "wellKnownDigest": "sha256:6b231897f10477fe2a9d335b457e53c670b07a8291a08b5d8dad3981b658b9d0"
+    },
+    "jakubkrehel-explain-interface": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "187d604078a8635f3a4c5444c4851c6c2483eb6a1cee81d888142903a14a4ebf",
+      "wellKnownDigest": "sha256:6795aff9a133b94c6398a95b5c8958a2eaccade5db18f58e752bc02460a356e0"
+    },
+    "jakubkrehel-interface-review": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "29858a02b4c8d73b1ddfff167c9450693c2ba95673cf0107a5b2173054c8d07c",
+      "wellKnownDigest": "sha256:8977988d63d7c17b8b0cd334ebd722d4e2dff00af0f152de2bc6f100d13d59ce"
+    },
+    "jakubkrehel-make-interfaces-feel-better": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8b8b9b1769899589c8f129b8fe682d3be0dfd81bfc64c389a3b10c3001612dd8",
+      "wellKnownDigest": "sha256:c1d508fa7bef8e47ee682b4f214c7a4ed1416b91d05a97285e555bad1c41a23e"
+    },
+    "jakubkrehel-oklch-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "74fd19b2b36fd83d79f57ea8bcb89c6bdb54e3ab7330172b3a8d6e3fbcf7556a",
+      "wellKnownDigest": "sha256:9a3a11b2ec5a6246bb41d5e6a4878bba2e2b54f9a34e44e35a38854c96582ed1"
+    },
+    "jakubkrehel-variant": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e81220d2ce5b34f48891863e0db4a3a0abe93f6f8a63b55b8276d96bf9e64d79",
+      "wellKnownDigest": "sha256:e5bb95b72aa1589f72f350e2201be031129155db3cb27e9c3bec284ee08bc245"
+    },
+    "jalaalrd-anti-ai-slop-writing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5f86043629eeb30dc427a096f891069b8c08b1ebdeb982d42f4a5c54bd4ecd27",
+      "wellKnownDigest": "sha256:90d1ad351c51a033a079708a6ef2cfaea104c35806dd0dbfb46abe5836735211"
+    },
+    "jane-xiaoer-web-clone": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3129ab120c91df82f6ae540fb5724910bb26b853c36c3709d58fa569d865d941",
+      "wellKnownDigest": "sha256:6c7ef7c17e3f2e4873ee595dbfbbdef7ec245b1d8d9b5873b1f89404f7c79eb2"
+    },
+    "joe-bell-apple-web-app": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "193e11037191d5ab82b7a91e8a0e05a2ed07f93bb0ee44cea21ff4760c25b56d",
+      "wellKnownDigest": "sha256:b0366697185d1f33ac4f04c8489f88229773f2b36aa71a52a01558a5f0becf34"
+    },
+    "joe-bell-letterboxd-diary": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "372dc0d09f945bc38bd0d24cccc887a2134970cd0e667beecf77f05cc28a3e85",
+      "wellKnownDigest": "sha256:2e882094e4deb852c5f6f30e154d3407cd08ff38b32390e145c0fe1e533d0458"
+    },
+    "justinwetch-apple-hig": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7fcafe3b8d0ac98f277de7a170bde7c8e1c7fcd837614fc4a1cfaffef2a21291",
+      "wellKnownDigest": "sha256:f31e8fa24d9d22121db4406ef05c36e53f40d7249587afc559db5016eaefd82d"
+    },
+    "kitlangton-effect": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f7b3548eae90f0e598bc0806ad19c6e132ab07e7ad9998b48e8ca9ca87df9851",
+      "wellKnownDigest": "sha256:4857783bc3d9683cd8e9a6b09b227fc4495153dd13bbf104641439118436bf83"
+    },
+    "larashero3-dotcom-lieflat-charts": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6814af4cc0fbc9b96c503a2686ae6f60be0fda1cb8de6a82f0c3fbad021920d2",
+      "wellKnownDigest": "sha256:1d58a31343b0f38fed16a44a65fd2fac0588ca98ffc9e43b20263d886f3ee9ce"
+    },
+    "latent-spaces-brag": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "38eac800acc4de4ac224c8c09700be6e65a5fd1d579cab23a591ebfd9d60f380",
+      "wellKnownDigest": "sha256:4cd47d39c35bbc70d99ad6ad76aaae7b15b84f14721cf94fd65417fd51658cae"
+    },
+    "latent-spaces-brag-slim": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "134f4ed365690db924b6c565520ea8b1ddecb3e6e3072409158259b9ee691f2f",
+      "wellKnownDigest": "sha256:c97ea53d7c5df2a3dd64694a388c013a05c363ac7c2e4e0d956c18ad3bfaa5ee"
+    },
+    "leonxlnx-brandkit": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20",
+      "wellKnownDigest": "sha256:b0c4837e1bd140ca816ae54948754ddd2ac1e2a4d3619363777a80caf00b2ede"
+    },
+    "leonxlnx-brutalist-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8fc355c4aadb7d29c53ca28bc41be3cd6eea765d121e3737c4dc2d0f90a8effa",
+      "wellKnownDigest": "sha256:fffbaac8597f07679e9d87145533567658aedba3b5eca6f16a7075a333048caa"
+    },
+    "leonxlnx-gpt-tasteskill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "cc8f0c601d8240a124e1d11634351a2be7b8a72fd807c75e5b6bf7afcd5ddee0",
+      "wellKnownDigest": "sha256:2e64c269953f2656c21bf5a0fa6b4568e82fe0c72b36e8f84758e090349966a5"
+    },
+    "leonxlnx-image-to-code-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "58517b03b2a01f4c9ba65861559d03df931400871bbc200978c975b24bb92c73",
+      "wellKnownDigest": "sha256:4c060a8064a8b13380bc2ef3d6e6a1d0b1e316aa093cd9807d0ce9e4eeb037fa"
+    },
+    "leonxlnx-imagegen-frontend-mobile": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9ab7f4f6ce66a3cff02bbf5894e5bd5af50bf5d6ef0adffdc88e8fab772fe44f",
+      "wellKnownDigest": "sha256:8a33389979f3074fa0926678e266ad2eb9234624472254469fc1ad916b9caa24"
+    },
+    "leonxlnx-imagegen-frontend-web": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "65f5ae59fa317567809438310b1c54f78cd133426deb43e4d3d4ca4c8f541628",
+      "wellKnownDigest": "sha256:6b5c2256522fdba1e3313eafa3d743b960a7b13ec029d3e6586e04b23327c1f8"
+    },
+    "leonxlnx-minimalist-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "08873a3131d3be27bef9bf3304b310b16b44ca6e3561aebe532797be3443f6bd",
+      "wellKnownDigest": "sha256:36bc7328f085405f43b476938e62460fa573bf7e984e949e072bcf014831a44c"
+    },
+    "leonxlnx-output-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "26bd29ce4c5e02c7666b2d503609bf466bd32290822e91f0e984147048dbb924",
+      "wellKnownDigest": "sha256:e5bf48b1ae561511439cf71672209a10a88cee0968cc925909ff861dfa0a96a7"
+    },
+    "leonxlnx-redesign-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b405eee0e0e80fc243f731d9aa368bca307e356db7e6157d27101d369dac6726",
+      "wellKnownDigest": "sha256:98ad3e5b051bfb71b2795f7e8a6aa0d32b51ee095606c098a4b2822ac07926c9"
+    },
+    "leonxlnx-soft-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7db385e4c5370e5a7fca9704a1361b056e4504ea6a03924bb86f33a4f00b5c73",
+      "wellKnownDigest": "sha256:e1e32f5e2d420872c6c7332b53d5ff7721946766b78c4822b424c2d512c8fdbc"
+    },
+    "leonxlnx-stitch-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e56d10e4e8b9c08f924bd4f325d9209644f741f46fd04419efe375efdf6f1838",
+      "wellKnownDigest": "sha256:46bdb08fee2dded38b6ba0a051230a502d6ac6e4044afd47592cb40c256028b5"
+    },
+    "leonxlnx-taste-skill": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6d838b246d0e35d0b53f4f23f98ba7a1dd561937e64f7d0c7553b0928e376c3e",
+      "wellKnownDigest": "sha256:aa194351b246b8b4799099d4ed7b033d29eab6e6e3d58d8d2172978be7b3ec89"
+    },
+    "leonxlnx-taste-skill-v1": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d704ab912c4d0ca954ffa858983da755ae4cd5cad9ba22554db5557382f5bd34",
+      "wellKnownDigest": "sha256:033d45af1ed23832730642f95f40ab49db7fb5222848489a6c5656144bfc6dae"
+    },
+    "leonxlnx-unlazy": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a2d4e8b9c33bccbcc8e89ad851effa2259fce485b1109c163a014505e81b0d94",
+      "wellKnownDigest": "sha256:0ea144724398f9df5ce4cb880ff472c8afee0193179eb2f2a5d82f1a0f633450"
+    },
+    "liamgvchi-gc-minimal-zine-poster-v0-1": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4caa2d365d08ffd0d184118e32114fb79964b91acbcdf46c734c7d5a99c28ea1",
+      "wellKnownDigest": "sha256:89c7dc90c9aa80ba020c55e54b7de2fa2b49b49d20c240b150cd79ebea59775d"
+    },
+    "luchasarie-bro": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "145c8565aa3091ad55a633374a718f6f7145bb7d5ccbe8bbda920a8efdf00d38",
+      "wellKnownDigest": "sha256:577525d7959c56786afe19f35d1bd54f6b5e53aacad4910d1fc9669e7ef2a1d0"
+    },
+    "mattpocock-codebase-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "bcd1959b5d7571c69146410f87c341a3c8cdc0775afb013ebde0fd2e6919c845",
+      "wellKnownDigest": "sha256:2c20617f87ec8af6a434859f381b2f061a69b530444e74eb39e78bb016a6d1e2"
+    },
+    "mattpocock-domain-modeling": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "104a395428e64d68aa0bd83b3c2d18c01bef3fb114e386d7d58f4d701cf968eb",
+      "wellKnownDigest": "sha256:7b925d7b1e341a2eeae33ad68a8a8c0ab889a38ddd22a7598e4c240e5a7556a3"
+    },
+    "mattpocock-grill-with-docs": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "091532e0777493f8d665453b46e0e64cbc1b88d1d2fedbe33dd7d25f327128b2",
+      "wellKnownDigest": "sha256:7de372c13488f1ee96cc11cd8907b56b6809cc93eef776eeddd37de6b6cbe3fe"
+    },
+    "mattpocock-improve-codebase-architecture": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7c51c706468f6dd0132e413751d6cab98b75bac360b74bf881c12e2916673ad9",
+      "wellKnownDigest": "sha256:552240a5ab5cec6b67c15dd1ad6e9f6962b1bca6ce870059a8c2713760c20392"
+    },
+    "mattpocock-prototype": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0f8b725cf30a2d019ccf4abf8979ce8325652ff858de18d07a431e90acc3167b",
+      "wellKnownDigest": "sha256:714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3"
+    },
+    "mattpocock-to-issues": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a37dcde0a63b4ab9d6b46c7acd1cf445038dc40d9edc3920185d51f0cf2e800d",
+      "wellKnownDigest": "sha256:56ec23c5b2782785d4e65bff9e315b6d3aeb4ef977c174a219e99489fada1995"
+    },
+    "mattpocock-to-prd": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5115c86593e19b46160d60ffc96b65ed6ae5140f3a4ded43f162e47e3564e356",
+      "wellKnownDigest": "sha256:43ad9cf318e5e7d3d1fa360253a37021796dc87a0c2e595ad262661a10f85088"
+    },
+    "mattpocock-triage": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "58e64a2c403f4a8e5cea70460d4cff1e74e583d13d6bfae64b61d428686db6c8",
+      "wellKnownDigest": "sha256:917b0baf74be583e74f110857ed45df2766617f75c00baf61fd136d7af515edf"
+    },
+    "memex-lab-gemini-tts": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5f83babf7131febfd339159efc0e979835d7668a1a3d100667260f98db4305c0",
+      "wellKnownDigest": "sha256:619c3c999c9e0e7715f204322e296a451793db084a2edfb9fc4c88dfb4a863d7"
+    },
+    "memex-lab-product-launch-video": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c06074f552543dfcf3d708a3c81625a9087df584d719ce5a20b70a1371371223",
+      "wellKnownDigest": "sha256:7608467709e563fe201ae9e4f4e32d7515c9605b91510dc8baaefccb5f16ee85"
+    },
+    "mengto-animation-on-scroll": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2063af5d4b22095d70125d6494fc8343ab63df1bfcfb430f87af2b34e419f6d1",
+      "wellKnownDigest": "sha256:4c9c795a9d5d8f7baf0b141394ebc0a4fd30e22234b37ff63fbf38e7cceefadf"
+    },
+    "mengto-animation-systems": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "606f7202aaa7a990fb919e6d287208798ef2906d2a87fe50653c82b450bc08de",
+      "wellKnownDigest": "sha256:ae1e51b8eede6f4d05fda5388f61bbc1d29ea88b7a5d7a488c3ecfed5f18e262"
+    },
+    "mengto-beautiful-shadows": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7f2285d3971b6312990df4ffe4b149d730a9a787b8941d2ae89ebda663375157",
+      "wellKnownDigest": "sha256:10b6cc0964919118218ffe0845e4a00954f39788d89d4ec29827d100f254e135"
+    },
+    "mengto-cobejs": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d798a27dc46da9a439b27ef794475ee874cd4758e2b3292410e8ddb7314878a0",
+      "wellKnownDigest": "sha256:4f050b7495a5b19d05fb89736c6c61df4feacab07f23aae20cf8a8a79a53bbef"
+    },
+    "mengto-company-logos": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "58329ba3fad3609ec5962d3f3b409c9fcb63a85eb8a436f871d1bbc490323b92",
+      "wellKnownDigest": "sha256:d089dd870e8f4012acc3bc1bf55855346a7e39fa4e975868f6ed2d495eb82729"
+    },
+    "mengto-container-lines": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a453de95e08668fd15b2a181c1c8f668aa153d763cf912b0e6e2977a51410191",
+      "wellKnownDigest": "sha256:b2eb19356c14c034d8e077452ede319835b841b7aa046ec3cd0a4460cc7911b6"
+    },
+    "mengto-design-first-ui-prompting": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2272a846f0464c8c3c229c9a9401486991bf6637e21ededf7bccffcc2e086f4b",
+      "wellKnownDigest": "sha256:5e3d4db0eb0ea983f2bedb90f28f358901c292388a7889e2f66ac133ceff743c"
+    },
+    "mengto-gsap": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3f677b525f16a89694db046c4d58caf35e82e54bccc0fa2b9f989503b1944804",
+      "wellKnownDigest": "sha256:eb9a0a84f0747fa19ce693cf776328945aebee1205ddc42c518c133c2ab6cb42"
+    },
+    "mengto-gsap-scrolltrigger-storytelling": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0fd5d0658991b2383493b3d3467bfc392d8c53ca9b532159145774fca94e5d27",
+      "wellKnownDigest": "sha256:c388738853064f4bbb4293b910efc0fb82f957298a49c94214c2522b138ae939"
+    },
+    "mengto-landing-page": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "36fb9ba897442c9acda116826db58cdfee5cc6c10b0a5457764f857dd73503ed",
+      "wellKnownDigest": "sha256:6ad9965bc6b8f682340998ddd17c7700f5529ae40603d47c3b4610892c459cad"
+    },
+    "mengto-marquee-loop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "73707f1764601414d536126d96b74ede14ff0e26cdea427576ccf4741cec9ab6",
+      "wellKnownDigest": "sha256:53f705e5f245f414d4e88b88e5f997b3201d8f782d407a2f2b5794e7b2aea8ed"
+    },
+    "mengto-masked-reveal": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "bf51b53058c5163ff8125acd5e999e3d6112f29bf3f608d7139701339214eac6",
+      "wellKnownDigest": "sha256:a3e4fb96f6092ac382530db24fdd15da559e959c5b7e02d0503918c1358dcf03"
+    },
+    "mengto-matterjs": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8ad80d2b70c8f020e8d03bae030834796ab06715527121d7bd259f355063187a",
+      "wellKnownDigest": "sha256:eeb1d2f6521e337dd5a5f0743ba00c00dd81f6e22b22a6f26c5d77fc44f16be4"
+    },
+    "mengto-pricing-page": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2e3620df6ec621a773be7828d2bef6f2da90871873e69df9fcf0b2a348a9cd92",
+      "wellKnownDigest": "sha256:9b3af6174e379042ea1579f5d62b6fb0030fe6298d35b417488ac1e5ef8159db"
+    },
+    "mengto-progressive-blur": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "88b7a541650df42c41dbabdb9d90ba57df1ea056a79318e3f04cfff38d587d35",
+      "wellKnownDigest": "sha256:202004db5ff37fb8add044cf00288d984c9a680c2fb07e4bb2dacc3df90ac2a1"
+    },
+    "mengto-tailwindcss": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3f200ef5ec2ebf72311413e4486883d030c497c7ae65c7925ea0261b9fcb9cad",
+      "wellKnownDigest": "sha256:90d2150c24c7453d3f75914791d5356c87606a7c1b933d3371a6120624720c4e"
+    },
+    "mengto-threejs": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b79638f315ac396c638fe1c86f038066ef570e6aa305043e0c151a35c8f8e637",
+      "wellKnownDigest": "sha256:e6ebd6e0354b7d05fbfb87a63403b6c2a8c62450f86ff7a9316d55283d586813"
+    },
+    "mengto-webgl-landing-steering": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "05156cc751257b52461cf5ab501e2b90e5d6f1214acc587ecf5c9b681e98600f",
+      "wellKnownDigest": "sha256:a5310ca2912c1c5ae8eb38f14284e5876da88bdbb9ee8034838aafba462a5127"
+    },
+    "mickadesign-fluid-functionalism": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "787dafa92e852db11469b8ca8a497f84c0962400cf6572a8712dc84ddc50fc7b",
+      "wellKnownDigest": "sha256:148465e2b67125d70c961fed08a96bf292d6d406ce6ebe1f52e4e7d035cd13b8"
+    },
+    "microsoft-dev": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b5f654de260743ac0b1fec862ea0eec24dd6d6e866c1785f12cfd64154d52ab7",
+      "wellKnownDigest": "sha256:3c08eeb759e6b8e7b7c95c763cc6e7bdadfb0198f86c74e9ce338922d039be1c"
+    },
+    "microsoft-playwright-cli": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "556f551d1c65e3ef419af37318f1ae332969c8dd011650ba0e5db057a0d0d293",
+      "wellKnownDigest": "sha256:9bba755285a4c9ad72a4a41b9c7baef6fb516d329c0b44ed0573715f4479b906"
+    },
+    "millionco-budge": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4338b5c89f7f9b59992793a979cbd7a6e8b832873d645b73d4be8a2414f45c03",
+      "wellKnownDigest": "sha256:429574426170d2624e19fda3ffd6dcceeb484fafcf349c900b99f0e4e54df7cd"
+    },
+    "millionco-improve-react": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4262401b316247b8503195bf09006dfe9faae0e4c364f268b61cbd9dd6788315",
+      "wellKnownDigest": "sha256:c50776c79e15f53dd7769b4a4d33c3d9f1723d7f23064201e37086d15910d9ac"
+    },
+    "millionco-interactive-hit-areas": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f3eee587143093851d2df0c38339ed55b32d0d943ca0b7758e8d76c150f9c5bc",
+      "wellKnownDigest": "sha256:4c50140e2f0148e54fffa61ef1c7e8dac5cd480642f1eb7baaac0c3f367d5ac5"
+    },
+    "millionco-paper-flex": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2757d719e42746ae8f1d03255852ff0a2b28ee8c9b3f6f2800f71230f57bce86",
+      "wellKnownDigest": "sha256:56c36662c4cce8c4cb8814c629e668633fe9e96e2f29615fdab000daf35b4ade"
+    },
+    "millionco-paper-to-code-components": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1a908c1ea26837c5f99d24175d96c3e25c363752cecd67b3d76d6a87ef6a3ba3",
+      "wellKnownDigest": "sha256:ee07e8ca1a1b84a1bdd9b97c326f67d67a0aa85735c70305775ef48fbb8de93d"
+    },
+    "millionco-reconcile-paper-sync": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e582e3ea4fe86f5da1464476420fdac8fa1849fab898b9e54a42d14801caeac5",
+      "wellKnownDigest": "sha256:268da514450dc76a8205fa4dac24362dc84eae3921dfd2b8f7b19ebb805d4e82"
+    },
+    "millionco-tailwind-token-consolidation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c8672ffd1d963c56113a0e6ef8fddbd1d640bebfa82b9f162ac403d3e84518da",
+      "wellKnownDigest": "sha256:7c0f4321474c533fb98d42ad1347eed8ebd824e11f5c535a63bcf458a062a242"
+    },
+    "moguzbulbul-blueprint-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "290ef6789f2fda6b6a6c94b7cbf9bda88dec2c41451a37f626527ef740cc5402",
+      "wellKnownDigest": "sha256:ab70b1e9020b830c71179085bd555ef5b2942cfda26e50b185d30b9ad9a6ac41"
+    },
+    "mrstev3n-balise-ux-writing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5326ff389524530910845065e466a470dddd5fd76891c07e91c7812dd397dfd6",
+      "wellKnownDigest": "sha256:3331b6dd0db544e1524eb36fbc985033935f49ab9a93ddff19b83b2c58bdbc18"
+    },
+    "nextlevelbuilder-banner-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6f86f048268834ceaf1b6d75ab04fe8563ac3ae480917acf17a8962130a5f87d",
+      "wellKnownDigest": "sha256:ccb89ddc848f60bfe630cb19dfe3e062df94a029467a9b15259f2761019ac5c4"
+    },
+    "nextlevelbuilder-brand": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9b827132f9790d4dd8e4bb49bb4a3f6bf2c8434db3735ce1e40ac1d05bfae9f3",
+      "wellKnownDigest": "sha256:1c24139633e2ebf11da4f97eaeb1c0564f8658a40b3ad779387a5b8c6cb76dbc"
+    },
+    "nextlevelbuilder-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b8a1433df4d21650a10fcd3fc26163847bd3b12593c7a2b90d36d4354587736b",
+      "wellKnownDigest": "sha256:c84f3ecfd6a0fd1c46abf6805a0bbc26ea0b94a104f457e243ccf0943ece123c"
+    },
+    "nextlevelbuilder-design-system": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "17aa3e81895e11639897efaeab3382ea181705274f62109034cd0e8a3456d08b",
+      "wellKnownDigest": "sha256:8aa5ff93320559a6e5289d37b6b06b3307737dbfb4a6f3fc44135c705613c511"
+    },
+    "nextlevelbuilder-slides": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "011ac11211ec9f9c00e9d22087bb535f37fbfcd630bd7b36e0d54675542c759f",
+      "wellKnownDigest": "sha256:86c07f19ec09f79441d3837e909cfcd51034b83bdcc88094c15e652be1e765cb"
+    },
+    "nextlevelbuilder-ui-styling": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "05bef360cb260c0b16b3fe65ac030f44698b54650e5d6547ef264924b571f0bc",
+      "wellKnownDigest": "sha256:625e302c60ee8f2e22d56cbe638c4a739e2657f566dae42689503ad517c30f1e"
+    },
+    "nextlevelbuilder-ui-ux-pro-max": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a2f9b509c487669cd1c8691407ca0bc3ece37c8bd702d7503b6ca41a95700dc9",
+      "wellKnownDigest": "sha256:ea087c341bfb5b23195c7302027268ede86da802554c18a5c4896a6017b439f9"
+    },
+    "nolanperk-rad-spacing": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "666f89751d53ada306a6590c62ff01ee4f2bee59b15c9c0df83e2678f372c468",
+      "wellKnownDigest": "sha256:407a750f23bc654ccdfd59d2d6afa727e995afa3d983488d5147f0f69fcc0dcb"
+    },
+    "nuxt": {
+      "source": "antfu/skills",
+      "sourceType": "github",
+      "skillPath": "skills/nuxt/SKILL.md",
+      "computedHash": "03fc229d7c6a300b2ded6d9f984b45d8a554c2c991199c54760893e627c91371"
+    },
+    "nvillapiano-cc-figma-component": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0250e718735c7025e5ebdb37694859ec5e27f07cfd3f5f18e855c3813808fb74",
+      "wellKnownDigest": "sha256:e1e8046ee79235585eff519eb799b87fb66d186c974749bdc0ea67837e19592b"
+    },
+    "nvillapiano-cc-figma-tokens": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b8f5b20ba7b2dedb755b10e940e8577a5f881066240691ade64ae24fed387319",
+      "wellKnownDigest": "sha256:2044e6207414700ca4d33c7b8651bdff8dae2ab170a877c2c29e16691eeb673d"
+    },
+    "openai-define-goal": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d8d91edd9a9293d7bc40686bb387c3795f39c7f63337d96e5a215e5d6fcf70c5",
+      "wellKnownDigest": "sha256:708df89ff19cbae82a762efae036735d1914b5c7e44df1832e0b723f6cd9ee30"
+    },
+    "oso95-scroll-world": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2b7de43b222748463c1377dc82606264cb3a8fae83fed1378798d54bdc91f21b",
+      "wellKnownDigest": "sha256:e56fe396c1fa258278289cfa9cbf17253519f11f4856535f7709dd2368e3e65e"
+    },
+    "pbakaus-impeccable": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "80829ce440f82b6567d035762f6476e61674217cae65ef1ddbb832339ca8d9e5",
+      "wellKnownDigest": "sha256:78573ef57390d37ece0366e2746b1dda6a20e2a74352a0abc2e6d05518e87d47"
+    },
+    "petergyang-human-review": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8320339fc38a6ea5bfdbe1d9ef5fb49978220f55c6b04c82a5218102e5ebde34",
+      "wellKnownDigest": "sha256:e919a34c4fbe8fb6f5f446fbf64d2492d3e07d094fcb858d9da15a151fb74a46"
+    },
+    "petergyang-no-ai-slop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3fbc9f039d8a1d263e74f1e0891401381f5df4c06d0fa3f2d354ebf866f938ce",
+      "wellKnownDigest": "sha256:992b365f51a2f62cf4c1c5ed22049a9ee551dfea677550c1a72b371c0ceadd62"
+    },
+    "prototyperai-animate-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "abc5e65c8cb9ae22cad8d45e6c81a3fb85d493411de9e15c6ab484d50948b0da",
+      "wellKnownDigest": "sha256:6c3a03caa29e6075c6b92e31211c11535bed89d9755e722071bff7cbcb0e4bf6"
+    },
+    "prototyperai-build-primitive": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6e3ad02972826b34852aa2731818efde87dccec548efca4d284ea203cd674c70",
+      "wellKnownDigest": "sha256:c9dfd37d61e476520fe77b6014d8ec229c1e3eb2a067bb58f514d32fb0792016"
+    },
+    "prototyperai-create-component": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "87252569a2bd69d6602e144fe6f314ad945538a001c7e284a05975f6f7f3ae08",
+      "wellKnownDigest": "sha256:895211a7cee8bc2fda9185864826f1c47d31d3bcbde9a81bc92d0a491fc838c9"
+    },
+    "prototyperai-prototyper-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "4b6ce6f0c6f2b0b28c164a19a7dc0a9c85db775a1c15677e063dd26e04022361",
+      "wellKnownDigest": "sha256:32f0aa54b711844b520595ccac922b2e54d99f4b751893f1fd73b305ea27a411"
+    },
+    "raphaelsalaja-12-principles-of-animation": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "fd8f83df6be0cebd89ac8c5e5345f7b5f4028a5e32f98f1699d52fa5008c7082",
+      "wellKnownDigest": "sha256:2027056a645c5ffdf17047d0e74b78a60c414d91da45d983ffd452548ee1e1ac"
+    },
+    "raphaelsalaja-generating-sounds-with-ai": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "bc271f63fef92d29df8ed64b3d7a0b592e39ae3ce668bafabcefc43fda425f32",
+      "wellKnownDigest": "sha256:4b635e3b47254e9673abaf9bf10019f4e0cd62d445e08a287160a3234371c7d7"
+    },
+    "raphaelsalaja-mastering-animate-presence": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ec89348f9dd39e1447b40346e99193ca2ba276277152efbe03d6eb6104e28115",
+      "wellKnownDigest": "sha256:75a027a2ef484a256b6aaa12e34c5d0b2b40516dafac65e582c9a397e8f26716"
+    },
+    "raphaelsalaja-morphing-icons": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "9a0d225abf57837c7d1b7c6ec4e607dbaf0584d316e8b127aa6176f537568d85",
+      "wellKnownDigest": "sha256:690cb3ebe7860f77b4fedd6f951aba6aff129faa84a98849489de4338c88f97f"
+    },
+    "raphaelsalaja-pseudo-elements": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0739f283f6141b2848aa01b1a1e00475caac648591273ee75191b30228225e6e",
+      "wellKnownDigest": "sha256:c8375d1e6b61b216139b935ad5f1968fdeb06eb30fb795f74a7f2fe3489849f2"
+    },
+    "raphaelsalaja-sounds-on-the-web": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "caf809d1a9e33e01b4a0be68c9a6f1b789f5742d84d120abc09842e9ba859116",
+      "wellKnownDigest": "sha256:7f7f366832681d63e94f268a3c249bc5ac837c65c85e3ef400f9127387840516"
+    },
+    "raphaelsalaja-to-spring-or-not-to-spring": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a0fdf128794cfa6472319b89356a940c3b04d9794c13108a6e10fca337092c5f",
+      "wellKnownDigest": "sha256:388c3d6651149ff63db2eea292d9b90f1f6f3bc2ab2ff71accc9583af8d56e3b"
+    },
+    "redongreen-create-anatomy": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a93eef5d0d4948e696bc41de5cc1b8e67fe648c4b612aa77ef457b59dce857bc",
+      "wellKnownDigest": "sha256:c3a8a654142300536a2ba3a757072bb2c2dd90f74083f3c2eaa491be3417b576"
+    },
+    "redongreen-create-voice": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ddc3f48cebe436823a1cf9e6574734ae3d945cd084cc6543c9a03513c81486aa",
+      "wellKnownDigest": "sha256:c1a1a48717bb28ca06f9f00ee0aa1803e10a448d37b80c72526fe3adca200c09"
+    },
+    "remix-run-react-router-data-mode": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ceb1c35e66329b82a732decaa26512c5e795cf101b9d7aa960db895d936c20d4",
+      "wellKnownDigest": "sha256:b65204814690fda386b4b0d263a5a9ab51515033436bb8ac9cd6a78d79a7b569"
+    },
+    "remix-run-react-router-declarative-mode": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "f7b7d68c824c230ae6810b67894dc85674496d1a28a7439093ef60ab5a364c53",
+      "wellKnownDigest": "sha256:cd0d78bfafe0d2f4e130911f9fa43dab08727c9b90336c8879efc9b8860edd17"
+    },
+    "remix-run-react-router-framework-mode": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "cb775fa8590b72488f01f885db46fc50cbc4fded932ce263dc500da49bd12325",
+      "wellKnownDigest": "sha256:f3ea09caa569c280e6cb099590658f164a2c7d58c84932db59bd3c840782ff21"
+    },
+    "rieranthony-product-film": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "25fcb7b3cfecb9594121a0e7138d7d3ae1884fca97924854e950678d230a971e",
+      "wellKnownDigest": "sha256:65825fbc4bdfbf9861c0a077028032876b5324b1515fee00c4791c37297e9292"
+    },
+    "s0xdk-refactoring-ui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2013363b5c6d316827340cb5e7300dd808fe223b58a4f4607ec27534743e922e",
+      "wellKnownDigest": "sha256:2e3a4aa0b5d5fc35d7c81ca1120564a229a0ad323d21e44b4b6a3d77614446c1"
+    },
+    "saadeghi-daisyui": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1bf8639d9a04fe4ccb3799a86b307eb8805db727e7f12893539362d8beecc6fb",
+      "wellKnownDigest": "sha256:b4f20b48d444b18c0ac3506cc063a22e996bf5b717a7b9cd1b2dabc1bc98a7c7"
+    },
+    "saadeghi-daisyui-colors": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "91256ec1b283e99a8a122bece8927f46d59cc84b8764d67266a79142c16be27e",
+      "wellKnownDigest": "sha256:655e2eef74d8f1f6f517044d58fd7115c4384687148a99073ff179da7f1b482f"
+    },
+    "saadeghi-daisyui-config": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "e1101c4822181a1efbdbbc7427a6d74ff94c4b3906d34ab73f2ec45757eb04cf",
+      "wellKnownDigest": "sha256:1097716fa7385259ab53d2fb7f50e7c548d0362457fbd0b93d8a39050b91d0a5"
+    },
+    "saadeghi-daisyui-install": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "91ca085e608ddfcb059806a3964abc49543651b3ed856a62f7519f5ec17216c3",
+      "wellKnownDigest": "sha256:c5fc3f4e97a62eaca1e215bef6149b5fc1f0fbb875a755ed57865c145192ca5b"
+    },
+    "saadeghi-daisyui-usage": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7c8be50d85bb6375adde86c0b8d3fd2e27d444f51ef23abaeee45efc2b583ff9",
+      "wellKnownDigest": "sha256:9a0cb9e36d263c67c0442cbd2bf3c2fcc36d327d9fac6bbf883615f402b7cca9"
+    },
+    "samyost1-3dicon": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8fe8bbecf1775185e30a887177da477d5d5b19a88ab0ba81b4fa0fca5b49a7b9",
+      "wellKnownDigest": "sha256:65d6946516477b73d98c12e50b94b75a5a82e5f51cd549e48e6c705c7caa4e4e"
+    },
+    "shadcn-improve": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d47589b26696fd18283075c075e874240afdcaad5a96d23710d8716a592d1181",
+      "wellKnownDigest": "sha256:1599aa29e9b16424cb767779efac53fa56e3f38be92dff4ac587393a1ad5070a"
+    },
+    "shadcn-ui-migrate-radix-to-base": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a90cd8e3e58da801566ee0423baa242247594e29d1589ebc1e54e8d3640b6155",
+      "wellKnownDigest": "sha256:64c879f6f1eab0decc306ca52ad32d41327c05c4d2fb7e708335e956c61dadf8"
+    },
+    "sidkh-term-radar": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "92c1c1c23d00af8b5988aaa11565b3d0336f6af39437b63b5e648171fe88532b",
+      "wellKnownDigest": "sha256:d48d443259cabf15e1617c7640bf77be19c0443c0af6d38c1ac383a7429208ba"
+    },
+    "stephenturner-deslop": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "524510471d206f19c62ef936e45884e8c3d1d4c3dfe0768045128c83bef6729c",
+      "wellKnownDigest": "sha256:90fd6355859239630bf9e1b36f8a0b9071fe7fa63f57b1bf28cf069ad702c546"
+    },
+    "superfuture-design-review": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "69e38d97f62d8fa59ac9e0c7f7cb25b72ad497fe325b928663ee1afc21a93f0a",
+      "wellKnownDigest": "sha256:88ffb615d6365f8b1cf53b61854028dc7711df217b688a235bca16516fed794d"
+    },
+    "sveltejs-svelte-code-writer": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6f78193a79906175595ce8e4ca8d726da350eb99035a9544b6553620df5673a1",
+      "wellKnownDigest": "sha256:ccd435bc524f1bdc38f7ca34a3ff279de1e855d3e5165151345d08b85706e95f"
+    },
+    "tjcages-linear-discipline": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "688cf6666ce7b4b74fd61c44cd73c021afa2997a9a72903209898f57909309a5",
+      "wellKnownDigest": "sha256:88f5efd21ff837fcb004ce898dd3274bb8b8335a1e40474b3b982ea67026e174"
+    },
+    "tjcages-linear-finish-install": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "ba404264a25832ef26dffa8d3e3d8f5a5ef817751538a40e912cb624565959b7",
+      "wellKnownDigest": "sha256:04fc97cf11cf221594e18ee7b2de3cf6fbbd74a8e88cacc1f0bc72c9f7fa2ef8"
+    },
+    "tjcages-linear-methodology": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6ebef4639962420f7544ec51c7dd75963fbfe60ba8cd7f8b5d88861b59082884",
+      "wellKnownDigest": "sha256:8541d9804e5a7341eaf6d58f1eaf37e3b915c965828c89bf0748bdb53a478113"
+    },
+    "tjcages-linear-monitor": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "59fec3879664f7d928479d14a6afb86a62fe14ece2ae821505c952f51bebdb7e",
+      "wellKnownDigest": "sha256:1801492b13e1fc1c8a584e80f822f7bb955f4c96c0cfdfef96e0aa0dc9f568b7"
+    },
+    "tjcages-linear-setup": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "0898571131a3c1e980cb9f4fef9d5997b2f47be8ef2d6c538a6aa8b4cf2473e3",
+      "wellKnownDigest": "sha256:40cb2f00dc3f239476cce4696f39cc76530f702f92f25e80fd24c22377aad1c9"
+    },
+    "tjcages-linear-sync": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d0907303a0c43cdd1a7c67c6728b2c2121b81b68a9e12cf1b360df19788ca4a8",
+      "wellKnownDigest": "sha256:af7df95e69e15b8a29b0c9d059c18d7f026e81a237b1bc3b65807a76491b4317"
+    },
+    "vercel-labs-agent-browser": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "dd491d53824ad9286ec950aee667098446332429a6d41fe28b4ba11f1959264c",
+      "wellKnownDigest": "sha256:3a7520e64de2dfaa516b6721c001e84e06e3c06a187b82af029ae721540ebfac"
+    },
+    "vercel-labs-react-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6d60b430de79d8283df426585ac17f72d66352d822612569e32342fe61f7a881",
+      "wellKnownDigest": "sha256:71ed7794962fa6e803ee83030517b5b93a9f70fbfeb431ec4535c5480a8d8355"
+    },
+    "vercel-labs-web-design-guidelines": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "a6a44d5498f7e8f68289902f3dedfc6f38ae0cee1e96527c80724cf27f727c2a",
+      "wellKnownDigest": "sha256:f4647ca866a3accf763777f83e7682954f0187cd6bea7eea0399796652414e8f"
+    },
+    "vercel-next-cache-components": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "6ec6e67b6795c8a7f0432e9c5481e0fa802472afa2cf35c18b6f986f331afc17",
+      "wellKnownDigest": "sha256:20bd3022e370fff23f3c3956c7f02e79edcee451a6533aa8d98f7e0fce40e35e"
+    },
+    "vercel-next-cache-components-optimizer": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "d2be03fa364b2d94fa97095f8d2fd1693b39b826fadcda8bbff5d57fb059928f",
+      "wellKnownDigest": "sha256:3d0e8eb9d922538de71def2e75ebfc1e1d5ec86e5eeaf0b3b51f22cc38a29f99"
+    },
+    "vincentwei1021-video-shotcraft": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5c9b61946b9ab9e1e642ad7b01726be3d7b7dbdf0228dcedd8b2ca0336b15814",
+      "wellKnownDigest": "sha256:12696ad78212f9036cbb76bd46be305094686db64d9cf72f69a6e650eba3ebbc"
+    },
+    "vuejs-ai-create-adaptable-composable": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "2f215126499d29a733be980ef9ce8f4ffb5f25a8831aec965d86c0cd21b2c5d2",
+      "wellKnownDigest": "sha256:9d6c8822577020dd62594e7fca4c11feb2be1af36f62d3f190984fe5aae1f6d1"
+    },
+    "vuejs-ai-vue-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "7f3268341bc138ed53d5347b52442b6ec11a7a9d35059a4af058143cccb310dc",
+      "wellKnownDigest": "sha256:05b373713e6bbd216fb3ee9709289b68bcdeb9eac8ffea477e35bdbd8e0f9acd"
+    },
+    "vuejs-ai-vue-debug-guides": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "8226bd32d386cfa50ec6d30ed5f501aaa35a4c6016f2ecac4c27179a7307dba8",
+      "wellKnownDigest": "sha256:c39cee74b0b6a4a8f7e50447ae9fd7494c80e86f50dc75753620e2ebeae22c3f"
+    },
+    "vuejs-ai-vue-jsx-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "c91158083593299974526fcca4d78f65ab6f5e6571abbba8e87acf60754d4f66",
+      "wellKnownDigest": "sha256:bd3487c0d6217ecdd0604fee84454f51d4b8db0c333921378eccd495be8a0fcc"
+    },
+    "vuejs-ai-vue-options-api-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "3fbd77c3b534234f04b861115f1cf66595bccb17968408abf4df18786205a31c",
+      "wellKnownDigest": "sha256:fd0a8c9e698a5d0413290f5c8e934f8ddd8c3db68ea5c2bd352a749b85744ea8"
+    },
+    "vuejs-ai-vue-pinia-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "1a1fc877a1a3237d1862a80c6bd6cfce0eef032ea0508dca0082ad0681a8f3b4",
+      "wellKnownDigest": "sha256:70c5fae1e97d1df1d7a1207ad1df606d0c7375855f0c1cb0c9c94351931ab862"
+    },
+    "vuejs-ai-vue-router-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "df5718e18a4fe97d1f94b0e868239f9c3b344e5dbccfee93ead7cd3159482301",
+      "wellKnownDigest": "sha256:33889faf631e80bf112a096dfe3e76029447f05f99d6d5c0aea2daddff186d7c"
+    },
+    "vuejs-ai-vue-testing-best-practices": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "b327769ca46dad30e47d76b882b27c97f1e9adb326d19c0a65cd13804996b70a",
+      "wellKnownDigest": "sha256:376fd21d6adfd37f7d102fa17ca099abddef16943389f37588405b013cef23b8"
+    },
+    "wshobson-interaction-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "32a25c963536232dcfb310920a821e7a9a879a5b4fe8fdbd4f9469e187d5c68f",
+      "wellKnownDigest": "sha256:87f2765ed1deeef3f1c06f9e4338ff103c391c6c4adcdffc885f3516b7c34ff2"
+    },
+    "wshobson-wcag-audit-patterns": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "014e5ba987d8c17d17433b952062976fcab49a8432ef677d0359a2c8c1f73108",
+      "wellKnownDigest": "sha256:db263a3405deb95a63175f33da4a9d82d8595599fbee4a81979059b35a7cec40"
+    },
+    "zarazhangrui-frontend-slides": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "5a331e7db78e7bc312eecc6f7b2aa0e89463e7c088be960992e01f609ba2f47a",
+      "wellKnownDigest": "sha256:832994fe1dfcce2aa7ceca9a1b7b708eca94becef242713999855f4e946cf4d5"
+    },
+    "zeke-swiss-design": {
+      "source": "ui-skills.com",
+      "sourceUrl": "https://www.ui-skills.com",
+      "sourceType": "well-known",
+      "computedHash": "dddf41ec0504a2fff7f40b924912cbd8aff76fe0d689634bf868be00d451fa32",
+      "wellKnownDigest": "sha256:7b7b471950e66d68491c8320e1acaa781e6cefb32a3fe04dcefc650ed8ac4eb8"
+    }
+  }
+}

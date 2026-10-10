@@ -30,7 +30,6 @@ export default function Header() {
       className={`sticky top-0 z-100 border-b border-border transition-all duration-300 ${
         scrolled ? 'shadow-md bg-surface/95 backdrop-blur-md' : 'bg-surface'
       }`}
-      role="banner"
     >
       <div className="container flex items-center justify-between h-16 md:h-18 lg:h-18 gap-2 md:gap-4">
         <NavLink to="/" className="flex items-center gap-2 md:gap-2.5 text-text flex-shrink-0" aria-label="Veritas HomeServices LLC - Home">

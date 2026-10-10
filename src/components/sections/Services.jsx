@@ -278,10 +278,11 @@ export default function Services() {
                 <Link
                   to={service.link}
                   className="link-arrow group relative overflow-hidden"
+                  aria-label={`Learn more about ${service.title}`}
                   whileHover={{ x: 4 }}
                   transition={{ type: 'spring', stiffness: 300, damping: 20 }}
                 >
-                  {t.services.learnMore || 'Learn more'}
+                  {t.services.learnMore || 'Learn more'} {service.title}
                   <motion.svg
                     className="w-5 h-5 flex-shrink-0"
                     aria-hidden="true"
