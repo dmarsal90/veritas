@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .opencode/
+.agents/
+.claude/
+.junie/
+.ocx/
+agent/skills/
+mobile-preview/
