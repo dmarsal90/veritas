@@ -40,6 +40,85 @@ export default defineConfig({
           delete bundle[criticalCssFile]
         }
       }
+    },
+    {
+      name: 'inject-modulepreload',
+      apply: 'build',
+      enforce: 'post',
+      generateBundle(options, bundle) {
+        // Find index.html
+        const htmlFile = Object.keys(bundle).find(f => f === 'index.html')
+        if (!htmlFile) return
+        
+        const html = bundle[htmlFile]
+        let htmlSource = html.source
+        
+        // Find critical chunks for modulepreload
+        const criticalChunks = [
+          'vendor-react-core',
+          'section-hero',
+          'vendor-router',
+        ]
+        
+        // Build modulepreload links for critical chunks
+        let preloadLinks = criticalChunks
+          .map(chunkName => {
+            const chunkFile = Object.keys(bundle).find(
+              f => f.endsWith('.js') && f.includes(chunkName)
+            )
+            return chunkFile ? `    <link rel="modulepreload" href="/${chunkFile}">` : null
+          })
+          .filter(Boolean)
+          .join('\n')
+        
+        // Also preload the main entry
+        const mainEntry = Object.keys(bundle).find(f => f === 'main.js' || (f.endsWith('.js') && f.includes('main') && !f.includes('-')))
+        if (mainEntry && !criticalChunks.some(c => mainEntry.includes(c))) {
+          preloadLinks = `    <link rel="modulepreload" href="/${mainEntry}">\n` + preloadLinks
+        }
+        
+        // Inject after font preloads
+        if (preloadLinks) {
+          htmlSource = htmlSource.replace(
+            '<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap"></noscript>',
+            `<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap"></noscript>\n\n    <!-- Module preload for critical JS chunks -->\n${preloadLinks}`
+          )
+        }
+        
+        // Defer non-critical chunks using requestIdleCallback
+        const nonCriticalChunks = [
+          'vendor-other',
+          'vendor-icons',
+          'vendor-motion',
+          'sections-primary',
+          'sections-secondary',
+          'sections-tertiary',
+          'features-quote',
+          'features-ai-assistant',
+          'features-other',
+          'ui-components',
+          'utils',
+        ]
+        
+        const deferredScripts = nonCriticalChunks
+          .map(chunkName => {
+            const chunkFile = Object.keys(bundle).find(
+              f => f.endsWith('.js') && f.includes(chunkName)
+            )
+            return chunkFile ? `    <script type="module">if ('requestIdleCallback' in window) { requestIdleCallback(() => import('/${chunkFile}')); } else { setTimeout(() => import('/${chunkFile}'), 2000); }</script>` : null
+          })
+          .filter(Boolean)
+          .join('\n')
+        
+        if (deferredScripts) {
+          htmlSource = htmlSource.replace(
+            '</body>',
+            `    <!-- Deferred non-critical JS chunks -->\n${deferredScripts}\n  </body>`
+          )
+        }
+        
+        html.source = htmlSource
+      }
     }
   ],
   build: {
@@ -89,35 +168,25 @@ export default defineConfig({
             if (id.includes('motion') || id.includes('@gsap') || id.includes('gsap')) {
               return 'vendor-motion';
             }
+            // Split other vendor code into smaller chunks
+            if (id.includes('lucide-react')) {
+              return 'vendor-icons';
+            }
             return 'vendor-other';
           }
           // Split page sections into individual chunks for better code splitting and tree-shaking
           if (id.includes('/sections/Hero')) {
             return 'section-hero';
           }
-          if (id.includes('/sections/Services')) {
-            return 'section-services';
+          // Combine below-fold sections into fewer chunks
+          if (id.includes('/sections/Services') || id.includes('/sections/WhyVeritas') || id.includes('/sections/QuickStart')) {
+            return 'sections-primary';
           }
-          if (id.includes('/sections/WhyVeritas')) {
-            return 'section-why-veritas';
+          if (id.includes('/sections/Process') || id.includes('/sections/HOA') || id.includes('/sections/ServiceAreas')) {
+            return 'sections-secondary';
           }
-          if (id.includes('/sections/QuickStart')) {
-            return 'section-quick-start';
-          }
-          if (id.includes('/sections/Process')) {
-            return 'section-process';
-          }
-          if (id.includes('/sections/HOA')) {
-            return 'section-hoa';
-          }
-          if (id.includes('/sections/ServiceAreas')) {
-            return 'section-service-areas';
-          }
-          if (id.includes('/sections/FAQ')) {
-            return 'section-faq';
-          }
-          if (id.includes('/sections/CTA')) {
-            return 'section-cta';
+          if (id.includes('/sections/FAQ') || id.includes('/sections/CTA')) {
+            return 'sections-tertiary';
           }
           if (id.includes('/features/quote/')) {
             return 'features-quote';

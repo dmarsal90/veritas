@@ -19,14 +19,11 @@ export default function Services() {
   const services = [
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true" className="w-12 h-12">
-          <rect x="15" y="30" width="70" height="55" rx="8" stroke="currentColor" strokeWidth="2"/>
-          <path d="M50 30 L50 45" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-          <path d="M25 50 L75 50" stroke="currentColor" strokeWidth="1.5" strokeDasharray="6 4" strokeLinecap="round"/>
-          <circle cx="40" cy="65" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <circle cx="60" cy="65" r="8" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <path d="M40 65 L40 75 M60 65 L60 75" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          <ellipse cx="50" cy="88" rx="20" ry="4" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <rect x="3" y="9" width="18" height="12" rx="2" stroke="currentColor" strokeWidth="1.5"/>
+          <path d="M12 9v6M7 12h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          <circle cx="7" cy="18" r="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+          <circle cx="17" cy="18" r="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
         </svg>
       ),
       title: t.services.generalPestControl || 'General Pest Control',
@@ -36,22 +33,12 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <g transform="translate(50, 50)">
-            <line x1="0" y1="-40" x2="0" y2="40" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3"/>
-            <line x1="-40" y1="0" x2="40" y2="0" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3"/>
-            <line x1="-30" y1="-30" x2="30" y2="30" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3"/>
-            <line x1="30" y1="-30" x2="-30" y2="30" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3"/>
-            <ellipse cx="0" cy="0" rx="14" ry="14" stroke="currentColor" strokeWidth="1.5" fill="none" strokeOpacity="0.4"/>
-            <ellipse cx="0" cy="0" rx="24" ry="24" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.3"/>
-            <ellipse cx="0" cy="0" rx="34" ry="34" stroke="currentColor" strokeWidth="0.5" fill="none" strokeOpacity="0.2"/>
-            <ellipse cx="0" cy="0" rx="10" ry="7" fill="currentColor" fillOpacity="0.9"/>
-            <ellipse cx="0" cy="-4" rx="6" ry="4" fill="currentColor" fillOpacity="0.9"/>
-            <circle cx="-7" cy="-3" r="1.5" fill="currentColor"/>
-            <circle cx="7" cy="-3" r="1.5" fill="currentColor"/>
-            <path d="M-16 -10 Q-11 -6 -6 -3 M-19 -5 Q-13 -3 -7 1 M-21 0 Q-13 2 -7 5 M-22 5 Q-13 5 -7 8" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-            <path d="M16 -10 Q11 -6 6 -3 M19 -5 Q13 -3 7 1 M21 0 Q13 2 7 5 M22 5 Q13 5 7 8" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          </g>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="12" cy="12" rx="10" ry="8" stroke="currentColor" strokeWidth="1.5"/>
+          <ellipse cx="12" cy="12" rx="6" ry="4" fill="currentColor" fillOpacity="0.3"/>
+          <circle cx="9" cy="10" r="1.5" fill="currentColor"/>
+          <circle cx="15" cy="10" r="1.5" fill="currentColor"/>
+          <path d="M8 14 Q10 16 12 16 Q14 16 16 14" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
         </svg>
       ),
       title: t.services.monthlySpiderControl || 'Monthly Spider Control',
@@ -62,16 +49,11 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <ellipse cx="50" cy="50" rx="30" ry="18" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-          <ellipse cx="50" cy="50" rx="26" ry="15" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.4"/>
-          <ellipse cx="50" cy="40" rx="14" ry="10" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.1"/>
-          <ellipse cx="50" cy="36" rx="10" ry="7" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.3"/>
-          <path d="M36 28 Q26 20 18 16 M64 28 Q74 20 82 16 M36 32 Q24 15 14 8 M64 32 Q76 15 86 8" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M28 42 Q22 36 18 28 M72 42 Q78 36 82 28 M26 50 Q18 46 12 40 M74 50 Q82 46 88 40 M24 56 Q16 56 8 56 M76 56 Q84 56 92 56 M24 62 Q16 68 8 72 M76 62 Q84 68 92 72" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
-          <path d="M20 48 Q14 50 8 56 M80 48 Q86 50 92 56" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-          <ellipse cx="50" cy="68" rx="16" ry="12" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.08"/>
-          <path d="M34 68 Q30 74 28 80 M66 68 Q70 74 72 80" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="12" cy="14" rx="9" ry="6" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <ellipse cx="12" cy="10" rx="5" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.15"/>
+          <path d="M8 12 Q6 8 4 6 M16 12 Q18 8 20 6 M8 16 Q6 19 4 22 M16 16 Q18 19 20 22" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M10 20 L8 22 M14 20 L16 22" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
         </svg>
       ),
       title: t.services.germanRoachCleanup || 'German Roach Clean-Up',
@@ -82,18 +64,13 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <g transform="translate(50, 55) scale(0.8)">
-            <ellipse cx="0" cy="5" rx="18" ry="12" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-            <ellipse cx="-20" cy="-12" rx="13" ry="10" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-            <ellipse cx="-28" cy="-18" rx="6" ry="5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.2"/>
-            <circle cx="-32" cy="-19" r="2" fill="currentColor"/>
-            <ellipse cx="-16" cy="-20" rx="6" ry="3" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="0.5"/>
-            <ellipse cx="18" cy="-10" rx="10" ry="9" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-            <path d="M-35 -10 Q-42 -3 -45 6 Q-45 16 -35 20" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-            <path d="M-6 25 Q-12 35 -6 45 M6 25 Q12 35 6 45" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-            <path d="M-12 -12 Q-18 -20 -22 -25 M12 -12 Q18 -20 22 -25" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeDasharray="3 2"/>
-          </g>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="8" cy="16" rx="7" ry="5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <ellipse cx="16" cy="16" rx="7" ry="5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <circle cx="6" cy="14" r="1.5" fill="currentColor"/>
+          <circle cx="18" cy="14" r="1.5" fill="currentColor"/>
+          <path d="M6 20 L4 24 M18 20 L20 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M8 16 Q6 19 4 22 M16 16 Q18 19 20 22" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeDasharray="3 2"/>
         </svg>
       ),
       title: t.services.rodentControl || 'Rodent Control',
@@ -103,17 +80,13 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <ellipse cx="50" cy="50" rx="24" ry="17" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.15"/>
-          <ellipse cx="50" cy="50" rx="20" ry="14" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.4"/>
-          <ellipse cx="50" cy="50" rx="16" ry="11" stroke="currentColor" strokeWidth="0.5" fill="none" strokeOpacity="0.2"/>
-          <ellipse cx="50" cy="50" rx="12" ry="8" stroke="currentColor" strokeWidth="0.5" fill="none" strokeOpacity="0.15"/>
-          <ellipse cx="50" cy="36" rx="9" ry="6" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-          <circle cx="46" cy="34" r="1.5" fill="currentColor"/>
-          <circle cx="54" cy="34" r="1.5" fill="currentColor"/>
-          <path d="M42 28 Q34 22 28 18 M58 28 Q66 22 72 18" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M30 40 Q22 36 16 30 M70 40 Q78 36 84 30 M26 48 Q16 48 10 48 M74 48 Q84 48 90 48 M26 56 Q16 60 10 64 M74 56 Q84 60 90 64 M30 64 Q22 70 16 76 M70 64 Q78 70 84 76" stroke="currentColor" strokeWidth="1.2" fill="none" strokeLinecap="round"/>
-          <path d="M44 50 L38 46 M56 50 L62 46" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="12" cy="14" rx="8" ry="6" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <ellipse cx="12" cy="10" rx="4" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.15"/>
+          <circle cx="10" cy="9" r="1" fill="currentColor"/>
+          <circle cx="14" cy="9" r="1" fill="currentColor"/>
+          <path d="M6 12 L6 18 M18 12 L18 18" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M10 14 L8 16 M14 14 L16 16" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
         </svg>
       ),
       title: t.services.bedBugTreatment || 'Bed Bug Treatment',
@@ -123,24 +96,13 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <g transform="translate(22, 35)">
-            <ellipse cx="0" cy="0" rx="11" ry="7" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-            <ellipse cx="-7" cy="-6" rx="4" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
-            <circle cx="-9" cy="-7" r="1.2" fill="currentColor"/>
-            <path d="M-14 -10 Q-20 -18 -25 -24 M-14 10 Q-20 18 -25 24" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-            <path d="M-2 12 Q-7 20 -10 26 M2 12 Q7 20 10 26" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-            <path d="M-2 4 Q-6 10 -10 16 M2 4 Q6 10 10 16" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
-            <path d="M14 2 Q18 8 20 12 M14 -2 Q18 -8 20 -12" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          </g>
-          <g transform="translate(78, 65)">
-            <ellipse cx="0" cy="0" rx="13" ry="11" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.15"/>
-            <ellipse cx="0" cy="0" rx="10" ry="8" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.4"/>
-            <ellipse cx="-5" cy="-4" rx="3" ry="2.5" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.12"/>
-            <circle cx="-6" cy="-5" r="1" fill="currentColor"/>
-            <path d="M-12 -7 Q-18 -12 -22 -18 M-12 7 Q-18 12 -22 18" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-            <path d="M-3 -12 Q-6 -20 -8 -26 M3 -12 Q6 -20 8 -26 M-5 12 Q-7 20 -9 26 M5 12 Q7 20 9 26 M12 7 Q16 12 20 18 M12 -7 Q16 -12 20 -18" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
-          </g>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="6" cy="12" rx="4" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <ellipse cx="18" cy="12" rx="4" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <circle cx="4" cy="11" r="0.8" fill="currentColor"/>
+          <circle cx="20" cy="11" r="0.8" fill="currentColor"/>
+          <path d="M3 8 L0 4 M21 8 L24 4 M3 16 L0 20 M21 16 L24 20" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <path d="M5 12 L7 14 M17 12 L19 14" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
         </svg>
       ),
       title: t.services.fleaTickTreatment || 'Flea & Tick Treatment',
@@ -150,19 +112,14 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <ellipse cx="50" cy="52" rx="7" ry="24" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.12"/>
-          <ellipse cx="50" cy="52" rx="5" ry="20" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.3"/>
-          <ellipse cx="50" cy="28" rx="6" ry="5" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
-          <circle cx="47" cy="27" r="1.2" fill="currentColor"/>
-          <circle cx="53" cy="27" r="1.2" fill="currentColor"/>
-          <path d="M50 33 L44 16 M50 33 L56 16" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M28 34 Q18 28 8 22 M72 34 Q82 28 92 22" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round"/>
-          <ellipse cx="25" cy="40" rx="22" ry="15" stroke="currentColor" strokeWidth="1.2" fill="none" strokeOpacity="0.4" strokeDasharray="5 3"/>
-          <ellipse cx="75" cy="40" rx="22" ry="15" stroke="currentColor" strokeWidth="1.2" fill="none" strokeOpacity="0.4" strokeDasharray="5 3"/>
-          <path d="M32 62 Q26 68 22 74 M68 62 Q74 68 78 74" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
-          <path d="M42 62 Q36 68 30 74 M58 62 Q64 68 70 74" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round"/>
-          <path d="M50 76 L50 88" stroke="currentColor" strokeWidth="1" strokeDasharray="2 2" fill="none" strokeLinecap="round"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <ellipse cx="12" cy="16" rx="3" ry="8" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <ellipse cx="12" cy="10" rx="2" ry="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.15"/>
+          <circle cx="11" cy="9" r="0.7" fill="currentColor"/>
+          <circle cx="13" cy="9" r="0.7" fill="currentColor"/>
+          <path d="M8 16 L4 10 M16 16 L20 10" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+          <ellipse cx="8" cy="14" rx="6" ry="4" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.3" strokeDasharray="3 2"/>
+          <ellipse cx="16" cy="14" rx="6" ry="4" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.3" strokeDasharray="3 2"/>
         </svg>
       ),
       title: t.services.mosquitoControl || 'Mosquito Control',
@@ -172,31 +129,12 @@ export default function Services() {
     },
     {
       icon: (
-        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
-          <rect x="18" y="42" width="26" height="48" rx="4" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.08"/>
-          <rect x="21" y="47" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="33" y="47" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="21" y="62" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="33" y="62" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="21" y="77" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="33" y="77" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <path d="M18 42 L18 24 Q31 12 44 24 L44 42" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.06"/>
-          <rect x="44" y="42" width="26" height="48" rx="4" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.08"/>
-          <rect x="47" y="47" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="59" y="47" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="47" y="62" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="59" y="62" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="47" y="77" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="59" y="77" width="6" height="8" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <path d="M44 42 L44 24 Q57 12 70 24 L70 42" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.06"/>
-          <rect x="70" y="42" width="12" height="28" rx="3" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.08"/>
-          <rect x="72" y="50" width="4" height="4" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="78" y="50" width="4" height="4" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="72" y="60" width="4" height="4" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <rect x="78" y="60" width="4" height="4" rx="1" stroke="currentColor" strokeWidth="1" fill="none"/>
-          <ellipse cx="50" cy="18" rx="22" ry="13" stroke="currentColor" strokeWidth="2" fill="currentColor" fillOpacity="0.08"/>
-          <ellipse cx="50" cy="18" rx="17" ry="9" stroke="currentColor" strokeWidth="1" fill="none" strokeOpacity="0.4"/>
-          <path d="M50 8 L50 14 M42 12 L58 12 M44 16 L56 16" stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinecap="round"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" className="w-12 h-12">
+          <rect x="4" y="10" width="6" height="10" rx="1" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <rect x="11" y="10" width="6" height="10" rx="1" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.1"/>
+          <rect x="18" y="10" width="2" height="6" rx="0.5" stroke="currentColor" strokeWidth="1" fill="currentColor" fillOpacity="0.1"/>
+          <path d="M4 10 L7 4 Q12 -2 17 4 L20 10" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.05"/>
+          <ellipse cx="12" cy="4" rx="7" ry="4" stroke="currentColor" strokeWidth="1.5" fill="currentColor" fillOpacity="0.05"/>
         </svg>
       ),
       title: t.services.hoaPropertyManagement || 'HOA & Property Management',
