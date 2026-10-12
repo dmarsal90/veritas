@@ -31,33 +31,51 @@ function Home() {
       <main>
         <Hero />
         <Suspense fallback={<SectionFallback />}>
-          <Services />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <Services />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <WhyVeritas />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <WhyVeritas />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <QuickStart />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <QuickStart />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <Process />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <Process />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <HOA />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <HOA />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <ServiceAreas />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <ServiceAreas />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <FAQ />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <FAQ />
+          </div>
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
-          <CTA />
+          <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 500px' }}>
+            <CTA />
+          </div>
         </Suspense>
       </main>
       <Footer />
       <Suspense fallback={<SectionFallback />}>
-        <AIAssistant />
+        <div style={{ contentVisibility: 'auto', containIntrinsicSize: '0 300px' }}>
+          <AIAssistant />
+        </div>
       </Suspense>
       <BackToTop />
       <ScrollProgress />

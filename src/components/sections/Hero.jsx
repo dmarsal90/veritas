@@ -51,28 +51,26 @@ export default function Hero() {
           <div className="hero-content relative z-10">
             <motion.span 
               className="badge badge-primary mb-6 inline-block"
-              initial={reduceMotion ? {} : { y: 20 }}
-              animate={reduceMotion ? {} : { y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { opacity: 0 }}
+              animate={reduceMotion ? {} : { opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0, ease: [0.16, 1, 0.3, 1] }}
             >
               {t.hero.badge}
             </motion.span>
             
-            <motion.h1 
+            <h1 
               id="hero-title" 
               className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-[1.05] text-text mb-6 text-balance tracking-tight"
-              initial={reduceMotion ? {} : { y: 30 }}
-              animate={reduceMotion ? {} : { y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+              style={{ contentVisibility: 'visible' }}
             >
               {t.hero.titleNew}
-            </motion.h1>
+            </h1>
             
             <motion.p 
               className="text-lg md:text-xl lg:text-2xl text-text-muted leading-relaxed mb-8 max-w-2xl font-medium"
-              initial={reduceMotion ? {} : { y: 30 }}
-              animate={reduceMotion ? {} : { y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+              initial={reduceMotion ? {} : { opacity: 0 }}
+              animate={reduceMotion ? {} : { opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
             >
               {t.hero.descriptionNew}
             </motion.p>
@@ -180,46 +178,32 @@ export default function Hero() {
               whileHover={{ scale: 1.02, boxShadow: '0 30px 60px -12px rgba(26, 95, 58, 0.3)' }}
             >
               <div className="relative h-64 md:h-72 bg-gradient-to-br from-primary via-primary-dark to-primary-light flex items-center justify-center overflow-hidden">
-                <motion.svg 
-                  className="w-28 h-28 md:w-32 md:h-32 text-white/95 drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
-                  viewBox="0 0 300 300"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
+                <div 
+                  className="w-28 h-28 md:w-32 md:h-32 text-white/95 drop-shadow-[0_4px_20px_rgba(0,0,0,0.3)] relative"
                   aria-hidden="true"
-                  initial={reduceMotion ? {} : { opacity: 0, rotate: -5, scale: 0.9 }}
-                  animate={reduceMotion ? {} : { opacity: 1, rotate: 0, scale: 1 }}
-                  transition={{ duration: 1.2, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <defs>
-                    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                      <feMerge>
-                        <feMergeNode in="coloredBlur"/>
-                        <feMergeNode in="SourceGraphic"/>
-                      </feMerge>
-                    </filter>
-                  </defs>
-                  
-                  <rect x="20" y="80" width="260" height="180" rx="12" stroke="currentColor" strokeWidth="2" filter="url(#glow)"/>
-                  <path d="M60 80 L150 20 L240 80" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <rect x="100" y="180" width="100" height="80" rx="4" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.5"/>
-                  <rect x="130" y="210" width="40" height="50" rx="2" fill="currentColor" fillOpacity="0.3"/>
-                  <rect x="80" y="190" width="15" height="15" rx="2" fill="currentColor" fillOpacity="0.2"/>
-                  <rect x="205" y="190" width="15" height="15" rx="2" fill="currentColor" fillOpacity="0.2"/>
-                  
-                  <circle cx="150" cy="110" r="18" stroke="currentColor" strokeWidth="2" fill="none"/>
-                  <path d="M150 92v18M132 110h36" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                  
-                  <ellipse cx="150" cy="260" rx="120" ry="15" fill="currentColor" fillOpacity="0.1"/>
-                </motion.svg>
-                
-                <motion.div 
-                  className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-primary-light)_0%,_transparent_60%)]"
-                  initial={reduceMotion ? {} : { opacity: 0 }}
-                  animate={reduceMotion ? {} : { opacity: 1 }}
-                  transition={{ duration: 1.5, delay: 0.8, ease: 'easeOut' }}
-                />
+                  <svg 
+                    className="w-full h-full" 
+                    viewBox="0 0 300 300" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    strokeWidth="1.5"
+                    aria-hidden="true"
+                  >
+                    <rect x="20" y="80" width="260" height="180" rx="12" stroke="currentColor" strokeWidth="2" style={{filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))'}}/>
+                    <path d="M60 80 L150 20 L240 80" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <rect x="100" y="180" width="100" height="80" rx="4" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.5"/>
+                    <rect x="130" y="210" width="40" height="50" rx="2" fill="currentColor" fillOpacity="0.3"/>
+                    <rect x="80" y="190" width="15" height="15" rx="2" fill="currentColor" fillOpacity="0.2"/>
+                    <rect x="205" y="190" width="15" height="15" rx="2" fill="currentColor" fillOpacity="0.2"/>
+                    
+                    <circle cx="150" cy="110" r="18" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <path d="M150 92v18M132 110h36" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                    
+                    <ellipse cx="150" cy="260" rx="120" ry="15" fill="currentColor" fillOpacity="0.1"/>
+                  </svg>
+                  <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-primary-light)_0%,_transparent_60%)] opacity-0 animate-fade-in" style={{animationDelay: '1.5s', animationDuration: '1.5s'}} />
+                </div>
               </div>
               
               <div className="p-6 md:p-8">
@@ -239,7 +223,7 @@ export default function Hero() {
                   transition={{ duration: 0.6, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <article className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border hover:border-primary/50 hover:shadow-md transition-all duration-200 group">
-                    <div className="icon-wrapper flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+<div className="icon-wrapper flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
                         <circle cx="12" cy="12" r="10"/>
                         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
@@ -248,23 +232,21 @@ export default function Hero() {
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h4 className="font-semibold text-text">{t.hero.monthlySpiderControl}</h4>
+                       <h4 className="font-semibold text-text">{t.hero.monthlySpiderControl}</h4>
                       <p className="text-lg font-bold text-primary">{t.hero.from35mo}</p>
                       <p className="text-sm text-text-muted">{t.hero.spiderControlDesc}</p>
                     </div>
                   </article>
                   
                   <article className="flex items-start gap-4 p-4 bg-background rounded-lg border border-border hover:border-primary/50 hover:shadow-md transition-all duration-200 group">
-                    <div className="icon-wrapper flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-                        <path d="M12 12v4"/>
-                        <path d="M12 12h.01"/>
-                        <path d="M8 14c0 1.5.5 2.5 1.5 3.5"/>
-                        <path d="M16 14c0 1.5-.5 2.5-1.5 3.5"/>
-                        <path d="M12 7v4"/>
-                      </svg>
-                    </div>
+                    <svg className="w-6 h-6 flex-shrink-0 text-primary group-hover:scale-110 transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true">
+                      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                      <path d="M12 12v4"/>
+                      <path d="M12 12h.01"/>
+                      <path d="M8 14c0 1.5.5 2.5 1.5 3.5"/>
+                      <path d="M16 14c0 1.5-.5 2.5-1.5 3.5"/>
+                      <path d="M12 7v4"/>
+                    </svg>
                     <div className="flex-1 min-w-0">
                       <h4 className="font-semibold text-text">{t.hero.germanRoachCleanup}</h4>
                       <p className="text-lg font-bold text-primary">{t.hero.from225}</p>
