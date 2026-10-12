@@ -62,9 +62,9 @@ export default function WhyVeritas() {
           viewport={{ once: false, amount: 0.3 }}
           variants={containerVariants}
         >
-          {t.whyVeritas.reasons.map((reason, index) => (
+          {t.whyVeritas.reasons.map((reason) => (
             <motion.li
-              key={index}
+              key={reason}
               className="card glass-card card-volume p-5"
               variants={itemVariants}
               whileHover={{ y: -4, boxShadow: 'var(--shadow-elevated-hover)' }}

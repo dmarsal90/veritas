@@ -101,7 +101,7 @@ export default function HOA() {
                 aria-hidden="true"
               />
               <motion.div
-                className="absolute inset-0 bg-[linear-gradient(135deg,_rgba(255,255,255,0.05)_0%,_transparent_50%,_rgba(255,255,255,0.03)_100%)]"
+                className="absolute inset-0 bg-[linear-gradient(135deg,_var(--color-background)_0%,_transparent_50%,_var(--color-background)_100%)]"
                 aria-hidden="true"
               />
               <motion.h3
@@ -121,7 +121,7 @@ export default function HOA() {
               >
                 {t.hoa.features.map((feature, index) => (
                   <motion.li
-                    key={index}
+                    key={feature}
                     className="flex items-start gap-3"
                     variants={{
                       hidden: { opacity: 0, x: -20 },

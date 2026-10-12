@@ -2,17 +2,17 @@ import { motion, useMotionValue, useTransform, useReducedMotion } from 'motion/r
 import { Link } from 'react-router-dom';
 import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function Hero() {
   const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobileRef = useRef(false);
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 1024 || 'ontouchstart' in window);
+      isMobileRef.current = window.innerWidth < 1024 || 'ontouchstart' in window;
     };
     checkMobile();
     window.addEventListener('resize', checkMobile);
@@ -23,7 +23,7 @@ export default function Hero() {
   const mouseY = useMotionValue(0);
 
   const handleMouseMove = (e) => {
-    if (reduceMotion || isMobile) return;
+    if (reduceMotion || isMobileRef.current) return;
     const target = e.currentTarget;
     const rect = target.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
@@ -33,7 +33,7 @@ export default function Hero() {
   };
 
   const handleMouseLeave = () => {
-    if (reduceMotion || isMobile) return;
+    if (reduceMotion || isMobileRef.current) return;
     mouseX.set(0);
     mouseY.set(0);
   };
@@ -54,7 +54,6 @@ export default function Hero() {
               initial={reduceMotion ? {} : { y: 20 }}
               animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.badge}
             </motion.span>
@@ -65,7 +64,6 @@ export default function Hero() {
               initial={reduceMotion ? {} : { y: 30 }}
               animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.titleNew}
             </motion.h1>
@@ -75,7 +73,6 @@ export default function Hero() {
               initial={reduceMotion ? {} : { y: 30 }}
               animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              style={{ opacity: 1, willChange: 'transform' }}
             >
               {t.hero.descriptionNew}
             </motion.p>
@@ -85,7 +82,6 @@ export default function Hero() {
               initial={reduceMotion ? {} : { y: 30 }}
               animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-              style={{ opacity: 1, willChange: 'transform' }}
             >
               <Link
                 to="/quote"
@@ -135,7 +131,6 @@ export default function Hero() {
               initial={reduceMotion ? {} : { y: 20 }}
               animate={reduceMotion ? {} : { y: 0 }}
               transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              style={{ opacity: 1, willChange: 'transform' }}
             >
               <div className="flex items-center gap-2 text-primary font-semibold">
                 <motion.svg 

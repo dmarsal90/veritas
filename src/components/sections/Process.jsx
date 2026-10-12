@@ -55,7 +55,7 @@ export default function Process() {
         >
           {t.process.steps.map((step, index) => (
             <motion.li
-              key={index}
+              key={step.title}
               className="card glass-card card-volume p-6 relative group"
               variants={itemVariants}
               whileHover={{ y: -6, boxShadow: 'var(--shadow-elevated-hover)' }}
