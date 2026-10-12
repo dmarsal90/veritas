@@ -96,9 +96,9 @@ export default function Header() {
           aria-label={isOpen ? 'Close menu' : 'Open menu'}
         >
           <span className="flex flex-col justify-between w-5 h-3.5" aria-hidden="true">
-            <span className="block w-full h-0.5 bg-text rounded transition-all duration-200" />
-            <span className="block w-full h-0.5 bg-text rounded transition-all duration-200" />
-            <span className="block w-full h-0.5 bg-text rounded transition-all duration-200" />
+            <span className="block w-full h-0.5 bg-text rounded transition-transform duration-200" />
+            <span className="block w-full h-0.5 bg-text rounded transition-transform duration-200" />
+            <span className="block w-full h-0.5 bg-text rounded transition-transform duration-200" />
           </span>
         </button>
       </div>
@@ -110,7 +110,7 @@ export default function Header() {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `block px-4 py-3.5 text-base font-medium rounded-md transition-all duration-150 ${
+                  `block px-4 py-3.5 text-base font-medium rounded-md transition-colors duration-150 ${
                     isActive
                       ? 'bg-background text-primary'
                       : 'text-text hover:bg-background hover:text-primary'

@@ -136,7 +136,7 @@ export default function AIAssistant() {
   return (
     <>
       <button
-        className="fixed bottom-16 right-6 z-50 flex items-center gap-2 md:gap-3 px-4 md:px-5 py-3 bg-primary text-white rounded-xl shadow-xl transition-all duration-200 hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary/30"
+        className="fixed bottom-16 right-6 z-50 flex items-center gap-2 md:gap-3 px-4 md:px-5 py-3 bg-primary text-white rounded-xl shadow-xl transition-transform hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-2xl focus:outline-none focus:ring-2 focus:ring-primary/30"
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label={isOpen ? t.aiAssistant.closeLabel : t.aiAssistant.openLabel}
@@ -154,7 +154,7 @@ export default function AIAssistant() {
 
       <div
         id="ai-assistant-panel"
-        className={`fixed bottom-30 right-6 z-50 w-full max-w-sm md:max-w-[380px] h-[500px] md:h-[600px] max-h-[70vh] bg-surface rounded-2xl shadow-2xl border border-border flex flex-col transform transition-all duration-300 ${
+        className={`fixed bottom-30 right-6 z-50 w-full max-w-sm md:max-w-[380px] h-[500px] md:h-[600px] max-h-[70vh] bg-surface rounded-2xl shadow-2xl border border-border flex flex-col transform transition-transform duration-300 ${
           isOpen ? 'translate-y-0 scale-100 opacity-100 visible pointer-events-auto' : 'translate-y-8 scale-95 opacity-0 invisible pointer-events-none'
         }`}
         role="dialog"
@@ -221,7 +221,7 @@ export default function AIAssistant() {
           {quickReplies.map((reply) => (
             <li key={reply}>
               <button
-                className="whitespace-nowrap px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-all duration-150"
+                className="whitespace-nowrap px-3 py-2 text-sm font-medium text-primary bg-primary/10 border border-primary/20 rounded-full hover:bg-primary hover:text-white hover:border-primary transition-colors duration-150"
                 onClick={() => handleQuickReply(reply)}
               >
                 {reply}
@@ -237,13 +237,13 @@ export default function AIAssistant() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             placeholder={t.aiAssistant.placeholder}
-            className="flex-1 px-4 py-3 text-sm border border-border rounded-xl bg-background text-text placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all disabled:opacity-50"
+            className="flex-1 px-4 py-3 text-sm border border-border rounded-xl bg-background text-text placeholder-text-muted focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors disabled:opacity-50"
             aria-label="Your message"
             disabled={isTyping}
           />
           <button
             type="submit"
-            className="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center hover:bg-primary-dark hover:scale-105 transition-all duration-150 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed flex-shrink-0"
+            className="w-11 h-11 rounded-xl bg-primary text-white flex items-center justify-center hover:bg-primary-dark hover:scale-105 transition-transform duration-150 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed flex-shrink-0"
             disabled={!input.trim() || isTyping}
             aria-label={t.aiAssistant.sendLabel}
           >

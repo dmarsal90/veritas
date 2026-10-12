@@ -86,7 +86,7 @@ export default function QuoteForm() {
   );
 
   const inputClass = (field) => (
-    `w-full px-4 py-3 text-base border rounded-lg bg-surface text-text placeholder-text-muted transition-all duration-150 ${
+    `w-full px-4 py-3 text-base border rounded-lg bg-surface text-text placeholder-text-muted transition-colors duration-150 ${
       errors[field] && touched[field]
         ? 'border-error focus:border-error focus:ring-2 focus:ring-error/20'
         : 'border-border hover:border-primary/50 focus:border-primary focus:ring-2 focus:ring-primary/20'
@@ -118,7 +118,7 @@ export default function QuoteForm() {
               </p>
               <button
                 onClick={resetForm}
-                className="inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold rounded-lg bg-primary text-white hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold rounded-lg bg-primary text-white hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-transform duration-200"
               >
                 {t.quoteForm.submit}
               </button>
@@ -347,7 +347,7 @@ export default function QuoteForm() {
               <div className="pt-4 border-t border-border">
                 <button
                   type="submit"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold rounded-lg bg-primary text-white hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold rounded-lg bg-primary text-white hover:bg-primary-dark hover:shadow-lg hover:-translate-y-0.5 transition-transform duration-200 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? (

@@ -1,18 +1,30 @@
 import { motion, useReducedMotion, useMotionValue, useTransform } from 'motion/react';
 import { useContactInfo } from '../../hooks/useContactInfo';
 import { useLanguage } from '../../context/LanguageContext';
+import { useEffect, useRef } from 'react';
 
 export default function CTA() {
   const { phoneHref } = useContactInfo();
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
+  const isMobileRef = useRef(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      isMobileRef.current = window.innerWidth < 1024 || 'ontouchstart' in window;
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
   const handleMouseMove = (e) => {
-    if (reduceMotion) return;
-    const rect = e.currentTarget.getBoundingClientRect();
+    if (reduceMotion || isMobileRef.current) return;
+    const target = e.currentTarget;
+    const rect = target.getBoundingClientRect();
     const x = (e.clientX - rect.left) / rect.width - 0.5;
     const y = (e.clientY - rect.top) / rect.height - 0.5;
     mouseX.set(x * 30);
@@ -20,7 +32,7 @@ export default function CTA() {
   };
 
   const handleMouseLeave = () => {
-    if (reduceMotion) return;
+    if (reduceMotion || isMobileRef.current) return;
     mouseX.set(0);
     mouseY.set(0);
   };
@@ -32,7 +44,7 @@ export default function CTA() {
     <section className="section" aria-labelledby="cta-title">
       <div className="page-container">
         <motion.div
-          className="cta-gradient-fixed rounded-2xl p-8 lg:p-12 text-white relative overflow-hidden"
+          className="cta-gradient-fixed rounded-2xl p-8 lg:p-12 text-text relative overflow-hidden"
           onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave}
           initial={reduceMotion ? {} : { opacity: 0, y: 40 }}
@@ -50,7 +62,7 @@ export default function CTA() {
             aria-hidden="true"
           />
           <motion.div
-            className="absolute inset-0 bg-[linear-gradient(135deg,_rgba(255,255,255,0.03)_0%,_transparent_50%,_rgba(255,255,255,0.02)_100%)]"
+            className="absolute inset-0 bg-[linear-gradient(135deg,_var(--color-background)_0%,_transparent_50%,_var(--color-background)_100%)]"
             aria-hidden="true"
           />
           <motion.span
@@ -63,7 +75,7 @@ export default function CTA() {
           </motion.span>
           <motion.h2
             id="cta-title"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-white text-balance relative z-10"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 text-text text-balance relative z-10"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
@@ -71,7 +83,7 @@ export default function CTA() {
             {t.cta.title}
           </motion.h2>
           <motion.p
-            className="text-lg md:text-xl opacity-90 mb-8 max-w-2xl mx-auto relative z-10"
+            className="text-lg md:text-xl text-text-muted mb-8 max-w-2xl mx-auto relative z-10"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
@@ -86,8 +98,8 @@ export default function CTA() {
           >
             <motion.Link
               to="/quote"
-              className="btn btn-secondary btn-magnetic group relative overflow-hidden"
-              whileHover={{ scale: 1.02, boxShadow: '0 0 0 1px white, 0 20px 40px -12px rgba(255,255,255,0.3)' }}
+              className="btn btn-primary btn-magnetic group relative overflow-hidden"
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               <span className="relative z-10">{t.cta.buttonOnline || 'Request Service Online'}</span>
@@ -106,9 +118,9 @@ export default function CTA() {
             </motion.Link>
             <motion.a
               href={phoneHref}
-              className="btn btn-outline text-white border-white hover:bg-white/10 group relative overflow-hidden"
+              className="btn btn-outline border-border hover:bg-primary/10 group relative overflow-hidden"
               aria-label={t.hero.call}
-              whileHover={{ scale: 1.02, backgroundColor: 'rgba(255,255,255,0.1)', boxShadow: '0 0 0 1px white, 0 20px 40px -12px rgba(255,255,255,0.2)' }}
+              whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
               <motion.svg

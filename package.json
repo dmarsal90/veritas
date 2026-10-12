@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Veritas HomeServices LLC - Professional Pest Control Website",
+  "sideEffects": false,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
