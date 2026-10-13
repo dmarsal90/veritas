@@ -49,7 +49,7 @@ export default function CTA() {
           onMouseLeave={handleMouseLeave}
           initial={reduceMotion ? {} : { opacity: 0, y: 40 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.div

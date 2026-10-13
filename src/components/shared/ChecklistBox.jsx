@@ -35,7 +35,7 @@ export default function ChecklistBox({
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {roachItems.map((itemKey, _index) => (
             <motion.li key={itemKey} className="flex items-start gap-3" variants={itemVariants}>
@@ -67,7 +67,7 @@ export default function ChecklistBox({
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {hoaItems.map((itemKey, _index) => (
             <motion.li key={itemKey} className="flex items-start gap-3" variants={itemVariants}>
@@ -91,7 +91,7 @@ export default function ChecklistBox({
         variants={containerVariants}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.1 }}
       >
         {items.map((item, index) => (
           <motion.li key={index} className="flex items-start gap-3" variants={itemVariants}>

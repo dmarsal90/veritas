@@ -53,7 +53,7 @@ export default function RoachCleanupPage() {
               className="flex gap-4 p-4 sm:p-6 bg-background rounded-xl border border-border"
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">

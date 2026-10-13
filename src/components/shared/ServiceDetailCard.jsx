@@ -12,7 +12,7 @@ export default function ServiceDetailCard({ icon, title, description, index = 0 
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
       <div className="flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-primary/10 text-primary flex items-center justify-center" aria-hidden="true">
         {icon}

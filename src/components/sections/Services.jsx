@@ -161,14 +161,14 @@ export default function Services() {
           className="section-header text-center max-w-3xl mx-auto mb-10 lg:mb-16"
           initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.span
             className="section-label badge badge-primary inline-block"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.services.title}
@@ -178,7 +178,7 @@ export default function Services() {
             className="section-title"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.services.subtitle}
@@ -187,7 +187,7 @@ export default function Services() {
             className="section-description"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           >
             Choose a focused service or tell us what you are seeing and we can discuss the appropriate option for your property.
@@ -199,7 +199,7 @@ export default function Services() {
           variants={containerVariants}
           initial={reduceMotion ? {} : { opacity: 0 }}
           whileInView={reduceMotion ? {} : { opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           style={{ minWidth: 0 }}
         >
           {services.map((service) => (

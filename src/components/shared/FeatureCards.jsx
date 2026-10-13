@@ -90,7 +90,7 @@ export default function FeatureCards({ className = '', title, subtitle }) {
             className="text-center max-w-3xl mx-auto mb-12 lg:mb-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             {title && (
@@ -99,7 +99,7 @@ export default function FeatureCards({ className = '', title, subtitle }) {
                 className="text-3xl md:text-4xl font-bold leading-tight text-text mb-4"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               >
                 {title}
@@ -110,7 +110,7 @@ export default function FeatureCards({ className = '', title, subtitle }) {
                 className="text-lg leading-relaxed text-text-muted"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               >
                 {subtitle}
@@ -123,7 +123,7 @@ export default function FeatureCards({ className = '', title, subtitle }) {
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           {hoaFeatures.map((feature, _index) => (
             <motion.div
