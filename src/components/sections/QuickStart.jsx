@@ -1,5 +1,4 @@
 import { motion, useReducedMotion } from 'motion/react';
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function QuickStart() {
@@ -52,9 +51,9 @@ export default function QuickStart() {
             {t.quickStart.description}
           </motion.p>
           <motion.Link
-            to="/quote"
-            className="btn btn-primary btn-magnetic group relative overflow-hidden"
-            whileHover={{ scale: 1.02, boxShadow: 'var(--shadow-elevated-hover)' }}
+            to="/request-service"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-green-800 text-white shadow-sm hover:bg-green-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600/50 group relative overflow-hidden transition-all duration-200"
+            whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             animate={reduceMotion ? {} : { opacity: 1, y: 0 }}

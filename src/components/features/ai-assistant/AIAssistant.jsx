@@ -20,17 +20,19 @@ export default function AIAssistant() {
 
   const quickReplies = t.aiAssistant.quickReplies;
 
+  const initialMessage = t.aiAssistant.initialMessage;
+
   useEffect(() => {
     setMessages([
       {
         id: 1,
         role: 'assistant',
-        content: t.aiAssistant.initialMessage,
+        content: initialMessage,
         timestamp: new Date(),
       },
     ]);
     idCounterRef.current = 2;
-  }, [t.aiAssistant.initialMessage]);
+  }, [initialMessage]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -46,7 +48,7 @@ export default function AIAssistant() {
     }
   }, [isOpen]);
 
-  const getBotResponse = (userMessage) => {
+  const getBotResponse = useCallback((userMessage) => {
     const msg = userMessage.toLowerCase();
     const responses = t.aiAssistant.botResponses;
     
@@ -91,7 +93,7 @@ export default function AIAssistant() {
     }
     
     return responses.default;
-  };
+  }, [t.aiAssistant.botResponses]);
 
   const handleSend = useCallback((e) => {
     e.preventDefault();
@@ -122,7 +124,7 @@ export default function AIAssistant() {
       setMessages(prev => [...prev, botMsg]);
       setIsTyping(false);
     }, delay);
-  }, [input, isTyping]);
+  }, [input, isTyping, getBotResponse]);
 
   const handleQuickReply = useCallback((reply) => {
     setInput(reply);
@@ -152,11 +154,10 @@ export default function AIAssistant() {
         {!isOpen && <span className="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse" aria-hidden="true" />}
       </button>
 
+      {isOpen && (
       <div
         id="ai-assistant-panel"
-        className={`fixed bottom-30 right-6 z-50 w-full max-w-sm md:max-w-[380px] h-[500px] md:h-[600px] max-h-[70vh] bg-surface rounded-2xl shadow-2xl border border-border flex flex-col transform transition-transform duration-300 ${
-          isOpen ? 'translate-y-0 scale-100 opacity-100 visible pointer-events-auto' : 'translate-y-8 scale-95 opacity-0 invisible pointer-events-none'
-        }`}
+        className="fixed bottom-30 right-6 z-50 w-full max-w-sm md:max-w-[380px] h-[500px] md:h-[600px] max-h-[70vh] bg-surface rounded-2xl shadow-2xl border border-border flex flex-col transform transition-transform duration-300 translate-y-0 scale-100 opacity-100 visible pointer-events-auto"
         role="dialog"
         aria-label={t.aiAssistant.title}
         aria-modal="true"
@@ -258,14 +259,15 @@ export default function AIAssistant() {
           {t.aiAssistant.disclaimer}
         </p>
       </div>
+      )}
 
+      {isOpen && (
       <div
-        className={`fixed inset-0 z-40 bg-background/60 transition-opacity duration-300 ${
-          isOpen ? 'opacity-100 visible' : 'opacity-0 invisible pointer-events-none'
-        }`}
+        className="fixed inset-0 z-40 bg-background/60 transition-opacity duration-300 opacity-100 visible"
         onClick={() => setIsOpen(false)}
         aria-hidden="true"
       />
+      )}
     </>
   );
 }

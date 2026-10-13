@@ -4,6 +4,7 @@ import { createValidator, validators, sanitizeFormData, rateLimiter } from '../.
 import { api } from '../../../services/api';
 import { SERVICE_OPTIONS } from '../../../constants';
 import { useLanguage } from '../../../context/LanguageContext';
+import Seo from '../../shared/Seo';
 
 const initialValues = {
   firstName: '',
@@ -38,7 +39,7 @@ export default function QuoteForm() {
     service: [validators.required(t.quoteForm.required)],
     pestDetails: [validators.maxLength(1000, t.quoteForm.required)],
     preferredContact: [validators.required()],
-    preferredTime: [validators.maxLength(100, 'Preferred time too long')],
+    preferredTime: [validators.maxLength(100, t.quoteForm.required)],
   };
 
   const validate = createValidator(validationRules);
@@ -95,7 +96,8 @@ export default function QuoteForm() {
 
   return (
     <section className="py-16 md:py-24 bg-background" aria-labelledby="quote-title">
-      <div className="page-container">
+      <Seo title={t.quoteForm.title} description={t.quoteForm.subtitle} path="/request-service" />
+      <div className="w-full max-w-[85%] mx-auto px-6">
         <header className="text-center max-w-3xl mx-auto mb-10 lg:mb-12">
           <p className="inline-block px-3 py-1 text-xs font-bold tracking-widest text-primary bg-primary/10 rounded-full mb-4">
             {t.quoteForm.title}
@@ -112,9 +114,9 @@ export default function QuoteForm() {
                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
                 <polyline points="22 4 12 14.01 9 11.01" />
               </svg>
-              <h3 className="text-2xl font-bold text-text mb-4">Quote Request Sent!</h3>
+              <h3 className="text-2xl font-bold text-text mb-4">{t.quoteForm.successTitle}</h3>
               <p className="text-text-muted leading-relaxed mb-8">
-                Thank you! We'll review your information and follow up within 24 hours to discuss service options.
+                {t.quoteForm.successBody}
               </p>
               <button
                 onClick={resetForm}
@@ -205,7 +207,7 @@ export default function QuoteForm() {
                     className={inputClass('phone')}
                     required
                     autoComplete="tel"
-                    placeholder="(239) 555-0123"
+                    placeholder={t.quoteForm.phonePlaceholder}
                   />
                   {renderError('phone')}
                 </div>
@@ -225,7 +227,7 @@ export default function QuoteForm() {
                   className={inputClass('address')}
                   required
                   autoComplete="street-address"
-                  placeholder="123 Main St"
+                  placeholder={t.quoteForm.addressPlaceholder}
                 />
                 {renderError('address')}
               </div>
@@ -263,7 +265,7 @@ export default function QuoteForm() {
                     className={inputClass('zipCode')}
                     required
                     autoComplete="postal-code"
-                    placeholder="33901"
+                    placeholder={t.quoteForm.zipPlaceholder}
                   />
                   {renderError('zipCode')}
                 </div>
@@ -301,7 +303,7 @@ export default function QuoteForm() {
                   onChange={handleChange}
                   rows={4}
                   className={inputClass('pestDetails') + ' resize-y'}
-                  placeholder="What are you seeing? Where? How long has it been going on?"
+                  placeholder={t.quoteForm.pestPlaceholder}
                   maxLength={1000}
                 />
                 {renderError('pestDetails')}
@@ -321,7 +323,7 @@ export default function QuoteForm() {
                         className="w-4 h-4 text-primary border-border focus:ring-2 focus:ring-primary/20 accent-primary"
                       />
                       <span className="text-text">
-                        {option === 'phone' ? 'Phone Call' : option === 'text' ? 'Text Message' : 'Email'}
+                        {option === 'phone' ? t.quoteForm.contactPhone : option === 'text' ? t.quoteForm.contactText : t.quoteForm.contactEmail}
                       </span>
                     </label>
                   ))}
@@ -339,7 +341,7 @@ export default function QuoteForm() {
                   value={values.preferredTime}
                   onChange={handleChange}
                   className={inputClass('preferredTime')}
-                  placeholder="e.g., Weekday mornings, After 5pm, Anytime"
+                  placeholder={t.quoteForm.timePlaceholder}
                   maxLength={100}
                 />
               </div>
@@ -363,7 +365,7 @@ export default function QuoteForm() {
                   )}
                 </button>
                 <p className="mt-4 text-sm text-text-muted text-center">
-                  By submitting, you agree to be contacted regarding your pest control inquiry. We respect your privacy.
+                  {t.quoteForm.consent}
                 </p>
               </div>
             </form>

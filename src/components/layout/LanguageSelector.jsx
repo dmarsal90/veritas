@@ -7,7 +7,7 @@ export default function LanguageSelector() {
     <button
       className="w-11 h-9 rounded-md bg-background text-text text-xs font-semibold border border-border transition-colors duration-150 hover:bg-border hover:border-primary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
       onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
-      aria-label={t.header.language}
+      aria-label={`${language === 'en' ? 'EN' : 'ES'} — ${t.header.language}`}
       title={t.header.language}
     >
       {language === 'en' ? 'EN' : 'ES'}

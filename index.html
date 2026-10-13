@@ -14,28 +14,20 @@
     <meta name="theme-color" content="#1a5f3a" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default;" />
+    <!-- frame-ancestors is intentionally omitted here: it has no effect in a <meta> CSP
+         (browsers ignore it and log a console warning) and is only enforced via the real
+         HTTP header set in netlify.toml. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-hashes'; script-src-elem 'self' 'unsafe-inline'; script-src-attr 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com; style-src-elem 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default;" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
     <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
     <link rel="canonical" href="https://veritashomeservices.com/" />
-    <link rel="alternate" hreflang="en" href="https://veritashomeservices.com/" />
-    <link rel="alternate" hreflang="es" href="https://veritashomeservices.com/es/" />
-    <link rel="alternate" hreflang="x-default" href="https://veritashomeservices.com/" />
     <title>Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap"></noscript>
-
-    <!-- Netlify hud removal for production -->
-    <script>
-      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-        var hud = document.querySelector('script[src*="hud"]');
-        if (hud) hud.remove();
-      }
-    </script>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -292,20 +284,6 @@
         }
       ]
     }
-    </script>
-
-    <script>
-      if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
-      window.scrollTo(0, 0);
-    </script>
-    <script>
-      if ('trustedTypes' in window) {
-        trustedTypes.createPolicy('default', {
-          createHTML: (s) => s,
-          createScript: (s) => s,
-          createScriptURL: (s) => s
-        });
-      }
     </script>
   </head>
   <body>

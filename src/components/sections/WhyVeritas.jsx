@@ -46,7 +46,7 @@ export default function WhyVeritas() {
           </motion.h2>
         </motion.header>
         <motion.p
-          className="section-description text-center max-w-3xl mx-auto mb-12 lg:mb-16"
+          className="section-description text-center max-w-3xl mx-auto mb-8 lg:mb-12"
           initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}

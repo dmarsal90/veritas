@@ -97,8 +97,8 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.Link
-              to="/quote"
-              className="btn btn-primary btn-magnetic group relative overflow-hidden"
+              to="/request-service"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-green-800 text-white shadow-sm hover:bg-green-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600/50 btn-magnetic group relative overflow-hidden transition-all duration-200"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -118,7 +118,7 @@ export default function CTA() {
             </motion.Link>
             <motion.a
               href={phoneHref}
-              className="btn btn-outline border-border hover:bg-primary/10 group relative overflow-hidden"
+              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-amber-600 text-gray-900 shadow-sm hover:bg-amber-700 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 group relative overflow-hidden transition-all duration-200"
               aria-label={t.hero.call}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}

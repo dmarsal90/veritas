@@ -48,6 +48,9 @@ importers:
       oxlint:
         specifier: ^1.81.0
         version: 1.87.0
+      playwright:
+        specifier: ^1.64.0
+        version: 1.64.0
       postcss:
         specifier: ^8.5.29
         version: 8.5.29
