@@ -23,9 +23,9 @@
   --color-text-muted-dark: #94a3b8;
   --color-border-dark: #334155;
 
-  --font-sans: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-heading: 'Geist', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --font-mono: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-heading: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 
   --shadow-subtle: 0 1px 2px 0 rgb(0 0 0 / 0.03), 0 1px 3px 0 rgb(0 0 0 / 0.05);
   --shadow-card: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.05), 0 0 0 1px rgb(0 0 0 / 0.02);
@@ -117,7 +117,10 @@
   }
 
   html, body {
-    overflow-x: hidden;
+    /* clip (not hidden) so this doesn't establish a scroll container on html/body —
+       overflow-x: hidden here breaks position: sticky on descendants like the header.
+       Keep in sync with the matching rule in index.css. */
+    overflow-x: clip;
     max-width: 100vw;
   }
 
@@ -205,24 +208,6 @@
     background-color: var(--color-primary);
     color: white;
   }
-}
-
-@font-face {
-  font-family: 'Geist';
-  font-style: normal;
-  font-weight: 400 800;
-  font-display: optional;
-  src: local('Geist'), url('https://fonts.gstatic.com/s/geist/v2/6e95a5405936d12.woff2') format('woff2');
-  unicode-range: latin;
-}
-
-@font-face {
-  font-family: 'Geist Mono';
-  font-style: normal;
-  font-weight: 400 500;
-  font-display: optional;
-  src: local('Geist Mono'), url('https://fonts.gstatic.com/s/geistmono/v2/6e95a5405936d12.woff2') format('woff2');
-  unicode-range: latin;
 }
 
 @layer components {

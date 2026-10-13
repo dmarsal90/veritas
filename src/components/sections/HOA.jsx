@@ -2,6 +2,8 @@ import { motion, useReducedMotion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 
+const MotionLink = motion.create(Link);
+
 export default function HOA() {
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
@@ -9,12 +11,12 @@ export default function HOA() {
   return (
     <section className="section bg-background" aria-labelledby="hoa-title">
       <div className="page-container">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           <motion.div
             className="reveal-section"
             initial={reduceMotion ? {} : { opacity: 0, y: 40 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <motion.span
@@ -42,9 +44,9 @@ export default function HOA() {
             >
               {t.hoa.description || 'Flexible service plans can include scheduled pest prevention, common-area treatment, rodent bait-station monitoring, documented recommendations and callback terms defined by agreement.'}
             </motion.p>
-            <motion.Link
+            <MotionLink
               to="/communities"
-              className="btn btn-primary group relative overflow-hidden"
+              className="btn btn-primary group relative overflow-hidden whitespace-normal w-full sm:w-auto"
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
@@ -65,26 +67,26 @@ export default function HOA() {
               >
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </motion.svg>
-            </motion.Link>
+            </MotionLink>
           </motion.div>
 
           <motion.div
             className="reveal-section"
             initial={reduceMotion ? {} : { opacity: 0, y: 40 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
           >
             <motion.div
-              className="relative rounded-t-2xl overflow-hidden bg-primary text-white p-6 lg:p-8 card-volume"
+              className="relative rounded-2xl lg:rounded-t-2xl overflow-hidden bg-primary text-white p-6 lg:p-8 card-volume max-w-full w-full"
               style={{
                 boxShadow: `
                   4px 4px 0 0 var(--color-primary-dark),
                   8px 8px 0 -1px var(--color-primary-dark),
                   0 30px 60px -12px rgba(26, 95, 58, 0.4)
                 `
-              }}
-              initial={reduceMotion ? {} : { opacity: 0, scale: 0.95, y: 40 }}
+}}
+               initial={reduceMotion ? {} : { opacity: 0, scale: 0.95, y: 40 }}
               animate={reduceMotion ? {} : { opacity: 1, scale: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               whileHover={{ scale: 1.01, boxShadow: `
@@ -120,10 +122,10 @@ export default function HOA() {
                 transition={{ duration: 0.6, delay: 0.5, staggerChildren: 0.08, ease: [0.16, 1, 0.3, 1] }}
               >
                 {t.hoa.features.map((feature, index) => (
-                  <motion.li
-                    key={feature}
-                    className="flex items-start gap-3"
-                    variants={{
+<motion.li
+                      key={feature}
+                      className="flex items-start gap-3 min-w-0"
+                      variants={{
                       hidden: { opacity: 0, x: -20 },
                       show: { opacity: 1, x: 0 }
                     }}
@@ -139,7 +141,7 @@ export default function HOA() {
                       </svg>
                     </motion.div>
                     <motion.span
-                      className="text-white leading-relaxed"
+                      className="text-white leading-relaxed break-words min-w-0 flex-1"
                       initial={reduceMotion ? {} : { opacity: 0, x: -10 }}
                       animate={reduceMotion ? {} : { opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: index * 0.08 + 0.1 }}

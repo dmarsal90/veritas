@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const viewports = [
+  { name: 'mobile-360', width: 360, height: 800 },
   { name: 'mobile-small', width: 375, height: 667 },
   { name: 'mobile-large', width: 414, height: 896 },
   { name: 'tablet', width: 768, height: 1024 },
@@ -56,6 +57,27 @@ for (const viewport of viewports) {
       const cards = page.locator('.card-volume');
       const count = await cards.count();
       expect(count).toBeGreaterThan(0);
+    });
+
+    test('services cards should be fully visible in viewport', async ({ page }) => {
+      const servicesSection = page.locator('section:has(h2#services-title)');
+      await expect(servicesSection).toBeVisible();
+      
+      const cards = servicesSection.locator('.card-volume');
+      const count = await cards.count();
+      expect(count).toBeGreaterThan(0);
+      
+      for (let i = 0; i < count; i++) {
+        const card = cards.nth(i);
+        await expect(card).toBeVisible();
+        
+        const boundingBox = await card.boundingBox();
+        expect(boundingBox).toBeTruthy();
+        if (boundingBox) {
+          expect(boundingBox.x).toBeGreaterThanOrEqual(-1);
+          expect(boundingBox.x + boundingBox.width).toBeLessThanOrEqual(viewport.width + 1);
+        }
+      }
     });
 
     test('footer should not overflow', async ({ page }) => {

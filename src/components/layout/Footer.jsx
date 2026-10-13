@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useContactInfo } from '../../hooks/useContactInfo';
-import { SERVICE_OPTIONS } from '../../constants';
+import { SERVICE_CATALOG } from '../../constants/services';
 import { useLanguage } from '../../context/LanguageContext';
 
 export default function Footer() {
@@ -8,23 +8,23 @@ export default function Footer() {
   const { t } = useLanguage();
 
   const footerLinks = {
-    services: SERVICE_OPTIONS.slice(0, 7).map(label => ({ label, path: `/${label.toLowerCase().replace(/\s+/g, '-').replace('&', '').replace('/', '-')}` })),
+    services: SERVICE_CATALOG.map(({ key, link }) => ({ label: t.services[key] || key, path: link })),
     local: [
-      { label: t.footer.fortMyers || 'Fort Myers', path: '/services' },
-      { label: t.footer.sanCarlosPark || 'San Carlos Park', path: '/san-carlos-park' },
-      { label: t.footer.estero || 'Estero', path: '/estero' },
-      { label: t.footer.bonitaSprings || 'Bonita Springs', path: '/bonita-springs' },
-      { label: t.footer.hoasPropertyManagers || 'HOAs & Property Managers', path: '/communities' },
-      { label: t.footer.requestQuote || 'Request a Quote', path: '/quote' },
+      { label: t.footer.fortMyers || 'Fort Myers', path: '/pest-control-fort-myers' },
+      { label: t.footer.sanCarlosPark || 'San Carlos Park', path: '/pest-control-san-carlos-park' },
+      { label: t.footer.estero || 'Estero', path: '/pest-control-estero' },
+      { label: t.footer.bonitaSprings || 'Bonita Springs', path: '/pest-control-bonita-springs' },
+      { label: t.footer.hoasPropertyManagers || 'HOAs & Property Managers', path: '/hoa-property-management-pest-control' },
+      { label: t.footer.requestQuote || 'Request a Quote', path: '/request-service' },
     ],
   };
 
   return (
     <footer className="bg-neutral-900 dark:bg-neutral-950 text-surface">
-      <div className="page-container">
+      <div className="w-full max-w-[85%] mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pt-12 pb-8 min-w-0">
           <div className="md:col-span-2 lg:col-span-2 min-w-0">
-            <Link to="/" className="flex items-center gap-2.5 mb-6" aria-label="Veritas HomeServices LLC - Home">
+            <Link to="/" className="flex items-center gap-2.5 mb-6">
               <span className="w-10 h-10 rounded-md bg-primary text-white flex items-center justify-center font-extrabold text-xl flex-shrink-0" aria-hidden="true">V</span>
               <div className="flex flex-col leading-tight min-w-0">
                 <span className="font-bold text-base text-surface whitespace-nowrap overflow-hidden text-ellipsis">VERITAS HOMESERVICES LLC</span>
@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="footer-nav min-w-0" aria-labelledby="footer-services-heading">
+          <nav className="min-w-0" aria-labelledby="footer-services-heading">
             <h2 id="footer-services-heading" className="font-semibold text-surface mb-4">{t.footer.services}</h2>
             <ul className="flex flex-col gap-2">
               {footerLinks.services.map((link) => (
@@ -64,7 +64,7 @@ export default function Footer() {
             </ul>
           </nav>
 
-          <nav className="footer-nav min-w-0" aria-labelledby="footer-areas-heading">
+          <nav className="min-w-0" aria-labelledby="footer-areas-heading">
             <h2 id="footer-areas-heading" className="font-semibold text-surface mb-4">{t.footer.areas}</h2>
             <ul className="flex flex-col gap-2">
               {footerLinks.local.map((link) => (

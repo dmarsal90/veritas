@@ -1,44 +1,142 @@
-# Veritas Pest Control - Project Memory
+# Veritas Pest Control — Project Memory
 
 ## Project Overview
-- **Stack**: React 18 + TypeScript + Vite + Tailwind CSS v4
-- **Routing**: React Router v7 (framework mode)
-- **State**: React Context (Language, Theme)
-- **Animation**: Framer Motion (motion/react)
-- **Icons**: Lucide React
-- **Deployment**: GitHub → Vercel/Cloudflare (develop branch)
+- **Stack**: React 19 + Vite 8 + Tailwind CSS v4 (CSS-first `@theme` config)
+- **Routing**: React Router v7 (`BrowserRouter`, lazy-loaded route components)
+- **State**: React Context — `LanguageContext` (en/es, client-side only, defaults to `en`), `ThemeContext` (light/dark via `.dark` class on `<html>`)
+- **Animation**: Framer Motion (`motion/react`)
+- **Icons**: inline SVGs (no icon library)
+- **Package manager**: pnpm (CLAUDE.md says pnpm; `npm run` scripts also work)
+- **Deployment**: Netlify, auto-deploys from `develop` branch. `netlify.toml` is the single source of truth for headers/redirects.
 
-## Key Files Modified Recently
+## What this project is
+A React/Tailwind rebuild of the live site at veritaservicesllc.com (same business —
+Veritas HomeServices LLC, same phone/license/email — different implementation). The
+home page keeps its original hand-built styling. Every other page was brought in line
+with the live site's URL structure and rewritten to use plain Tailwind utilities
+instead of the custom `@layer` classes in `index.css`/`critical.css`.
 
-### CTA Section (`src/components/sections/CTA.jsx`)
-- Fixed theme-adaptive gradient: uses `var(--color-background)` instead of hardcoded dark color
-- Text colors now use semantic tokens: `text-text`, `text-text-muted` (adaptive light/dark)
-- Buttons: `btn-primary` + `btn-outline` with theme-aware borders
-- Gradient now matches section background in both themes
+## URL structure (matches the live site)
+| Route | Old short path (still redirects) |
+|---|---|
+| `/` | — |
+| `/pest-control-fort-myers` | `/services` |
+| `/spider-control-fort-myers` | `/spider-control` |
+| `/german-roach-cleanup-fort-myers` | `/roach-cleanup` |
+| `/rodent-control-fort-myers` | `/rodent-control` |
+| `/bed-bug-treatment-fort-myers` | `/bed-bug-treatment` |
+| `/flea-tick-treatment-fort-myers` | `/flea-tick-treatment` |
+| `/mosquito-control-fort-myers` | `/mosquito-control` |
+| `/pest-control-san-carlos-park` | `/san-carlos-park` |
+| `/pest-control-estero` | `/estero` |
+| `/pest-control-bonita-springs` | `/bonita-springs` |
+| `/hoa-property-management-pest-control` | `/communities` |
+| `/request-service` | `/quote` |
+| `/spider-control-bonita-springs` | (unchanged) |
+| `/spider-control-naples` | (unchanged) |
 
-### HOA Section (`src/components/sections/HOA.jsx`)
-- Fixed gradient overlay: uses `var(--color-background)` for theme-adaptive background
-- Card remains `bg-primary` with white text (intentional brand color)
+Legacy paths are `<Navigate replace>` routes in `src/App.jsx`. Unknown paths hit a
+catch-all `*` route rendering `NotFoundPage` (404, `noindex,follow`). `public/_redirects`
+(`/* /index.html 200`) is required for Netlify to serve the SPA shell on any of these
+paths at all — **do not remove it**, deep links 404 on Netlify without it.
 
-### CSS Tokens (`src/index.css`)
-- Light mode: `--color-background: #fafafa`, `--color-text: #1a1a2e`
-- Dark mode (`.dark` class): `--color-background: #0f172a`, `--color-text: #f1f5f9`
-- Theme toggled via `ThemeContext` adding/removing `.dark` class on `<html>`
+## Page architecture — shared templates
+Several near-duplicate pages were consolidated into parametrized templates under
+`src/components/pages/templates/` (previously each page hand-duplicated ~150-230
+lines, including the full services grid JSX with inline SVG icons):
+- `TreatmentPageTemplate` — bed bug / rodent / flea & tick / mosquito pages (`pestKey` prop)
+- `LocationPageTemplate` — San Carlos Park / Estero / Bonita Springs (`cityKey` prop)
+- `SpiderControlCityTemplate` — Fort Myers / Bonita Springs / Naples spider pages (`cityKey` prop)
 
-## Theme System
-- Class-based (not media query): `.dark` on `<html>` enables dark mode
-- Persisted in localStorage via `ThemeContext`
-- All semantic tokens (`--color-background`, `--color-text`, `--color-text-muted`, `--color-border`) swap automatically
+`ServicesPage`, `RoachCleanupPage`, `CommunitiesPage` remain standalone (genuinely
+unique layouts). The shared service catalog (icons, links) lives in
+`src/constants/services.jsx` (`.jsx` because it holds inline SVG JSX — a plain `.js`
+file won't parse JSX in this Vite config). `src/constants/index.js` only holds
+`SERVICE_OPTIONS` (quote-form dropdown labels) now — the other exports there were
+unused dead code and were removed (`NAV_ITEMS`, `SERVICE_AREAS`, `FAQ_ITEMS`,
+`AI_RESPONSES`, etc. all had live duplicates driven by `LanguageContext` instead).
 
-## Git History
-- Latest commit: `c1512c2` - "Fix CTA and HOA sections theme-adaptive backgrounds"
-- Branch: `develop` (pushed to origin)
+## Styling convention
+- **Home page sections** (`src/components/sections/*`: Hero, Services, WhyVeritas,
+  QuickStart, Process, HOA, ServiceAreas, FAQ, CTA) — left exactly as they were,
+  including their use of the custom `index.css` classes (`page-container`, `section`,
+  `btn`, `card`, etc.). Do not "clean these up" — that was an explicit instruction.
+- **Everywhere else** (shared components, page components, QuoteForm, ErrorBoundary) —
+  plain Tailwind utility classes only. No `page-container`/`section`/`section-header`/
+  `section-title`/`section-description`/`btn*`/`card`/`glass-card`/`card-volume`/
+  `icon-wrapper`/`badge*`/`link-arrow`/`prose`. Reference conversions:
+  - `page-container` → `w-full max-w-[85%] mx-auto px-6`
+  - `section` → `py-16 md:py-20 overflow-x-hidden`
+  - `btn btn-primary` → `inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-green-700 text-white shadow-sm hover:bg-green-800 ...`
+  - `card glass-card card-volume` → `bg-surface/90 backdrop-blur-md border border-border rounded-xl shadow-sm hover:shadow-xl transition-all duration-300`
+  - Semantic color tokens (`text-text`, `bg-primary`, `border-border`, etc.) are Tailwind
+    v4 `@theme` tokens, not custom classes — keep using them everywhere.
+- `src/index.css` and `src/critical.css` are hand-duplicated (critical.css is inlined
+  into `<head>` at build time by a custom Vite plugin for LCP). **Any fix to a rule in
+  one must be mirrored in the other** — this is exactly how the sticky-header bug
+  below slipped through once already.
 
-## Installed Tools (Global)
-- `opencode-mem` - OpenCode plugin for persistent vector memory
-- `envsitter-guard` - Env validation
-- `ocx` + `kdco/notify` - OpenCode extensions
+## Known bug classes fixed this pass (watch for recurrences)
+1. **Translation-key lookups with baked-in prefixes.** Several components stored a
+   fully-qualified dotted key (e.g. `'hero.trust.licensed'`, `'process.step1Title'`,
+   `'serviceAreas.fortMyers'`) and then looked it up as `t.hero.trust[key]` —
+   double-prefixing, so the lookup always missed and the UI rendered the literal key
+   string. Fixed in `TrustBadges`, `ProcessSteps`, `ServiceAreaLinks`, `FeatureCards`,
+   `ChecklistBox` (roach + hoa variants). When adding a new component that maps an
+   array item to a translation, prefer indexing an existing array
+   (`t.process.steps[index]`) over a flat key lookup, or keep keys un-prefixed and
+   double check the matching translation object actually has that key.
+2. **`overflow-x: hidden` on `html, body` breaks `position: sticky`** on descendants
+   (classic Chromium behavior — any non-`visible` overflow value makes the UA treat
+   the element as a scroll container, which changes what "stuck" is relative to).
+   Fixed by switching to `overflow-x: clip` in both `index.css` and `critical.css`.
+   Don't reintroduce `overflow-x: hidden` on `html`/`body`.
+3. **Missing `public/_redirects`** — Netlify static hosting 404s on any path other than
+   `/` without an SPA fallback rule. Always keep `/* /index.html 200` in that file.
 
-## Deployment
-- Auto-deploys from `develop` branch
-- Check Vercel/Cloudflare dashboard for build status
+## Translations
+`src/context/LanguageContext.jsx` now has full `en`/`es` coverage for every page
+(`t.pages.*`), the 404/500 pages (`t.notFound`, `t.serverError`), and the quote form
+(including success state, radio labels, placeholders, consent text). Language is
+**client-side only** (`localStorage`, no `/es/` URLs) — there is intentionally no
+hreflang alternate block in `index.html`/`sitemap.xml` for this reason (hreflang
+implies a distinct crawlable URL per language, which doesn't exist here).
+
+## SEO
+- `src/components/shared/Seo.jsx` — tiny effect-based component (no react-helmet
+  dependency) that sets `document.title`, meta description, canonical link, and
+  robots meta per route. Every page component renders its own `<Seo title=... description=... path=... />`.
+- `public/sitemap.xml` — rewritten to the canonical URLs above; no fake `/es/` entries.
+- Single CSP, kept in sync across `index.html` (meta) and `netlify.toml` (header) —
+  `public/_headers` was deleted (it duplicated/contradicted the other two, including a
+  leftover `'sha256-0'` placeholder hash that did nothing).
+
+## Contact info
+Phone/email are obfuscated (base64) in `src/utils/contactObfuscation.js`, consumed via
+`useContactInfo()`. The real values resolve to `239-227-0624` /
+`arthur@veritaservicesllc.com` (matches the live site). Always use the hook — don't
+hardcode contact info in translations or components.
+
+## Verification habits for this repo
+- `pnpm build` must succeed and `pnpm lint` (oxlint) should show no new warnings.
+- Since this is a CSR SPA, grep for `t\.\w+\[` after touching translation-driven
+  components and confirm every dynamic key actually resolves — that bug class has
+  bitten this project more than once (see above).
+- The Playwright MCP server in this environment has been unreliable (connection
+  timeouts); `claude-in-chrome` (browser automation skill) works and caught real
+  rendering bugs (blank hero on first paint, raw translation keys, non-sticky header)
+  that a code read-through missed. `resize_window` does not actually change the
+  viewport in this sandbox (reports success, `window.innerWidth` doesn't change) —
+  can't get a true mobile screenshot here; responsive behavior has to be verified by
+  reading the Tailwind breakpoint classes instead.
+
+## Known remaining debt (not fixed this pass, intentionally out of scope)
+- `index.css` / `critical.css` duplication (see above) — a real refactor would
+  auto-extract critical CSS instead of hand-maintaining two files.
+- `src/utils/security.js` is unused (its own comment says "for server-side use if
+  adding a backend") — dead code reserved for a future API, left alone.
+- Client-side rate limiting in `QuoteForm`/`validation.js` is cosmetic only — there's
+  no backend in this repo to enforce it server-side.
+- Stray root-level scripts (`analyze-*.cjs`, `crawl-site.cjs`, `audit-links.mjs`,
+  `check-mobile.*`, `test-mobile.mjs`, `check-5173.png`, `vite.config.simple.js`) are
+  untracked debugging artifacts, not part of the app — left alone, not mine to delete.

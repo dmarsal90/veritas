@@ -11,10 +11,10 @@ export default function Header() {
   const { theme, toggleTheme } = useTheme();
 
   const navItems = [
-    { label: t.nav.services, path: '/services' },
-    { label: t.nav.spiderControl, path: '/spider-control' },
-    { label: t.nav.roachCleanup, path: '/roach-cleanup' },
-    { label: t.nav.communities, path: '/communities' },
+    { label: t.nav.services, path: '/pest-control-fort-myers' },
+    { label: t.nav.spiderControl, path: '/spider-control-fort-myers' },
+    { label: t.nav.roachCleanup, path: '/german-roach-cleanup-fort-myers' },
+    { label: t.nav.communities, path: '/hoa-property-management-pest-control' },
     { label: t.nav.serviceAreas || 'Service Areas', path: '/#service-areas' },
   ];
 
@@ -31,8 +31,8 @@ export default function Header() {
         scrolled ? 'shadow-md bg-surface/95 backdrop-blur-md' : 'bg-surface'
       }`}
     >
-      <div className="container flex items-center justify-between h-16 md:h-18 lg:h-18 gap-2 md:gap-4">
-        <NavLink to="/" className="flex items-center gap-2 md:gap-2.5 text-text flex-shrink-0" aria-label="Veritas HomeServices LLC - Home">
+      <div className="w-full max-w-[85%] mx-auto flex items-center justify-between h-16 md:h-18 lg:h-18 gap-2 md:gap-4 px-3 md:px-6 overflow-x-hidden">
+        <NavLink to="/" className="flex items-center gap-2 md:gap-2.5 text-text flex-shrink-0">
           <span className="w-9 h-9 md:w-10 md:h-10 rounded-md bg-primary text-white flex items-center justify-center font-extrabold text-base md:text-xl flex-shrink-0" aria-hidden="true">V</span>
           <div className="flex flex-col leading-tight min-w-0">
             <span className="font-bold text-sm md:text-base text-text whitespace-nowrap overflow-hidden text-ellipsis">VERITAS HOMESERVICES LLC</span>
@@ -81,8 +81,8 @@ export default function Header() {
             )}
           </button>
           <NavLink
-            to="/quote"
-            className="btn btn-primary hidden sm:flex"
+            to="/request-service"
+            className="hidden sm:inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-green-700 text-white shadow-sm hover:bg-green-800 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-500/50 transition-all duration-200 whitespace-nowrap"
           >
             {t.header.freeQuote}
           </NavLink>

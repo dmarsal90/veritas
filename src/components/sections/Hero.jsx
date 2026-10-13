@@ -82,8 +82,8 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             >
               <Link
-                to="/quote"
-                className="btn btn-primary group relative overflow-hidden"
+                to="/request-service"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-green-800 text-white shadow-sm hover:bg-green-900 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] active:shadow-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600/50 group relative overflow-hidden transition-all duration-200"
                 style={{ minWidth: '200px' }}
               >
                 <span className="relative z-10">{t.hero.getQuoteNew}</span>
@@ -104,7 +104,7 @@ export default function Hero() {
               </Link>
               <a
                 href={phoneHref}
-                className="btn btn-outline group relative overflow-hidden"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg bg-amber-600 text-gray-900 shadow-sm hover:bg-amber-700 hover:shadow-lg hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 group relative overflow-hidden transition-all duration-200"
                 aria-label={t.hero.callNow}
                 style={{ minWidth: '180px' }}
               >
@@ -255,8 +255,9 @@ export default function Hero() {
                   </article>
                 </motion.div>
                 
-                <motion.Link
-                  to="/quote"
+                <motion.a
+                  as="a"
+                  href="/request-service"
                   className="btn btn-primary w-full group relative overflow-hidden"
                   initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
                   animate={reduceMotion ? {} : { opacity: 1, y: 0 }}
@@ -269,7 +270,7 @@ export default function Hero() {
                     className="absolute inset-0 bg-gradient-to-r from-primary-light to-primary opacity-0 group-hover:opacity-100"
                     transition={{ duration: 0.3 }}
                   />
-                </motion.Link>
+                </motion.a>
               </div>
             </motion.div>
           </div>
