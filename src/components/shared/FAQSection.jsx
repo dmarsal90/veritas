@@ -30,7 +30,7 @@ export default function FAQSection({
               variants={itemVariants}
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
             >
               <details className="group">
                 <summary className="flex items-center justify-between p-5 cursor-pointer list-none">
@@ -57,7 +57,7 @@ export default function FAQSection({
           className="text-center max-w-3xl mx-auto mb-12 lg:mb-16"
           initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           {title && (
@@ -66,7 +66,7 @@ export default function FAQSection({
               className="text-3xl md:text-4xl font-bold leading-tight text-text mb-4"
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             >
               {title}
@@ -77,7 +77,7 @@ export default function FAQSection({
               className="text-lg leading-relaxed text-text-muted"
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             >
               {subtitle}
@@ -89,7 +89,7 @@ export default function FAQSection({
           variants={containerVariants}
           initial={reduceMotion ? {} : { opacity: 0 }}
           whileInView={reduceMotion ? {} : { opacity: 1 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.1 }}
         >
           <ul className="space-y-4" role="list">
             {faqs.map((faq, index) => (

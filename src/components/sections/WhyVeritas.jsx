@@ -22,14 +22,14 @@ export default function WhyVeritas() {
           className="section-header"
           initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.span
             className="section-label badge badge-primary inline-block"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.whyVeritas.title}
@@ -39,7 +39,7 @@ export default function WhyVeritas() {
             className="section-title"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.whyVeritas.subtitle}
@@ -49,7 +49,7 @@ export default function WhyVeritas() {
           className="section-description text-center max-w-3xl mx-auto mb-8 lg:mb-12"
           initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
         >
           Good pest control starts with reliability, communication and a service plan built around the property rather than a one-size-fits-all approach.
@@ -59,7 +59,7 @@ export default function WhyVeritas() {
           role="list"
           initial={reduceMotion ? {} : { opacity: 0 }}
           whileInView={reduceMotion ? {} : { opacity: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           variants={containerVariants}
         >
           {t.whyVeritas.reasons.map((reason) => (

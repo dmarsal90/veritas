@@ -86,12 +86,25 @@ unused dead code and were removed (`NAV_ITEMS`, `SERVICE_AREAS`, `FAQ_ITEMS`,
    array item to a translation, prefer indexing an existing array
    (`t.process.steps[index]`) over a flat key lookup, or keep keys un-prefixed and
    double check the matching translation object actually has that key.
-2. **`overflow-x: hidden` on `html, body` breaks `position: sticky`** on descendants
+2. **Framer Motion `viewport={{ amount: 0.3 }}` is unsatisfiable for tall containers.**
+   `amount` is the fraction of the *target element* that must be inside the viewport
+   simultaneously. For a stagger container taller than roughly `viewport-height / amount`
+   (e.g. an 8-card grid stacked to ~3000px on a 390x844 mobile viewport needs 900px of
+   itself visible at once — impossible), `whileInView` never fires and the content stays
+   at `opacity: 0` forever — invisible, but still taking up layout space, so the page just
+   looks like a huge blank gap. This hit the home page's 8-card services grid on every
+   real mobile device the user tested (not reproducible via Lighthouse's default
+   desktop-only checks — only showed up once we captured a real 390x844 screenshot via
+   Playwright). Fixed by lowering `amount` to `0.1` everywhere this pattern is used
+   (`ProcessSteps`, `FAQSection`, `FeatureCards`, `ChecklistBox`, `ServiceDetailCard`,
+   `ServicePageLayout`, and the home sections). Prefer a small `amount` (or Framer
+   Motion's `"some"`) over `0.3`+ for any container whose height scales with item count.
+3. **`overflow-x: hidden` on `html, body` breaks `position: sticky`** on descendants
    (classic Chromium behavior — any non-`visible` overflow value makes the UA treat
    the element as a scroll container, which changes what "stuck" is relative to).
    Fixed by switching to `overflow-x: clip` in both `index.css` and `critical.css`.
    Don't reintroduce `overflow-x: hidden` on `html`/`body`.
-3. **Missing `public/_redirects`** — Netlify static hosting 404s on any path other than
+4. **Missing `public/_redirects`** — Netlify static hosting 404s on any path other than
    `/` without an SPA fallback rule. Always keep `/* /index.html 200` in that file.
 
 ## Translations
@@ -126,9 +139,19 @@ hardcode contact info in translations or components.
   timeouts); `claude-in-chrome` (browser automation skill) works and caught real
   rendering bugs (blank hero on first paint, raw translation keys, non-sticky header)
   that a code read-through missed. `resize_window` does not actually change the
-  viewport in this sandbox (reports success, `window.innerWidth` doesn't change) —
-  can't get a true mobile screenshot here; responsive behavior has to be verified by
-  reading the Tailwind breakpoint classes instead.
+  viewport in this sandbox (reports success, `window.innerWidth` doesn't change) — it
+  cannot be used for a true mobile screenshot.
+- **For real mobile-viewport testing, use the `playwright` devDependency directly**
+  (`node -e "const {chromium}=require('playwright'); ..."`, `newPage({viewport:{width:390,
+  height:844}, isMobile:true, hasTouch:true})`), not the claude-in-chrome tool's
+  `resize_window`. This is what actually caught the `amount: 0.3` bug above — Lighthouse's
+  own mobile run scored the page fine and its stitched `fullPageScreenshot` looked
+  plausible, but only a direct Playwright screenshot at the real device viewport showed
+  the services grid rendering as a blank gap.
+- Lighthouse CLI (already used in this project: `lighthouse-report*.json` at repo root)
+  works well for category scores and a11y/SEO audit details (`--screenEmulation.*` flags
+  for mobile), but don't fully trust its full-page screenshot for visual bug-hunting on
+  pages with a `position: sticky` header — prefer a direct Playwright screenshot instead.
 
 ## Known remaining debt (not fixed this pass, intentionally out of scope)
 - `index.css` / `critical.css` duplication (see above) — a real refactor would

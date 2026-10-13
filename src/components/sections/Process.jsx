@@ -22,14 +22,14 @@ export default function Process() {
           className="section-header"
           initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
           whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
         >
           <motion.span
             className="section-label badge badge-primary inline-block"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.process.title}
@@ -39,7 +39,7 @@ export default function Process() {
             className="section-title"
             initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.1 }}
             transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
           >
             {t.process.subtitle || 'Getting Started Is Easy'}
@@ -51,7 +51,7 @@ export default function Process() {
           variants={containerVariants}
           initial={reduceMotion ? {} : { opacity: 0 }}
           whileInView={reduceMotion ? {} : { opacity: 1 }}
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.1 }}
         >
           {t.process.steps.map((step, index) => (
             <motion.li

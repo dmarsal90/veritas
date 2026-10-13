@@ -17,7 +17,7 @@ export default function ServicePageLayout({
             className="text-center max-w-3xl mx-auto mb-10 lg:mb-16"
             initial={reduceMotion ? {} : { opacity: 0, y: 30 }}
             whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             {hero.badge && (
@@ -25,7 +25,7 @@ export default function ServicePageLayout({
                 className="inline-flex items-center px-3 py-1 mb-3 text-xs font-bold tracking-widest uppercase rounded-full bg-primary text-white"
                 initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
                 whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               >
                 {hero.badge}
@@ -36,7 +36,7 @@ export default function ServicePageLayout({
               className="text-4xl md:text-5xl font-bold leading-tight text-text mb-4"
               initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
               whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true, amount: 0.1 }}
               transition={{ duration: 0.6, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
             >
               {hero.title}
@@ -46,7 +46,7 @@ export default function ServicePageLayout({
                 className="text-lg leading-relaxed text-text-muted"
                 initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
                 whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               >
                 {hero.subtitle}
@@ -57,7 +57,7 @@ export default function ServicePageLayout({
                 className="mt-8"
                 initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
                 whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.25, ease: [0.16, 1, 0.3, 1] }}
               >
                 <TrustBadges />
@@ -68,7 +68,7 @@ export default function ServicePageLayout({
                 className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
                 initial={reduceMotion ? {} : { opacity: 0, y: 20 }}
                 whileInView={reduceMotion ? {} : { opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               >
                 {hero.cta.primary && (
