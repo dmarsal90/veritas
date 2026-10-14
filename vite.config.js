@@ -100,20 +100,22 @@ export default defineConfig({
           'utils',
         ]
         
-        const deferredScripts = nonCriticalChunks
-          .map(chunkName => {
-            const chunkFile = Object.keys(bundle).find(
-              f => f.endsWith('.js') && f.includes(chunkName)
-            )
-            return chunkFile ? `    <script type="module">if ('requestIdleCallback' in window) { requestIdleCallback(() => import('/${chunkFile}')); } else { setTimeout(() => import('/${chunkFile}'), 2000); }</script>` : null
-          })
+        const deferredChunkFiles = nonCriticalChunks
+          .map(chunkName => Object.keys(bundle).find(
+            f => f.endsWith('.js') && f.includes(chunkName)
+          ))
           .filter(Boolean)
-          .join('\n')
-        
-        if (deferredScripts) {
+          .map(f => `/${f}`)
+
+        if (deferredChunkFiles.length) {
+          // One external, reusable script (content never changes between builds) that
+          // reads its target chunks from a data attribute, instead of one inline
+          // <script type="module"> per chunk - keeps the CSP's script-src-elem to
+          // just 'self', no per-build hash/unsafe-inline needed.
+          const chunksAttr = JSON.stringify(deferredChunkFiles).replace(/"/g, '&quot;')
           htmlSource = htmlSource.replace(
             '</body>',
-            `    <!-- Deferred non-critical JS chunks -->\n${deferredScripts}\n  </body>`
+            `    <!-- Deferred non-critical JS chunks -->\n    <script type="module" src="/deferred-import.js" data-chunks="${chunksAttr}"></script>\n  </body>`
           )
         }
         
