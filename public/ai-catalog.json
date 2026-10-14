@@ -1,0 +1,63 @@
+{
+  "name": "Veritas HomeServices LLC",
+  "description": "Licensed, insured, owner-operated residential pest control serving Fort Myers, San Carlos Park, Estero, Bonita Springs and nearby Southwest Florida communities.",
+  "url": "https://veritashomeservices.com/",
+  "contact": {
+    "phone": "+1-239-227-0624",
+    "email": "arthur@veritaservicesllc.com"
+  },
+  "license": "FL Pest Control Business License JB500621",
+  "resources": [
+    {
+      "name": "General Pest Control",
+      "url": "https://veritashomeservices.com/pest-control-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "Monthly Spider Control",
+      "url": "https://veritashomeservices.com/spider-control-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "German Roach Clean-Up",
+      "url": "https://veritashomeservices.com/german-roach-cleanup-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "Rodent Control",
+      "url": "https://veritashomeservices.com/rodent-control-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "Bed Bug Treatment",
+      "url": "https://veritashomeservices.com/bed-bug-treatment-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "Flea & Tick Treatment",
+      "url": "https://veritashomeservices.com/flea-tick-treatment-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "Mosquito Control",
+      "url": "https://veritashomeservices.com/mosquito-control-fort-myers",
+      "type": "service"
+    },
+    {
+      "name": "HOA & Property Management",
+      "url": "https://veritashomeservices.com/hoa-property-management-pest-control",
+      "type": "service"
+    },
+    {
+      "name": "Request Service",
+      "url": "https://veritashomeservices.com/request-service",
+      "type": "action"
+    }
+  ],
+  "serviceAreas": [
+    "Fort Myers",
+    "San Carlos Park",
+    "Estero",
+    "Bonita Springs"
+  ]
+}
