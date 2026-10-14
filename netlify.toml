@@ -1,3 +1,7 @@
+# Headers/redirects here are mirrored in public/_headers and public/_redirects for
+# Cloudflare Pages (which doesn't read netlify.toml). If you change the CSP or add a
+# redirect, update both so the two hosts stay in sync.
+
 [build]
   command = "npm run build"
   publish = "dist"
