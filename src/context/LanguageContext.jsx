@@ -36,7 +36,7 @@ export const translations = {
     hero: {
       badge: 'PEST CONTROL EXPERTS',
       title: 'Protecting Southwest Florida Homes Since 2015',
-      titleNew: 'Southwest Florida\'s Most Trusted Pest Control — 247 5-Star Reviews',
+      titleNew: 'Professional Pest Control in Fort Myers & Southwest Florida',
       description: 'Veritas HomeServices LLC delivers integrity-driven pest control with transparent pricing, eco-friendly solutions, and a 100% satisfaction guarantee.',
       descriptionNew: 'Fast, effective, guaranteed. Starting at $35/mo.',
       getQuote: 'Get Free Quote',
@@ -49,7 +49,7 @@ export const translations = {
         guarantee: 'Satisfaction Guaranteed',
       },
       trustBar: {
-        reviews: '247 Reviews',
+        reviews: 'Owner-Operated',
         license: 'Licensed JB500621',
         sameDay: 'Same-Day Service',
       },
@@ -90,7 +90,7 @@ export const translations = {
       title: 'Why Choose Veritas?',
       subtitle: 'We\'re not just another pest control company',
       reasons: [
-        'Local family-owned business serving Southwest Florida',
+        'Honest Service Every time',
         'Licensed, insured, and certified technicians',
         'Eco-friendly and pet-safe treatment options',
         'Transparent pricing with no hidden fees',
@@ -587,7 +587,7 @@ export const translations = {
     hero: {
       badge: 'EXPERTOS EN CONTROL DE PLAGAS',
       title: 'Protegiendo Hogares del Suroeste de Florida Desde 2015',
-      titleNew: 'El Control de Plagas Más Confiable del Suroeste de Florida — 247 Reseñas de 5 Estrellas',
+      titleNew: 'Control de Plagas Profesional en Fort Myers y el Suroeste de Florida',
       description: 'Veritas HomeServices LLC ofrece control de plagas impulsado por la integridad, con precios transparentes, soluciones ecológicas y garantía de satisfacción del 100%.',
       descriptionNew: 'Rápido, efectivo, garantizado. Desde $35/mes.',
       getQuote: 'Obtener Cotización Gratis',
@@ -600,7 +600,7 @@ export const translations = {
         guarantee: 'Garantía de Satisfacción',
       },
       trustBar: {
-        reviews: '247 Reseñas',
+        reviews: 'Propietario Operador',
         license: 'Licenciado JB500621',
         sameDay: 'Servicio Mismo Día',
       },
@@ -641,7 +641,7 @@ export const translations = {
       title: '¿Por Qué Elegir Veritas?',
       subtitle: 'No somos solo otra empresa de control de plagas',
       reasons: [
-        'Empresa familiar local sirviendo al Suroeste de Florida',
+        'Servicio Honesto en Cada Visita',
         'Técnicos licenciados, asegurados y certificados',
         'Opciones de tratamiento ecológicas y seguras para mascotas',
         'Precios transparentes sin cargos ocultos',
