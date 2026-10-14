@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+/* Inter is loaded once, via the preload+swap link in index.html (with a
+   font-preload-swap.js helper instead of an inline onload attribute, so the CSP
+   doesn't need script-src-attr 'unsafe-inline') - importing it again here would just
+   duplicate that network request. */
 
 @theme {
   --color-primary: #1a5f3a;

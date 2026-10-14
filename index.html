@@ -14,10 +14,9 @@
     <meta name="theme-color" content="#1a5f3a" />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <!-- frame-ancestors is intentionally omitted here: it has no effect in a <meta> CSP
-         (browsers ignore it and log a console warning) and is only enforced via the real
-         HTTP header set in netlify.toml. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-hashes'; script-src-elem 'self' 'unsafe-inline'; script-src-attr 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com; style-src-elem 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self'; require-trusted-types-for 'script'; trusted-types default;" />
+    <!-- CSP lives only in the real HTTP header (netlify.toml) now - a <meta> CSP can't
+         carry frame-ancestors and Lighthouse flags the duplicate meta+header setup as a
+         best-practice issue. Keeping one canonical policy avoids them drifting apart. -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
     <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
@@ -26,8 +25,9 @@
     <title>Veritas HomeServices LLC | Professional Pest Control in Fort Myers & Southwest Florida</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'" fetchpriority="high">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+    <link id="font-preload" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional" fetchpriority="high">
+    <script src="/font-preload-swap.js" async></script>
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=optional"></noscript>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
